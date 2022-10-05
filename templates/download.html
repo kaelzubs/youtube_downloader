@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+{% for dt in data %}
+<div class="container">
+    <div class="row">
+        <h1 class="title">{{ dt.title }}</h1>
+        <!-- 16:9 aspect ratio -->
+        <div class="col-md-6 embed-responsive embed-responsive-16by9">
+            <iframe class="img_frame embed-responsive-item" src="{{ dt.url_emb }}" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-6 card card-price">
+            <div class="card-body">
+                <table class="table">
+                    <tr>
+                        <th>Format</th>
+                        <th>Resolution</th>
+                        <th>Duration</th>
+                        <th>File Size</th>
+                        <th>Download</th>
+                    </tr>
+                    <tr>
+                        <td class="btn btn-info">{{ dt.file_format }}</td>
+                        <td>{{ dt.seven }}</td>
+                        <td>{{ dt.duration }}</td>
+                        <td>{{ dt.file_size_720p }}</td>
+                        <td>
+                            <button class="btn btn-info btn-block" onclick="window.location.href='{{ url_for(dt.download_720p) }}';">Download!
+                                <span class="glyphicon glyphicon-triangle-right"></span>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="btn btn-info">{{ dt.file_format }}</td>
+                        <td>{{ dt.three }}</td>
+                        <td>{{ dt.duration }}</td>
+                        <td>{{ dt.file_size_360p }}</td>
+                        <td>
+                            <button class="btn btn-info btn-block" onclick="window.location.href='{{ url_for(dt.download_360p) }}';">Download!
+                                <span class="glyphicon glyphicon-triangle-right"></span>
+                            </button>
+                        </td>
+                    </tr>
+                    <td>{{ dt.y }}</td>
+                </table>
+                <h2 class="title btn btn-info">Description:</h2><p class="title">{{ dt.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
