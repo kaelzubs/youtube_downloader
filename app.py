@@ -81,7 +81,7 @@ def index():
     data_list = []
     if request.method == "POST":
         yt_url = request.form.get("q")
-        yt = YouTube(yt_url, on_progress_callback=on_progress)
+        yt = YouTube(yt_url, use_oauth=True, allow_oauth_cache=True, on_progress_callback=on_progress)
         yt_emb = yt_url.replace('/watch?v=', '/embed/')
         yt_res_720p = yt.streams.get_by_itag('22').resolution
         yt_res_360p = yt.streams.get_by_itag('18').resolution
