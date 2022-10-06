@@ -26,9 +26,12 @@
                         <td>{{ dt.duration }}</td>
                         <td>{{ dt.file_size_720p }}</td>
                         <td>
-                            <button class="btn btn-info btn-block" onclick="window.location.href='{{ url_for(dt.download_720p) }}';">Download!
-                                <span class="glyphicon glyphicon-triangle-right"></span>
-                            </button>
+                            <a href="#" id="test">
+                                <button class="btn btn-info btn-block">Download
+                                    <span class="glyphicon glyphicon-triangle-right"></span>
+                                </button>
+                            </a>
+                            
                         </td>
                     </tr>
                     <tr>
@@ -37,9 +40,12 @@
                         <td>{{ dt.duration }}</td>
                         <td>{{ dt.file_size_360p }}</td>
                         <td>
-                            <button class="btn btn-info btn-block" onclick="window.location.href='{{ url_for(dt.download_360p) }}';">Download!
-                                <span class="glyphicon glyphicon-triangle-right"></span>
-                            </button>
+                            <a href="#" id="test">
+                                <button class="btn btn-info btn-block">Download
+                                    <span class="glyphicon glyphicon-triangle-right"></span>
+                                </button>
+                            </a>
+                            
                         </td>
                     </tr>
                     <td>{{ dt.y }}</td>

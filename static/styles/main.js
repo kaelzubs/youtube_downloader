@@ -13,4 +13,3 @@ function loading() {
     document.querySelector('#loading').style.visibility = 'visible'
     window.location.href='/'
 }
-

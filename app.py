@@ -125,6 +125,7 @@ def index():
 def download():
     data_list = []
     if request.method == "POST":
+        global yt_url
         yt_url = request.form.get("q")
         yt = YouTube(yt_url, use_oauth=True, allow_oauth_cache=True, on_progress_callback=on_progress)
         yt_emb = yt_url.replace('/watch?v=', '/embed/')
@@ -134,20 +135,7 @@ def download():
         yt_size_720p = yt.streams.get_by_itag('22').filesize
         yt_file_size_pretty_720p = pretty_size(yt_size_720p)
         yt_size_360p = yt.streams.get_by_itag('18').filesize
-        yt_file_size_pretty_360p = pretty_size(yt_size_360p)
-
-        path = os.path.expanduser("~/Downloads")
-
-        # yt_res_720p_download = yt.streams.get_by_itag('22')
-        # yt_res_360p_download = yt.streams.get_by_itag('18')
-        
-        def yt_res_720p_download():
-            command720p = f'youtube-dl -f 22 {yt_url}'
-            call(command720p.split(), shell=False)
-
-        def yt_res_360p_download():
-            command360p = f'youtube-dl -f 18 {yt_url}'
-            call(command360p.split(), shell=False)
+        yt_file_size_pretty_360p = pretty_size(yt_size_360p)        
 
         yt_title = yt.streams[0].title
         yt_desc = yt.description
@@ -168,11 +156,6 @@ def download():
 
             'file_size_720p': yt_file_size_pretty_720p,
             'file_size_360p': yt_file_size_pretty_360p,
-
-            'download_720p': yt_res_720p_download(),
-            'download_360p': yt_res_360p_download(),
-
-            'path': path,
         }
         data_list.append(data_obj)
         time.sleep(5)
@@ -183,6 +166,20 @@ def download():
         return 'Not a valid request method for this route'
 
     return render_template("download.html", data=data_list)
+############################################################################################
+
+
+
+############################################################################################
+@app.route('/background_process_test')
+def yt_res_720p_download():
+    command720p = f'youtube-dl -f 22 {yt_url}'
+    call(command720p.split(), shell=False)
+
+@app.route('/background_process_test')
+def yt_res_360p_download():
+    command360p = f'youtube-dl -f 18 {yt_url}'
+    call(command360p.split(), shell=False)
 ############################################################################################
 
 

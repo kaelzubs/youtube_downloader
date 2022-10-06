@@ -7,6 +7,18 @@
         <title>Online Youtube Downloader!</title>
         <link rel="stylesheet" type="text/css" href="styles/main.css">
         <script type="text/javascript" src="styles/main.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type=text/javascript>
+        $(function() {
+            $('a#test').on('click', function(e) {
+                e.preventDefault()
+                $.getJSON('/background_process_test', function(data) {
+                    //do nothing
+                });
+                return false;
+            });
+        });
+        </script>
     <body>
         {% include 'home_page.html' %}
         
