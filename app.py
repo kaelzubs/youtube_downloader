@@ -173,6 +173,7 @@ def download():
 # Download Route
 @app.route('/background_process_test')
 def yt_res_720p_download():
+    global yt_url
     yt = YouTube(yt_url, on_progress_callback=on_progress)
     yt.streams.get_by_itag('22').download(os.path.expanduser("~/Downloads"))
     # command720p = f'youtube-dl -f 22 {yt_url}'
@@ -180,6 +181,7 @@ def yt_res_720p_download():
 
 @app.route('/background_process_test')
 def yt_res_360p_download():
+    global yt_url
     yt = YouTube(yt_url, on_progress_callback=on_progress)
     yt.streams.get_by_itag('18').download(os.path.expanduser("~/Downloads"))
     # command360p = f'youtube-dl -f 18 {yt_url}'
