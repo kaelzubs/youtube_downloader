@@ -80,6 +80,7 @@ def loading():
 def index():
     data_list = []
     if request.method == "POST":
+        global yt_url
         yt_url = request.form.get("q")
         yt = YouTube(yt_url, use_oauth=True, allow_oauth_cache=True, on_progress_callback=on_progress)
         yt_emb = yt_url.replace('/watch?v=', '/embed/')
@@ -124,8 +125,6 @@ def index():
 def download():
     data_list = []
     if request.method == "POST":
-        global yt_url
-        yt_url = request.form.get("q")
         yt = YouTube(yt_url, use_oauth=True, allow_oauth_cache=True, on_progress_callback=on_progress)
         yt_emb = yt_url.replace('/watch?v=', '/embed/')
         yt_res_720p = yt.streams.get_by_itag('22').resolution
