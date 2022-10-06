@@ -171,6 +171,7 @@ def download():
 
 
 ############################################################################################
+# Download Route
 @app.route('/background_process_test')
 def yt_res_720p_download():
     command720p = f'youtube-dl -f 22 {yt_url}'
@@ -239,5 +240,5 @@ def inject_template_scope():
 ############################################################################################
 # running flask server
 if __name__ == "__main__":
-    app.run(debug=True, port=int(os.environ.get('PORT', 5000)), use_reloader=True)
+    app.run(debug=False, use_reloader=True)
 ############################################################################################
