@@ -6,7 +6,6 @@ from flask_bootstrap import Bootstrap
 from pytube import YouTube
 from pytube.cli import on_progress
 from subprocess import call
-from flask_cors import CORS, cross_origin
 ############################################################################################
 
 
@@ -20,9 +19,6 @@ app = Flask(
     template_folder='templates'
 )
 Bootstrap(app)
-
-cors = CORS(app)
-app.config['CORS_HEADERS'] = 'Content-Type'
 
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
@@ -81,12 +77,11 @@ def loading():
 ############################################################################################
 # Home page route
 @app.route("/", methods=["GET", "POST"])
-@cross_origin()
 def index():
     data_list = []
     if request.method == "POST":
         yt_url = request.form.get("q")
-        yt = YouTube(yt_url, use_oauth=True, allow_oauth_cache=True, on_progress_callback=on_progress)
+        yt = YouTube(yt_url, on_progress_callback=on_progress)
         yt_emb = yt_url.replace('/watch?v=', '/embed/')
         yt_res_720p = yt.streams.get_by_itag('22').resolution
         yt_res_360p = yt.streams.get_by_itag('18').resolution
@@ -126,7 +121,6 @@ def index():
 ############################################################################################
 # Download page
 @app.route("/download", methods=["GET", "POST"])
-@cross_origin()
 def download():
     data_list = []
     if request.method == "POST":
