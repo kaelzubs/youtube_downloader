@@ -10,18 +10,9 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script type=text/javascript>
             $(function() {
-                $('a#test720p').on('click', function(e) {
+                $('a#test').on('click', function(e) {
                     e.preventDefault()
-                    $.getJSON('/background_process_test720p', function(data) {
-                        //do nothing
-                    });
-                    return false;
-                });
-            });
-            $(function() {
-                $('a#test360p').on('click', function(e) {
-                    e.preventDefault()
-                    $.getJSON('/background_process_test360p', function(data) {
+                    $.getJSON('/background_process_test', function(data) {
                         //do nothing
                     });
                     return false;
