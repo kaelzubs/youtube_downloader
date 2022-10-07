@@ -186,6 +186,7 @@ UPLOAD_DIRECTORY = os.path.expanduser("~/Downloads")
 def yt_res_720p_download():
     path = yt.streams.get_by_itag('22').download()
     send_from_directory(UPLOAD_DIRECTORY, path, as_attachment=True)
+    
 
 @app.route('/background_process_download360p')
 def yt_res_360p_download():
