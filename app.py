@@ -6,6 +6,8 @@ from flask_bootstrap import Bootstrap
 from pytube import YouTube
 from pytube.cli import on_progress
 from subprocess import call
+
+import youtube_dl
 ############################################################################################
 
 
@@ -174,14 +176,12 @@ def download():
 # Download Route
 @app.route('/background_process_test')
 def yt_res_720p_download():
-    # yt.streams.get_by_itag('22').download(os.path.expanduser("~/Downloads"))
-    command720p = f'youtube-dl -f 22 {yt_url}'
+    command720p = f'youtube-dl -o "%USERPROFILE%\Desktop\%(title)s-%(id)s.%(ext)s" -f 22 {yt_url}'
     call(command720p.split(), shell=False)
 
 @app.route('/background_process_test')
 def yt_res_360p_download():
-    # yt.streams.get_by_itag('18').download(os.path.expanduser("~/Downloads"))
-    command360p = f'youtube-dl -f 18 {yt_url}'
+    command360p = f'youtube-dl -o "%USERPROFILE%\Desktop\%(title)s-%(id)s.%(ext)s" -f 18 {yt_url}'
     call(command360p.split(), shell=False)
 ############################################################################################
 
