@@ -10,9 +10,22 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script type=text/javascript>
             $(function() {
-                $('a#test').on('click', function(e) {
+                $('a#seven').on('click', function(e) {
                     e.preventDefault()
-                    $.getJSON('/background_process_test', function(data) {
+                    $.getJSON('/background_process_download720p', function(data) {
+                        return True
+                        //do nothing
+                    });
+                    return false;
+                });
+            });
+        </script>
+        <script type=text/javascript>
+            $(function() {
+                $('a#three').on('click', function(e) {
+                    e.preventDefault()
+                    $.getJSON('/background_process_download360p', function(data) {
+                        return True
                         //do nothing
                     });
                     return false;

@@ -1,13 +1,19 @@
 ############################################################################################
 # importing needed libraries
-import os, datetime, time
+from importlib.resources import as_file
+import os, datetime, time, subprocess, platform
+from unicodedata import name
 from flask import *
 from flask_bootstrap import Bootstrap
 from pytube import YouTube
 from pytube.cli import on_progress
-from subprocess import call
+from flask import send_from_directory
 
-import youtube_dl
+
+Windows=False
+
+if platform.system()=="Windows":
+    Windows=True
 ############################################################################################
 
 
@@ -174,15 +180,17 @@ def download():
 
 ############################################################################################
 # Download Route
-@app.route('/background_process_test')
-def yt_res_720p_download():
-    command720p = f'youtube-dl -o "%USERPROFILE%\Desktop\%(title)s-%(id)s.%(ext)s" -f 22 {yt_url}'
-    call(command720p.split(), shell=False)
+UPLOAD_DIRECTORY = os.path.expanduser("~/Downloads")
 
-@app.route('/background_process_test')
+@app.route('/background_process_download720p')
+def yt_res_720p_download():
+    path = yt.streams.get_by_itag('22').download()
+    send_from_directory(UPLOAD_DIRECTORY, path, as_attachment=True)
+
+@app.route('/background_process_download360p')
 def yt_res_360p_download():
-    command360p = f'youtube-dl -o "%USERPROFILE%\Desktop\%(title)s-%(id)s.%(ext)s" -f 18 {yt_url}'
-    call(command360p.split(), shell=False)
+    path = yt.streams.get_by_itag('18').download()
+    send_from_directory(UPLOAD_DIRECTORY, path, as_attachment=True)
 ############################################################################################
 
 
