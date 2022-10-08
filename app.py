@@ -1,8 +1,7 @@
 ############################################################################################
 # importing needed libraries
-from importlib.resources import as_file
-import os, datetime, time, subprocess, platform
-from unicodedata import name
+import http
+import os, datetime, time, platform
 from flask import *
 from flask_bootstrap import Bootstrap
 from pytube import YouTube
@@ -166,7 +165,7 @@ def download():
             'file_size_360p': yt_file_size_pretty_360p,
         }
         data_list.append(data_obj)
-        time.sleep(5)
+        time.sleep(0.5)
 
     elif request.method == 'GET':
         return redirect('/')
@@ -182,16 +181,16 @@ def download():
 # Download Route
 UPLOAD_DIRECTORY = os.path.expanduser("~/Downloads")
 
-@app.route('/background_process_download720p')
-def yt_res_720p_download():
-    path = yt.streams.get_by_itag('22').download()
-    send_from_directory(UPLOAD_DIRECTORY, path, as_attachment=True)
+@app.route('/background_process_download720p/<path:filename>')
+def yt_res_720p_download(filename):
+    filename = yt.streams.get_by_itag('22').download(skip_existing=True)
+    send_from_directory(UPLOAD_DIRECTORY, filename, as_attachment=True)
     
 
-@app.route('/background_process_download360p')
-def yt_res_360p_download():
-    path = yt.streams.get_by_itag('18').download()
-    send_from_directory(UPLOAD_DIRECTORY, path, as_attachment=True)
+@app.route('/background_process_download360p/<path:filename>')
+def yt_res_360p_download(filename):
+    filename = yt.streams.get_by_itag('18').download(skip_existing=True)
+    send_from_directory(UPLOAD_DIRECTORY, filename, as_attachment=True)
 ############################################################################################
 
 
