@@ -184,13 +184,15 @@ UPLOAD_DIRECTORY = os.path.expanduser("~/Downloads")
 @app.route('/background_process_download720p/<path:filename>')
 def yt_res_720p_download(filename):
     filename = yt.streams.get_by_itag('22').download(skip_existing=True)
-    send_from_directory(UPLOAD_DIRECTORY, filename, as_attachment=True)
+    Response(send_from_directory(UPLOAD_DIRECTORY, filename, as_attachment=True), mimetype='video/mp4')
+    
     
 
 @app.route('/background_process_download360p/<path:filename>')
 def yt_res_360p_download(filename):
     filename = yt.streams.get_by_itag('18').download(skip_existing=True)
-    send_from_directory(UPLOAD_DIRECTORY, filename, as_attachment=True)
+    Response(send_from_directory(UPLOAD_DIRECTORY, filename, as_attachment=True), mimetype='video/mp4')
+    
 ############################################################################################
 
 
