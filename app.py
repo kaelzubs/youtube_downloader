@@ -1,12 +1,14 @@
 ############################################################################################
 # importing needed libraries
-import http
 import os, datetime, time, platform
 from flask import *
 from flask_bootstrap import Bootstrap
 from pytube import YouTube
 from pytube.cli import on_progress
 from flask import send_from_directory
+import wget
+from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 
 
 Windows=False
@@ -179,20 +181,41 @@ def download():
 
 ############################################################################################
 # Download Route
-UPLOAD_DIRECTORY = os.path.expanduser("~/Downloads")
+@app.route('/background_process_download720p', methods=["GET"])
+def yt_res_720p_download():
+    dw_url = f"http://{yt.streams.get_by_itag('22').download()}"
+    wget.download(dw_url)
+    # options = webdriver.ChromeOptions()
+    # prefs = {"download.default_directory" : os.path.expanduser("~/Downloads")}
+    # options.add_experimental_option("prefs", prefs)
+    # driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
+    # try:
+    #     driver.get(yt.streams.get_by_itag('22').download(skip_existing=True))
+    #     downloadfile = driver.find_element_by_css_selector('.downloader')
+    #     downloadfile.click()
+    #     time.sleep(5)
+    #     driver.close()
+    # except:
+    #     print("Invalid URL") 
+    
+     
 
-@app.route('/background_process_download720p/<path:filename>')
-def yt_res_720p_download(filename):
-    filename = yt.streams.get_by_itag('22').download(skip_existing=True)
-    Response(send_from_directory(UPLOAD_DIRECTORY, filename, as_attachment=True), mimetype='video/mp4')
-    
-    
-
-@app.route('/background_process_download360p/<path:filename>')
-def yt_res_360p_download(filename):
-    filename = yt.streams.get_by_itag('18').download(skip_existing=True)
-    Response(send_from_directory(UPLOAD_DIRECTORY, filename, as_attachment=True), mimetype='video/mp4')
-    
+@app.route('/background_process_download360p', methods=["GET"])
+def yt_res_360p_download():
+    dw_url = f"http://{yt.streams.get_by_itag('18').download()}"
+    wget.download(dw_url)
+    # options = webdriver.ChromeOptions()
+    # prefs = {"download.default_directory" : "~/Downloads"}
+    # options.add_experimental_option("prefs", prefs)
+    # driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
+    # try:
+    #     driver.get(yt.streams.get_by_itag('18').download(skip_existing=True))
+    #     downloadfile = driver.find_element_by_css_selector('.downloader')
+    #     downloadfile.click()
+    #     time.sleep(5)
+    #     driver.close()
+    # except:
+    #     print("Invalid URL")    
 ############################################################################################
 
 

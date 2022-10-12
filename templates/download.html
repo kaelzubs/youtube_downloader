@@ -26,7 +26,7 @@
                         <td>{{ dt.duration }}</td>
                         <td>{{ dt.file_size_720p }}</td>
                         <td>
-                            <a href="#" id="seven">
+                            <a href="{{ url_for('yt_res_720p_download') }}" id="seven" class="downloader">
                                 <button class="btn btn-info btn-block">Download
                                     <span class="glyphicon glyphicon-triangle-right"></span>
                                 </button>
@@ -40,7 +40,7 @@
                         <td>{{ dt.duration }}</td>
                         <td>{{ dt.file_size_360p }}</td>
                         <td>
-                            <a href="#" id="three">
+                            <a href="{{ url_for('yt_res_360p_download') }}" id="three" class="downloader">
                                 <button class="btn btn-info btn-block">Download
                                     <span class="glyphicon glyphicon-triangle-right"></span>
                                 </button>
