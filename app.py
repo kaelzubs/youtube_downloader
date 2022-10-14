@@ -20,7 +20,7 @@ app = Flask(
     template_folder='templates'
 )
 Bootstrap(app)
-Compress.init_app(app)
+Compress(app)
 
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
