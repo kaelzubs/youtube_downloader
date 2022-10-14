@@ -5,8 +5,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Online Youtube Downloader!</title>
-        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/main.css" defer>
         <script type="text/javascript" src="styles/main.js"></script>
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org/",
+              "@type": "Videos",
+              "name": "savtube",
+              "author": {
+                "@type": "Person",
+                "name": "Elvis Chukwuka"
+              },
+              "datePublished": "2022-010-20",
+              "description": "This is an online youtube video downloader",
+              "prepTime": "PT20M"
+            }
+        </script>
     </head>
     <body>
         {% include 'home_page.html' %}

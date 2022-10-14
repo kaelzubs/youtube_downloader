@@ -6,6 +6,7 @@ from flask_bootstrap import Bootstrap
 from pytube import YouTube
 from pytube.cli import on_progress
 from flask import send_from_directory
+from flask_compress import Compress
 ############################################################################################
 
 
@@ -19,6 +20,7 @@ app = Flask(
     template_folder='templates'
 )
 Bootstrap(app)
+Compress.init_app(app)
 
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
