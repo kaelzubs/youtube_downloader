@@ -176,13 +176,13 @@ def download():
 # Download Route
 @app.route('/background_process_download720p', methods=["GET"])
 def yt_res_720p_download():
-    path = yt.streams.get_by_itag('22').download().strip(" ")
+    path = yt.streams.get_by_itag('22').download(os.path.expanduser("~/Downloads")).strip(" ")
     return send_file(path, as_attachment=True)
     
      
 @app.route('/background_process_download360p', methods=["GET"])
 def yt_res_360p_download():
-    path = yt.streams.get_by_itag('18').download().strip(" ")
+    path = yt.streams.get_by_itag('18').download(os.path.expanduser("~/Downloads")).strip(" ")
     return send_file(path, as_attachment=True)
 ############################################################################################
 
