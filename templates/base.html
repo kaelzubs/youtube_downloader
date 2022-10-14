@@ -5,8 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Online Youtube Downloader!</title>
-        <link rel="stylesheet" type="text/css" href="styles/main.css" defer>
-        <link rel="stylesheet" type="text/css" href="styles/main.css" async="async">
+        <noscript>
+            <link rel="stylesheet" type="text/css" href="styles/main.css">
+        </noscript>
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
         <script type="text/javascript" src="styles/main.js"></script>
         <script type="application/ld+json">
             {
@@ -21,6 +23,35 @@
               "description": "This is an online youtube video downloader",
               "prepTime": "PT20M"
             }
+        </script>
+
+        <!-- loadCSS -->
+        <script src="https://cdn.rawgit.com/filamentgroup/loadCSS/6b637fe0/src/cssrelpreload.js"></script>
+        <script src="https://cdn.rawgit.com/filamentgroup/loadCSS/6b637fe0/src/loadCSS.js"></script>
+        <script src="https://cdn.rawgit.com/filamentgroup/loadCSS/6b637fe0/src/onloadCSS.js"></script>
+        <script>
+            /*!
+            loadCSS: load a CSS file asynchronously.
+            */
+            function loadCSS(href){
+                var ss = window.document.createElement('link'),
+                    ref = window.document.getElementsByTagName('head')[0];
+
+                ss.rel = 'stylesheet';
+                ss.href = href;
+
+                // temporarily, set media to something non-matching to ensure it'll
+                // fetch without blocking render
+                ss.media = 'only x';
+
+                ref.parentNode.insertBefore(ss, ref);
+
+                setTimeout( function(){
+                // set media back to `all` so that the stylesheet applies once it loads
+                ss.media = 'all';
+                },0);
+            }
+            loadCSS('styles/main.css');
         </script>
     </head>
     <body>
