@@ -2,9 +2,9 @@
 document.onreadystatechange = function() {
     window.onload = (e) => {
         if (document.readyState !== "complete") {
-            $('#loading').show()
+            document.querySelector('#loading').style.visibility = 'visible'
         } else {
-            $('#loading').remove()
+            document.querySelector('#loading').remove()
         }
     }
 }
