@@ -8,6 +8,7 @@ from pytube.cli import on_progress
 from flask import send_from_directory
 from flask_compress import Compress
 from flask_minify import Minify
+from flask_cdn import CDN
 ############################################################################################
 
 
@@ -26,6 +27,8 @@ Minify(app, html=True, js=True, cssless=True)
 
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
+app.config['CDN_CLOUDFLARE_DOMAIN'] = 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'
+CDN(app)
 ############################################################################################
 
 
