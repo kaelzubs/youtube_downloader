@@ -30,7 +30,6 @@ app.config['SECRET_KEY'] = SECRET_KEY
 app.config['CDN_DOMAIN'] = 'd20hfb7kld0tiy.cloudfront.net'
 
 CDN(app)
-SSLify(app)
 ############################################################################################
 
 
