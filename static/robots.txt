@@ -2,4 +2,4 @@ User-agent: *
 Disallow:
 
 Host: ytsaver.com
-Sitemap: https://ytsaver.com/sitemap.xml/
+Sitemap: https://savtube.com/sitemap.xml/
