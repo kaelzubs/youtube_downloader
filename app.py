@@ -27,6 +27,8 @@ SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
 app.config['CDN_DOMAIN'] = 'cdn.udownloadr.herokuapp.com'
 
+ALLOWED_EXTENSIONS = ["png", "jpg", "jpeg", "gif"]
+
 CDN(app)
 ############################################################################################
 
