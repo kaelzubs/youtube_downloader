@@ -27,7 +27,7 @@ Minify(app, html=True, js=True, cssless=True)
 
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
-app.config['CDN_CLOUDFLARE_DOMAIN'] = 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'
+app.config['CDN_DOMAIN'] = 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'
 CDN(app)
 ############################################################################################
 
