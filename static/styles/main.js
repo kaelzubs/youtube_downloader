@@ -4,7 +4,7 @@ document.onreadystatechange = function() {
         if (document.readyState !== "complete") {
             $('#loading').show()
         } else {
-            $('#loading').hide()
+            $('#loading').remove()
         }
     }
 }
