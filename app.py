@@ -21,7 +21,6 @@ app = Flask(
     template_folder='templates'
 )
 Bootstrap(app)
-Minify(app, html=True, js=True, cssless=True)
 Compress(app)
 Minify(app, html=True, js=True, cssless=True)
 
