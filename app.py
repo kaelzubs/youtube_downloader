@@ -27,6 +27,7 @@ Minify(app, html=True, js=True, cssless=True)
 
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
+app.config['BOOTSTRAP_SERVE_LOCAL'] = True #This turns file serving static
 app.config['CDN_DOMAIN'] = 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'
 CDN(app)
 ############################################################################################
