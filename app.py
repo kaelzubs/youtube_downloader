@@ -8,6 +8,7 @@ from flask import send_from_directory
 from flask_compress import Compress
 from flask_minify import Minify
 from flask_cdn import CDN
+from urllib.parse import urljoin
 ############################################################################################
 
 
@@ -25,9 +26,6 @@ Minify(app, html=True, js=True, cssless=True)
 
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
-app.config['CDN_DOMAIN'] = 'cdn.udownloadr.herokuapp.com'
-
-ALLOWED_EXTENSIONS = ["png", "jpg", "jpeg", "gif"]
 
 CDN(app)
 ############################################################################################
@@ -78,6 +76,17 @@ def pretty_size(bytes, units=UNITS_MAPPING):
 @app.route('/')
 def loading():
     return render_template("loading.html")
+############################################################################################
+
+
+
+############################################################################################
+@app.endpoint('static')
+def static(filename):
+    static_url = app.config.get('STATIC_URL')
+    if static_url:
+        return redirect(urljoin(static_url, filename))
+    return app.send_static_file(filename)
 ############################################################################################
 
 
