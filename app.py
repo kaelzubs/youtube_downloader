@@ -26,7 +26,7 @@ Minify(app, html=True, js=True, cssless=True)
 
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
-app.config['CDN_DOMAIN'] = 'flaskcdn-hexid.kxcdn.com'
+app.config['CDN_DOMAIN'] = 'udownloadr.herokuapp.com'
 app.config['CDN_TIMESTAMP'] = False
 
 CDN(app)
