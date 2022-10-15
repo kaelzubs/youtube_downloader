@@ -4,8 +4,6 @@ document.onreadystatechange = function() {
         document.querySelector("#loading").style.visibility = "hidden"
         if (document.readyState !== "complete") {
             document.querySelector("#loading").style.visibility = "visible";
-        } else {
-            document.querySelector("#loading").style.visibility = "hidden"
         }
     }
 }
