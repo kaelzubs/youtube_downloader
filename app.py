@@ -29,7 +29,6 @@ app.config['CDN_DOMAIN'] = 'd20hfb7kld0tiy.cloudfront.net'
 CDN(app)
 Compress(app)
 Minify(app, html=True, js=True, cssless=True)
-
 ############################################################################################
 
 
