@@ -22,7 +22,7 @@ app = Flask(
 )
 Bootstrap(app)
 Compress(app)
-Minify(app=app, html=True, js=True, cssless=True)
+Minify(app=app, html=True, js=True, css=True)
 
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
