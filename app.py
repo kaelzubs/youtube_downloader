@@ -37,7 +37,7 @@ CDN(app)
 # Favicon route
 @app.route('/favicon.ico')
 def favicon():
-    return app.send_static_file('icon/favicon.ico')
+    return app.send_static_file(filename='icon/favicon.ico')
 ############################################################################################
 
 
@@ -52,6 +52,7 @@ UNITS_MAPPING = [
     (1<<10, ' KB'),
     (1, (' byte', ' bytes')),
 ]
+
 def pretty_size(bytes, units=UNITS_MAPPING):
     """Get human-readable file sizes.
     simplified version of https://pypi.python.org/pypi/hurry.filesize/
