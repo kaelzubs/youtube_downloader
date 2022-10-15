@@ -9,6 +9,7 @@ from flask_compress import Compress
 from flask_minify import Minify
 from flask_cdn import CDN
 from urllib.parse import urljoin
+from flask_sslify import SSLify
 ############################################################################################
 
 
@@ -29,6 +30,7 @@ app.config['SECRET_KEY'] = SECRET_KEY
 app.config['CDN_DOMAIN'] = 'd20hfb7kld0tiy.cloudfront.net'
 
 CDN(app)
+SSLify(app)
 ############################################################################################
 
 
