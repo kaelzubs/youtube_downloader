@@ -8,14 +8,14 @@
         <meta property="og:description" content="Download all kinds of youtube video in full HD quality">
         <meta property="og:image" content="https://savtube.com/static/icon/favicon.ico">
         <meta property="og:url" content="https://savtube.com">
-        <link rel="icon" type="image/x-icon" href="icon/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='icon/favicon.ico') }}">
         <title>Online Youtube Downloader!</title>
         <meta name="description" content="Doownload youtube videos for free, read full video information, changing on device settings, cookies settings">
         <noscript>
-            <link rel="stylesheet" type="text/css" href="styles/main.css" async>
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}" async>
             <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" async>
         </noscript>
-        <script type="text/javascript" src="styles/main.js"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='styles/main.js') }}"></script>
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144176874-4"></script>
         <script>
