@@ -15,18 +15,23 @@ from urllib.parse import urljoin
 
 ############################################################################################
 # configuring flask application
-app = Flask(
-    __name__,
-    static_url_path='', 
-    static_folder='static',
-    template_folder='templates'
-)
+cdn = CDN()
+def start_app():
+    app = Flask(
+        __name__,
+        static_url_path='', 
+        static_folder='static',
+        template_folder='templates'
+    )
+    cdn.init_app(app)
+    return app
+    
 Compress(app)
 Minify(app, html=True, js=True, cssless=True)
 
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
-app.config['CDN_DOMAIN'] = 'udownloadr.herokuapp.com'
+app.config['CDN_DOMAIN'] = 'flaskcdn-hexid.kxcdn.com'
 app.config['CDN_TIMESTAMP'] = False
 
 CDN(app)
