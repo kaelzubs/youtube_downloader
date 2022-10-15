@@ -18,8 +18,8 @@ from urllib.parse import urljoin
 app = Flask(
     __name__,
     static_url_path='', 
-    static_folder='static',
-    template_folder='templates'
+    # static_folder='static',
+    # template_folder='templates'
 )
 
 SECRET_KEY = os.urandom(32)
