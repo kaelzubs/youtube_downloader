@@ -25,6 +25,8 @@ Minify(app, html=True, js=True, cssless=True)
 
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
+app.config['CDN_DOMAIN'] = 'cdn.udownloadr.herokuapp.com'
+
 CDN(app)
 ############################################################################################
 
