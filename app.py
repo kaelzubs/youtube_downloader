@@ -7,6 +7,7 @@ from pytube import YouTube
 from pytube.cli import on_progress
 from flask import send_from_directory
 from flask_compress import Compress
+from flask_minify import Minify
 ############################################################################################
 
 
@@ -21,6 +22,7 @@ app = Flask(
 )
 Bootstrap(app)
 Compress(app)
+Minify(app=app, html=True, js=True, cssless=True)
 
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
