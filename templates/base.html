@@ -12,7 +12,7 @@
         <title>Online Youtube Downloader!</title>
         <meta name="description" content="Doownload youtube videos for free, read full video information, changing on device settings, cookies settings">
         <noscript>
-            <link rel="stylesheet" type="text/css" href="static/styles/main.css" async>
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}" async>
             <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" async>
         </noscript>
         <script type="text/javascript" src="{{ url_for('static', filename='styles/main.js') }}"></script>
@@ -76,7 +76,7 @@
                 }, 0);
             }
             loadCSS('styles/main.css');
-            loadCSS('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css');
+            // loadCSS('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css');
         </script>
     </head>
     <body>
