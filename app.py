@@ -35,6 +35,17 @@ Minify(app, html=True, js=True, cssless=True)
 
 
 ############################################################################################
+@app.endpoint('/static/')
+def static(filename):
+    static_url = app.config.get('STATIC_URL')
+    if static_url:
+        return redirect(urljoin(static_url, filename))
+    return app.send_static_file(filename)
+############################################################################################
+
+
+
+############################################################################################
 # Favicon route
 @app.route('/favicon.ico')
 def favicon():
@@ -79,17 +90,6 @@ def pretty_size(bytes, units=UNITS_MAPPING):
 @app.route('/')
 def loading():
     return render_template("loading.html")
-############################################################################################
-
-
-
-############################################################################################
-@app.endpoint('static')
-def static(filename):
-    static_url = app.config.get('STATIC_URL')
-    if static_url:
-        return redirect(urljoin(static_url, filename))
-    return app.send_static_file(filename)
 ############################################################################################
 
 
