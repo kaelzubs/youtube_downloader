@@ -25,6 +25,7 @@ app = Flask(
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
 app.config['CDN_DOMAIN'] = 'd20hfb7kld0tiy.cloudfront.net'
+app.config['CDN_TIMESTAMP'] = False
 
 CDN(app)
 Compress(app)
@@ -34,7 +35,7 @@ Minify(app, html=True, js=True, cssless=True)
 
 
 ############################################################################################
-@app.endpoint('/static/')
+@app.template_global()
 def static(filename):
     static_url = app.config.get('STATIC_URL')
     if static_url:
