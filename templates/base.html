@@ -8,7 +8,7 @@
         <meta property="og:image" content="https://savtube.com/static/icon/favicon.ico">
         <meta property="og:url" content="https://savtube.com">
         <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='icon/favicon.ico') }}">
-        <title>SavTube: [information, changing, device, cookies, settings]</title>
+        <title>SavTube:~ [changing, device, information, cookies, settings]</title>
         <meta name="description" content="Paste youtube video link and Download/stream all kinds of youtube video in full HD quality for free at out website on SavTube.com [information, changing, device, cookies, settings]">
         <noscript>
             <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}">
@@ -102,17 +102,16 @@
             </script>
         {% endif %}
         <div class="text-center fb_css">
-            <a  
+            <span  
                 class="btn btn-info"
-                onclick="openWindow(URL)"
-                rel="noopener noreferrer"
-                href="{{ URL }}"
+                data-href = "https://www.facebook.com/sharer/sharer.php?u=https://udownloadr.herokuapp.com"
+                onclick="openWindow()"
             >
                 Share on Facebook
-            </a>
+            </span>
         </div>
         <script type="text/javascript">
-            function openWindow(URL) {
+            function openWindow() {
                 URL = "https://www.facebook.com/sharer/sharer.php?u=https://udownloadr.herokuapp.com";
                 window.open(URL, "Share on FB", "width=555, height=500");
             }
