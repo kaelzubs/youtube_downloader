@@ -9,6 +9,7 @@ from flask_compress import Compress
 from flask_minify import Minify
 from flask_cdn import CDN
 from urllib.parse import urljoin
+from flask_s3 import FlaskS3
 ############################################################################################
 
 
@@ -18,15 +19,17 @@ from urllib.parse import urljoin
 app = Flask(
     __name__,
     static_url_path='', 
-    # static_folder='static',
-    # template_folder='templates'
+    static_folder='static',
+    template_folder='templates'
 )
 
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
 app.config['CDN_DOMAIN'] = 'd20hfb7kld0tiy.cloudfront.net'
 app.config['CDN_TIMESTAMP'] = False
+app.config['FLASKS3_BUCKET_NAME'] = 'savtubebucketname'
 
+FlaskS3(app)
 CDN(app)
 Compress(app)
 Minify(app, html=True, js=True, cssless=True)

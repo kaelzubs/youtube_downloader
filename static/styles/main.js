@@ -1,4 +1,3 @@
-
 document.onreadystatechange = function() {
     window.onload = (e) => {
         if (document.readyState !== "complete") {

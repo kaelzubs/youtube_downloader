@@ -11,7 +11,7 @@
         <title>Online Youtube Downloader!</title>
         <meta name="description" content="Doownload youtube videos for free, read full video information, changing on device settings, cookies settings">
         <noscript>
-            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}" defer>
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}" async>
             <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" async>
         </noscript>
         <script type="text/javascript" src="{{ url_for('static', filename='styles/main.js') }}"></script>
@@ -47,7 +47,6 @@
               "prepTime": "PT20M"
             }
         </script>
-
         <!-- loadCSS -->
         <script src="https://cdn.rawgit.com/filamentgroup/loadCSS/6b637fe0/src/cssrelpreload.js"></script>
         <script src="https://cdn.rawgit.com/filamentgroup/loadCSS/6b637fe0/src/loadCSS.js"></script>
@@ -74,22 +73,11 @@
                     ss.media = 'all';
                 }, 0);
             }
-            loadCSS('https://udownloadr.herokuapp.com/static/styles/main.css');
+            loadCSS('styles/main.css');
             loadCSS('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css');
         </script>
     </head>
     <body>
-        <!-- Load Facebook SDK for JavaScript -->
-        <div id="fb-root"></div>
-        <script>
-            (function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-        </script>
         {% include 'home_page.html' %}
 
         {% block content %}
@@ -106,7 +94,6 @@
                 </p>
                 <button id="cookie-consent" class="btn btn-info">I Consent</button>
             </div>
-
             <script type="text/javascript">
                 var fn = function () {
                     document.cookie = "cookie_consent=true";
@@ -115,7 +102,5 @@
                 document.getElementById('cookie-consent').onclick = fn;
             </script>
         {% endif %}
-        <!-- Your share button code -->
-        <div class="fb-share-button btn-lg" data-href="https://udownloadr.herokuapp.com" data-layout="button_count"></div>
     </body>
 </html>
