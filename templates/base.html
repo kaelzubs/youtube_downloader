@@ -105,7 +105,7 @@
         <div class="text-center fb_css">
             <a  
                 class="btn btn-info"
-                onclick="openWindow()"
+                onclick="openWindow(url)"
                 href="/"
                 rel="noopener noreferrer"
             >
@@ -113,8 +113,8 @@
             </a>
         </div>
         <script type="text/javascript">
-            function openWindow() {
-                var URL = "https://www.facebook.com/sharer/sharer.php?u=https://udownloadr.herokuapp.com";
+            function openWindow(URL) {
+                URL = "https://www.facebook.com/sharer/sharer.php?u=https://udownloadr.herokuapp.com";
                 window.open(URL, "Share on FB", "width=555, height=500");
             }
         </script>      
