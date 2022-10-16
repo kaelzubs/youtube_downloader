@@ -24,7 +24,7 @@ body {
 }
 
 .dl_css {
-    line-height: 2px;
+    line-height: 2.5rem;
 }
 
 .embed {
@@ -51,7 +51,7 @@ body {
     color: #5bc0de;
     font-weight: bolder;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    line-height: 2px;
+    line-height: 2.5rem;
 }
 
 #title_css {
