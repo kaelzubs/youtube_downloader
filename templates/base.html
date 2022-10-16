@@ -52,9 +52,9 @@
         <script src="https://cdn.rawgit.com/filamentgroup/loadCSS/6b637fe0/src/loadCSS.js"></script>
         <script src="https://cdn.rawgit.com/filamentgroup/loadCSS/6b637fe0/src/onloadCSS.js"></script>
 
-        <script src="https://unpkg.com/ag-grid-community@26.2.1/dist/ag-grid-community.min.nostyle.js"></script>
+        <!-- <script src="https://unpkg.com/ag-grid-community@26.2.1/dist/ag-grid-community.min.nostyle.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/ag-grid-community@26.2.1/dist/styles/ag-grid.css">
-        <link rel="stylesheet" href="https://unpkg.com/ag-grid-community@26.2.1/dist/styles/ag-theme-alpine.css">
+        <link rel="stylesheet" href="https://unpkg.com/ag-grid-community@26.2.1/dist/styles/ag-theme-alpine.css"> -->
 
         <script src="https://unpkg.com/ag-grid-community@26.2.1/dist/ag-grid-community.min.js"></script>
         <script src="https://unpkg.com/papaparse@5.3.0/papaparse.min.js"></script>
@@ -124,28 +124,6 @@
                 URL = "https://www.facebook.com/sharer/sharer.php?u=https://udownloadr.herokuapp.com";
                 window.open(URL, "Share on FB", "width=555, height=500");
             }
-        </script>
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const columnDefs = [
-                    { field: "cdn" },
-                    { field: "url" },
-                ];
-                const rowData = [
-                    { cdn: "jsDelivr", url: "https://www.jsdelivr.com"},
-                    { cdn: "Unpkg", url: "https://Unpkg.com" },
-                    { cdn: "cdnJS", url: "https://cdnjs.com" }
-                ];
-                const gridOptions = {
-                    columnDefs: columnDefs,
-                    rowData: rowData,
-                    /* allow manual copy and paste */
-                    enableCellTextSelection: true,
-                    ensureDomOrder: true
-                };
-                const gridDiv = document.querySelector('#myGrid');
-                new agGrid.Grid(gridDiv, gridOptions);
-            });
-        </script>    
+        </script>  
     </body>
 </html>
