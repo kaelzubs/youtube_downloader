@@ -23,6 +23,10 @@ body {
     display: none;
 }
 
+.dl_css {
+    line-height: 2px;
+}
+
 .embed {
     max-width: 100%;
     height: auto;
@@ -47,6 +51,7 @@ body {
     color: #5bc0de;
     font-weight: bolder;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 2px;
 }
 
 #title_css {
