@@ -29,7 +29,7 @@ app.config['CDN_DOMAIN'] = 'd20hfb7kld0tiy.cloudfront.net'
 app.config['CDN_TIMESTAMP'] = False
 app.config['FLASKS3_BUCKET_NAME'] = 'savtubebucketname'
 
-FlaskS3(app)
+s3 = FlaskS3(app)
 CDN(app)
 Compress(app)
 Minify(app, html=True, js=True, cssless=True)
