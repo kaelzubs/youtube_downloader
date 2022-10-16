@@ -102,12 +102,22 @@
                 document.getElementById('cookie-consent').onclick = fn;
             </script>
         {% endif %}
-        <a
-            href="https://www.facebook.com/sharer/sharer.php?u=https://unclebigbay.hashnode.dev" 
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Share on Facebook
-        </a>
+        <div class="text-center">
+            <a  
+                class="btn btn-info"
+                onclick="openWindow1()"
+                href="/"
+                rel="noopener noreferrer"
+            >
+                Share on Facebook
+            </a>
+        </div>
+        
+        <script type="text/javascript">
+            function openWindow1() {
+                var URL = "https://www.facebook.com/sharer/sharer.php?u=https://udownloadr.herokuapp.com";
+                window.open(URL, "Share on FB", "width=555, height=500");
+            }
+        </script>      
     </body>
 </html>
