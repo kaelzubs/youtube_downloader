@@ -102,19 +102,14 @@
             </script>
         {% endif %}
         <div class="text-center fb_css">
-            <span  
+            <a  
                 class="btn btn-info"
-                data-href = "https://www.facebook.com/sharer/sharer.php?u=https://udownloadr.herokuapp.com"
-                onclick="openWindow()"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/sharer/sharer.php?u=https://udownloadr.herokuapp.com"
+                target="_blank"
             >
                 Share on Facebook
-            </span>
+            </a>
         </div>
-        <script type="text/javascript">
-            function openWindow() {
-                URL = "https://www.facebook.com/sharer/sharer.php?u=https://udownloadr.herokuapp.com";
-                window.open(URL, "Share on FB", "width=555, height=500");
-            }
-        </script>  
     </body>
 </html>
