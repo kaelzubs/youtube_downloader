@@ -102,19 +102,18 @@
                 document.getElementById('cookie-consent').onclick = fn;
             </script>
         {% endif %}
-        <div class="text-center">
+        <div class="text-center fb_css">
             <a  
                 class="btn btn-info"
-                onclick="openWindow1()"
+                onclick="openWindow()"
                 href="/"
                 rel="noopener noreferrer"
             >
                 Share on Facebook
             </a>
         </div>
-        
         <script type="text/javascript">
-            function openWindow1() {
+            function openWindow() {
                 var URL = "https://www.facebook.com/sharer/sharer.php?u=https://udownloadr.herokuapp.com";
                 window.open(URL, "Share on FB", "width=555, height=500");
             }
