@@ -8,4 +8,4 @@ document.onreadystatechange = function() {
     }
 }
 
-document.querySelector('body').setAttribute('spellcheck', false)
+document.body.setAttribute('spellcheck', false)
