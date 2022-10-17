@@ -1,5 +1,5 @@
 User-agent: *
 Disallow:
 
-Host: ytsaver.com
+Host: savtube.com
 Sitemap: https://savtube.com/sitemap.xml/
