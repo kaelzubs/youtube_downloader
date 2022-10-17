@@ -7,5 +7,3 @@ document.onreadystatechange = function() {
         }
     }
 }
-
-document.body.setAttribute('spellcheck', false)
