@@ -35,26 +35,6 @@ Minify(app, html=True, js=True, cssless=True)
 
 
 ############################################################################################
-@app.template_global()
-def static(filename):
-    static_url = app.config.get('STATIC_URL')
-    if static_url:
-        return redirect(urljoin(static_url, filename))
-    return app.send_static_file(filename)
-############################################################################################
-
-
-
-############################################################################################
-# Favicon route
-@app.route('/favicon.ico')
-def favicon():
-    return app.send_static_file(filename='icon/favicon.ico')
-############################################################################################
-
-
-
-############################################################################################
 # bytes pretty-printing
 UNITS_MAPPING = [
     (1<<50, ' PB'),
