@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include 'head.html' %}
+    </head>
+    <body>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="jumbotron text-center">
+                        <a href="/">
+                            <img class="img-responsive logo_css" src="{{ url_for('static', filename='icon/Youtube-dl.svg') }}" alt="youtube downloader logo">
+                        </a>
+                        <h1 id="title_css">Online Youtube Video Downloader!<span class="extra_css">[information, changing, device, cookies, settings]</span></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="card-title">Contact us</h2>
+                            <hr>
+                            <p class="card-text">This is the contact information page for SavTube, Online Video Downloader website. Here you can learn how to give your feedback, report an error, ask a question, give your complaints or claims with respect to the SavTube services.</p>
+                            <h2 class="card-title">If you want to report an error</h2>
+                            <h5 class="card-title">Please specify additional information following:</h5>
+                            <ul>
+                                <li>address of the page (URL) from where you try to download the file,</li>
+                                <li>links or messages displayed by our website as an answer to your download request.</li>
+                            </ul>
+                            <p class="card-text">Please, email any questions, error reports, or complaints to <b>support@savtube.com</b> or <b>contact@savtube.com</b></p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% include 'footer_page.html' %}
+    </body>
+</html>

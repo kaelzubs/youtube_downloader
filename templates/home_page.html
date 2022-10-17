@@ -1,12 +1,12 @@
 {% block content %}
-<div class="container w-100">
+<div class="container">
     <div class="row justify-content-center">
         <div class="col-lg-12">
             <div class="jumbotron text-center">
                 <a href="/">
                     <img class="img-responsive logo_css" src="{{ url_for('static', filename='icon/Youtube-dl.svg') }}" alt="youtube downloader logo">
                 </a>
-                <h1 id="title_css">Online Youtube Video Downloader!<span class="extra_css">[information, changing, device, cookies, settings]</span></h1>
+                <h1 id="title_css">Online YouTube Video Downloader!<span class="extra_css">[information, changing, device, cookies, settings]</span></h1>
             </div>
         </div>
     </div>
@@ -21,7 +21,7 @@
         </div>        
     </form>
     <p class="terms_css justify-content-center justify-content-space-between text-center">By using our service you are accepting our 
-        <a href="">terms of use</a>
+        <a href="{{ url_for('terms') }}" target="_blank">terms</a>
     </p>
 </div>
 {% endblock %}

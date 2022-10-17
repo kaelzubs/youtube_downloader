@@ -8,7 +8,6 @@ from flask import send_from_directory
 from flask_compress import Compress
 from flask_minify import Minify
 from flask_cdn import CDN
-from urllib.parse import urljoin
 ############################################################################################
 
 
@@ -70,6 +69,33 @@ def pretty_size(bytes, units=UNITS_MAPPING):
 @app.route('/')
 def loading():
     return render_template("loading.html")
+############################################################################################
+
+
+
+############################################################################################
+# Contact page
+@app.route("/contact-us", methods=["GET"])
+def contact():
+    return render_template('contact_page.html')
+############################################################################################
+
+
+
+############################################################################################
+# Contact page
+@app.route("/terms-of-use", methods=["GET"])
+def terms():
+    return render_template('terms_page.html')
+############################################################################################
+
+
+
+############################################################################################
+# Contact page
+@app.route("/privacy-policy", methods=["GET"])
+def privacy():
+    return render_template('privacy_page.html')
 ############################################################################################
 
 

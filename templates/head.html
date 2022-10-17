@@ -1,0 +1,76 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Online Youtube Downloader">
+    <meta property="og:description" content="Download and stream all kinds of youtube video in full HD quality for free at SavTube.com">
+    <meta property="og:image" content="https://savtube.com/static/icon/favicon.ico">
+    <meta property="og:url" content="https://savtube.com">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='icon/favicon.ico') }}">
+    <title>SavTube:~ [changing, device, information, cookies, settings]</title>
+    <meta name="description" content="Paste youtube video link and Download/stream all kinds of youtube video in full HD quality for free at out website on SavTube.com [information, changing, device, cookies, settings]">
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}">
+    </noscript>
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    </noscript>
+    
+    <script type="text/javascript" src="{{ url_for('static', filename='styles/main.js') }}"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144176874-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-144176874-4');
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DREFFTTVK8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-DREFFTTVK8');
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "Videos",
+          "name": "savtube",
+          "author": {
+            "@type": "Person",
+            "name": "Elvis Chukwuka"
+          },
+          "datePublished": "2022-010-20",
+          "description": "This is an online youtube video downloader",
+          "prepTime": "PT20M"
+        }
+    </script>
+    <script>
+        /*!
+        loadCSS: load a CSS file asynchronously.
+        */
+        function loadCSS(href) {
+            var ss = window.document.createElement('link'),
+                ref = window.document.getElementsByTagName('head')[0];
+
+            ss.rel = 'stylesheet';
+            ss.href = href;
+
+            // temporarily, set media to something non-matching to ensure it'll
+            // fetch without blocking render
+            ss.media = 'only x';
+
+            ref.parentNode.insertBefore(ss, ref);
+
+            setTimeout( function(){
+                // set media back to `all` so that the stylesheet applies once it loads
+                ss.media = 'all';
+            }, 0);
+        }
+        loadCSS('https://d20hfb7kld0tiy.cloudfront.net/styles/main.css');
+        loadCSS('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css');
+    </script>
+</head>
