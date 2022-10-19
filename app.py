@@ -28,7 +28,7 @@ app.config['SECRET_KEY'] = SECRET_KEY
 app.config['CDN_DOMAIN'] = 'd20hfb7kld0tiy.cloudfront.net'
 app.config['CDN_TIMESTAMP'] = False
 
-CSRFProtect(app)
+# CSRFProtect(app)
 # csrf.init_app(app)
 
 CDN(app)
