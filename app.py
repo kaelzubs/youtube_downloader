@@ -8,7 +8,7 @@ from flask import send_from_directory
 from flask_compress import Compress
 from flask_minify import Minify
 from flask_cdn import CDN
-# from flask_wtf.csrf import CSRFProtect
+from flask_wtf.csrf import CSRFProtect
 ############################################################################################
 
 
@@ -27,8 +27,8 @@ app.config['SECRET_KEY'] = SECRET_KEY
 app.config['CDN_DOMAIN'] = 'd20hfb7kld0tiy.cloudfront.net'
 app.config['CDN_TIMESTAMP'] = False
 
-# CSRFProtect(app)
-# csrf.init_app(app)
+csrf = CSRFProtect(app)
+csrf.init_app(app)
 
 CDN(app)
 Compress(app)
