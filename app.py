@@ -1,7 +1,6 @@
 ############################################################################################
 # importing needed libraries
 import os, datetime, time
-from datetime import timedelta
 from flask import *
 from pytube import YouTube
 from pytube.cli import on_progress
@@ -9,7 +8,7 @@ from flask import send_from_directory
 from flask_compress import Compress
 from flask_minify import Minify
 from flask_cdn import CDN
-from flask_wtf.csrf import CSRFProtect
+# from flask_wtf.csrf import CSRFProtect
 ############################################################################################
 
 
