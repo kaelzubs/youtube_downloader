@@ -1,6 +1,7 @@
 ############################################################################################
 # importing needed libraries
 import os, datetime, time
+from datetime import timedelta
 from flask import *
 from pytube import YouTube
 from pytube.cli import on_progress
@@ -8,6 +9,7 @@ from flask import send_from_directory
 from flask_compress import Compress
 from flask_minify import Minify
 from flask_cdn import CDN
+from flask_wtf.csrf import CSRFProtect
 ############################################################################################
 
 
@@ -29,6 +31,9 @@ app.config['CDN_TIMESTAMP'] = False
 CDN(app)
 Compress(app)
 Minify(app, html=True, js=True, cssless=True)
+
+csrf = CSRFProtect()
+csrf.init_app(app)
 ############################################################################################
 
 
@@ -254,6 +259,7 @@ def not_found(e):
 def cookies_check():
     value = request.cookies.get('cookie_consent')
     return value == 'true'
+
 
 @app.context_processor
 def inject_template_scope():
