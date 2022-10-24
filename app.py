@@ -25,8 +25,8 @@ app = Flask(
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
 
-# app.config['CDN_DOMAIN'] = 'd20hfb7kld0tiy.cloudfront.net'
-# app.config['CDN_TIMESTAMP'] = False
+app.config['CDN_DOMAIN'] = 'd1ejyaiauohy18.cloudfront.net'
+app.config['CDN_TIMESTAMP'] = False
 
 csrf = CSRFProtect(app)
 csrf.init_app(app)
