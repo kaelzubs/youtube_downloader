@@ -71,11 +71,17 @@ body {
 }
 
 #cookie-consent-container {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     color: white;
-    position: absolute;
+    position: fixed;
     width: 100%;
-    top: 300px;
+    height: 300px;
+    padding: 50px;
+    top: 100px;
+    animation-duration: 50s;
+    animation-delay: 40s;
+    visibility: hidden;
+    z-index: 100;
 }
 
 .form-inline {
@@ -157,4 +163,3 @@ body {
         font-size: 14px;
     }
 }
-
