@@ -6,16 +6,16 @@
                 <a href="/">
                     <img class="img-responsive logo_css" src="{{ url_for('static', filename='icon/Youtube-dl.svg') }}" alt="youtube downloader logo">
                 </a>
-                <h1 id="title_css">SavTube:~ Online YouTube Video Downloader!</h1>
+                <h1 id="title_css">Mp4us:~ Online YouTube Video Downloader!</h1>
             </div>
         </div>
     </div>
     <form action="{{ url_for('download') }}" method="POST" >
         <div class="input-group">
-            <input type="text" class="form-control" name="q" placeholder="Paste the Youtube link you copied here!">
+            <input type="text" class="form-control" name="q" placeholder="Paste Youtube link here!">
             <span class="input-group-btn">
                 <button class="btn btn-info" type="submit">
-                    <span class="glyphicon glyphicon-download dl_css"></span> Start download!
+                    <span class="glyphicon glyphicon-download dl_css"></span> Get Download Links!
                 </button>
             </span>
             <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">

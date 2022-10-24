@@ -2,4 +2,4 @@ User-agent: *
 Disallow:
 
 Host: savtube.com
-Sitemap: https://savtube.com/sitemap.xml/
+Sitemap: https://mp4us.live/sitemap.xml/
