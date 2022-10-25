@@ -8,12 +8,8 @@
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='icon/favicon.ico') }}">
     <title>Mp4us:~ Online YouTube Video Downloader!</title>
     <meta name="description" content="Paste copied youtube video links in our input box to Download all kinds of online youtube video in full HD quality for free at our website on mp4us.live">
-    <noscript>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='https://d1ejyaiauohy18.cloudfront.net/styles/main.css') }}">
-    </noscript>
-    <noscript>
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    </noscript>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <script type="text/javascript" src="{{ url_for('static', filename='styles/main.js') }}"></script>
     <!-- Google Ads -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6411693288489882" crossorigin="anonymous"></script>
@@ -48,30 +44,5 @@
           "description": "This is an online youtube video downloader",
           "prepTime": "PT20M"
         }
-    </script>
-    <script>
-        /*!
-        loadCSS: load a CSS file asynchronously.
-        */
-        function loadCSS(href) {
-            var ss = window.document.createElement('link'),
-                ref = window.document.getElementsByTagName('head')[0];
-
-            ss.rel = 'stylesheet';
-            ss.href = href;
-
-            // temporarily, set media to something non-matching to ensure it'll
-            // fetch without blocking render
-            ss.media = 'only x';
-
-            ref.parentNode.insertBefore(ss, ref);
-
-            setTimeout( function(){
-                // set media back to `all` so that the stylesheet applies once it loads
-                ss.media = 'all';
-            }, 0);
-        }
-        loadCSS('styles/main.css');
-        loadCSS('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css');
     </script>
 </head>
