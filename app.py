@@ -2,6 +2,7 @@
 # importing needed libraries
 import os, datetime, time
 from flask import *
+from flask_cors import CORS, cross_origin
 from pytube import YouTube
 from pytube.cli import on_progress
 from flask import send_from_directory
@@ -22,14 +23,16 @@ app = Flask(
     template_folder='templates'
 )
 
-SECRET_KEY = os.urandom(32)
-app.config['SECRET_KEY'] = SECRET_KEY
-
-app.config['CDN_DOMAIN'] = 'd1ejyaiauohy18.cloudfront.net'
-app.config['CDN_TIMESTAMP'] = False
+CORS(app)
 
 csrf = CSRFProtect(app)
 csrf.init_app(app)
+
+SECRET_KEY = os.urandom(32)
+app.config['SECRET_KEY'] = SECRET_KEY
+
+app.config['CDN_DOMAIN'] = "d1x1mpslzfq950.cloudfront.net"
+app.config['CDN_TIMESTAMP'] = False
 
 CDN(app)
 Compress(app)
@@ -72,6 +75,7 @@ def pretty_size(bytes, units=UNITS_MAPPING):
 ############################################################################################
 # Loading page
 @app.route('/')
+@cross_origin()
 def loading():
     return render_template("loading.html")
 ############################################################################################
@@ -81,6 +85,7 @@ def loading():
 ############################################################################################
 # Contact page
 @app.route("/contact-us", methods=["GET"])
+@cross_origin()
 def contact():
     return render_template('contact_page.html')
 ############################################################################################
@@ -88,8 +93,9 @@ def contact():
 
 
 ############################################################################################
-# Contact page
+# Terms page
 @app.route("/terms-of-use", methods=["GET"])
+@cross_origin()
 def terms():
     return render_template('terms_page.html')
 ############################################################################################
@@ -97,8 +103,9 @@ def terms():
 
 
 ############################################################################################
-# Contact page
+# Privacy page
 @app.route("/privacy-policy", methods=["GET"])
+@cross_origin()
 def privacy():
     return render_template('privacy_page.html')
 ############################################################################################
@@ -108,6 +115,7 @@ def privacy():
 ############################################################################################
 # Home page route
 @app.route("/", methods=["GET", "POST"])
+@cross_origin()
 def index():
     data_list = []
     if request.method == "POST":
@@ -152,6 +160,7 @@ def index():
 ############################################################################################
 # Download page
 @app.route("/download", methods=["GET", "POST"])
+@cross_origin()
 def download():
     data_list = []
     if request.method == "POST":
@@ -204,12 +213,14 @@ def download():
 ############################################################################################
 # Download Route
 @app.route('/background_process_download720p', methods=["GET"])
+@cross_origin()
 def yt_res_720p_download():
     path = yt.streams.get_by_itag('22').download(os.path.expanduser("~/Downloads")).strip(" ")
     return send_file(path, as_attachment=True)
     
      
 @app.route('/background_process_download360p', methods=["GET"])
+@cross_origin()
 def yt_res_360p_download():
     path = yt.streams.get_by_itag('18').download(os.path.expanduser("~/Downloads")).strip(" ")
     return send_file(path, as_attachment=True)
