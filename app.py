@@ -31,7 +31,7 @@ csrf.init_app(app)
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
 
-app.config['CDN_DOMAIN'] = "d1x1mpslzfq950.cloudfront.net"
+app.config['CDN_DOMAIN'] = "d32htaq0peojh1.cloudfront.net"
 app.config['CDN_TIMESTAMP'] = False
 
 CDN(app)
