@@ -23,18 +23,14 @@ app = Flask(
     template_folder='templates'
 )
 
-CORS(app)
-
-csrf = CSRFProtect(app)
-csrf.init_app(app)
-
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
 
-app.config['CDN_DOMAIN'] = "d1xhjq2fg7mg3c.cloudfront.net"
-app.config['CDN_TIMESTAMP'] = False
+app.config['CDN_DOMAIN'] = "dxqcoiseoc77b.cloudfront.net"
 
 CDN(app)
+CORS(app)
+CSRFProtect(app)
 Compress(app)
 Minify(app, html=True, js=True, cssless=True)
 ############################################################################################

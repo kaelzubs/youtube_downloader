@@ -14,9 +14,7 @@
     <noscript>
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     </noscript>
-    <noscript>
-        <script type="text/javascript" src="{{ url_for('static', filename='styles/main.js') }}" async></script>
-    </noscript>
+    <script type="text/javascript" src="{{ url_for('static', filename='styles/main.js') }}"></script>
     <!-- Google Ads -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6411693288489882" crossorigin="anonymous"></script>
     <!-- Google tag (gtag.js) -->
@@ -58,9 +56,8 @@
         function loadCSS(href) {
             var ss = window.document.createElement('link'),
                 ref = window.document.getElementsByTagName('head')[0];
-
-            ss.rel = 'stylesheet';
-            ss.href = href;
+                ss.rel = 'stylesheet';
+                ss.href = href;
 
             // temporarily, set media to something non-matching to ensure it'll
             // fetch without blocking render
@@ -73,7 +70,7 @@
                 ss.media = 'all';
             }, 0);
         }
-        loadCSS('https://d1xhjq2fg7mg3c.cloudfront.net/styles/main.css');
+        loadCSS('https://dxqcoiseoc77b.cloudfront.net/styles/main.css');
         loadCSS('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css');
     </script>
 </head>
