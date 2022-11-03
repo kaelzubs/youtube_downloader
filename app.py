@@ -29,7 +29,7 @@ app.wsgi_app = WhiteNoise(app.wsgi_app, root='static/')
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
 
-app.config['CDN_DOMAIN'] = "dtq2dbs4w6nex.cloudfront.net"
+app.config['CDN_DOMAIN'] = "d1cphwnjn92lev.cloudfront.net"
 
 CDN(app)
 CORS(app)
