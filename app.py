@@ -8,7 +8,6 @@ from pytube.cli import on_progress
 from flask import send_from_directory
 from flask_compress import Compress
 from flask_minify import Minify
-from flask_cdn import CDN
 from flask_wtf.csrf import CSRFProtect
 from whitenoise import WhiteNoise
 ############################################################################################
@@ -29,9 +28,6 @@ app.wsgi_app = WhiteNoise(app.wsgi_app, root='static/')
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
 
-app.config['CDN_DOMAIN'] = "d1cphwnjn92lev.cloudfront.net"
-
-CDN(app)
 CORS(app)
 CSRFProtect(app)
 Compress(app)
