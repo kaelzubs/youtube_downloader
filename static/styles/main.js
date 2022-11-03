@@ -4,4 +4,5 @@ document.onreadystatechange = function() {
             document.querySelector('#loading').style.visibility = 'visible'
         }
     }
+    document.querySelector('#loading').remove()
 }
