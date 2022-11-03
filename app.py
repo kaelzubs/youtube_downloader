@@ -23,7 +23,7 @@ app = Flask(
     template_folder='templates'
 )
 
-WhiteNoise(app.wsgi_app, root='static/')
+app.wsgi_app = WhiteNoise(app.wsgi_app, root='static/')
 
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
