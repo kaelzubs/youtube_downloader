@@ -92,19 +92,16 @@ button {
 
 .form-inline {
     display: flex;
-    position: relative;
 }
   
 .signup-form {
     display: flex;
     flex: 1 0 auto;
     max-width: 60%;
-    position: relative;
 }
 
 .emailNewsletter {
     width: 100%;
-    position: relative;
 }
 
 .loader{
@@ -113,6 +110,10 @@ button {
     border-radius: 100%;
     position: relative;
     margin: auto;
+}
+
+#loading {
+    visibility: hidden;
 }
 
 #loader-2 span{
@@ -171,6 +172,6 @@ button {
         font-size: 14px;
     }
     #cookie-consent {
-        margin-top: 100px;
+        margin-top: -50px;
     }
 }
