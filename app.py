@@ -10,6 +10,7 @@ from flask_compress import Compress
 from flask_minify import Minify
 from flask_wtf.csrf import CSRFProtect
 from whitenoise import WhiteNoise
+from flask_talisman import Talisman
 ############################################################################################
 
 
@@ -32,6 +33,7 @@ CORS(app)
 CSRFProtect(app)
 Compress(app)
 Minify(app, html=True, js=True, cssless=True)
+Talisman(app)
 ############################################################################################
 
 
