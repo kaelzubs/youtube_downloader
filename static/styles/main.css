@@ -28,15 +28,15 @@ button:active {
 }
 
 .col-lg-12 {
-    position: fixed;
+    position: relative;
 }
 
 .col-md-6 {
-    position: fixed;
+    position: relative;
 }
 
 .col-md-3 {
-    position: fixed;
+    position: relative;
 }
 
 .header-bg {
@@ -117,10 +117,12 @@ button:active {
     display: flex;
     flex: 1 0 auto;
     max-width: 60%;
+    position: relative;
 }
 
 .emailNewsletter {
     width: 100%;
+    position: relative;
 }
 
 .loader{
@@ -187,7 +189,6 @@ button:active {
         font-size: 14px;
     }
     #cookie-consent {
-        position: relative;
-        top: 100px;
+        margin-top: 100px;
     }
 }
