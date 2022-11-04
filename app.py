@@ -24,6 +24,8 @@ app = Flask(
     template_folder='templates'
 )
 
+Talisman(app)
+
 app.wsgi_app = WhiteNoise(app.wsgi_app, root='static/')
 
 SECRET_KEY = os.urandom(32)
@@ -33,7 +35,6 @@ CORS(app)
 CSRFProtect(app)
 Compress(app)
 Minify(app, html=True, js=True, cssless=True)
-Talisman(app)
 ############################################################################################
 
 
