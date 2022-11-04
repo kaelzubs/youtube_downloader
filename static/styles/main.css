@@ -172,6 +172,6 @@ button {
         font-size: 14px;
     }
     #cookie-consent-container {
-        max-width: 70%;
+        max-height: 70%;
     }
 }
