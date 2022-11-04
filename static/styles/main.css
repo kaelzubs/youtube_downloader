@@ -81,7 +81,8 @@ button {
     color: white;
     position: fixed;
     width: 100%;
-    padding: 50px;
+    height: 400px;
+    padding: 30px;
     top: 100px;
     animation-duration: 50s;
     animation-delay: 40s;
