@@ -9,7 +9,6 @@ from flask import send_from_directory
 from flask_compress import Compress
 from flask_minify import Minify
 from flask_wtf.csrf import CSRFProtect
-from whitenoise import WhiteNoise
 from flask_talisman import Talisman
 ############################################################################################
 
@@ -24,16 +23,14 @@ app = Flask(
     template_folder='templates'
 )
 
-app.wsgi_app = WhiteNoise(app.wsgi_app, root='static/')
-
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
 
 CORS(app)
 CSRFProtect(app)
 Compress(app)
-Talisman(app)
 Minify(app, html=True, js=True, cssless=True)
+Talisman(app)
 ############################################################################################
 
 
