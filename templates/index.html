@@ -18,19 +18,6 @@
                 </p>
                 <button id="cookie-consent" class="btn btn-info">I Consent</button>
             </div>
-            <script type="text/javascript">
-                var fn = function () {
-                    document.cookie = "cookie_consent=true";
-                    document.getElementById('cookie-consent-container').hidden = true;
-                };
-                document.getElementById('cookie-consent').onclick = fn;
-            </script>
-            <script type="text/javascript">
-                //cache your selector
-                setTimeout(function() {
-                    document.querySelector("#cookie-consent-container").style.visibility = 'visible'
-                }, 5000);
-            </script>
         {% endif %}
         <div class="text-center fb_css">
             <a  
@@ -44,5 +31,29 @@
         </div>
         {% include 'content_page.html' %}
         {% include 'footer_page.html' %}
+        <script type="text/javascript">
+            document.onreadystatechange = function() {
+                window.onload = (e) => {
+                    if (document.readyState !== "complete") {
+                        document.querySelector('#loading').style.visibility = 'visible'
+                    } else {
+                        document.querySelector('#loading').remove()
+                    }
+                }
+            }
+        </script>
+        <script type="text/javascript">
+            var fn = function () {
+                document.cookie = "cookie_consent=true";
+                document.getElementById('cookie-consent-container').hidden = true;
+            };
+            document.getElementById('cookie-consent').onclick = fn;
+        </script>
+        <script type="text/javascript">
+            //cache your selector
+            setTimeout(function() {
+                document.querySelector("#cookie-consent-container").style.visibility = 'visible'
+            }, 5000);
+        </script>
     </body>
 </html>
