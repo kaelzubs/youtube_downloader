@@ -16,10 +16,7 @@ body {
 
 button {
     outline: none;
-
-}
-button:active {
-    border-style: outset;
+    border-style: none;
 }
 
 .container {
@@ -32,11 +29,13 @@ button:active {
 }
 
 .img_frame {
+    position: relative;
     width: 100%;
     max-height: 300px;
 }
 
 .logo_css {
+    position: relative;
     max-width: 10%;
     max-height: 10%;
     margin-top: -15px;
@@ -44,20 +43,24 @@ button:active {
 }
 
 .dl_css {
+    position: relative;
     line-height: 2.5rem;
 }
 
 .embed {
+    position: relative;
     max-width: 100%;
     height: auto;
 }
 
 .fb_css {
+    position: relative;
     padding: 20px;
     margin: 20px;
 }
 
 .title {
+    position: relative;
     font-size: medium;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
@@ -65,16 +68,19 @@ button:active {
 }
 
 .terms_css {
+    position: relative;
     padding-top: 5px;
 }
 
 .title_css {
+    position: relative;
     color: #5bc0de;
     font-weight: bolder;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #title_css {
+    position: relative;
     font-size: 30px;
     color: #5bc0de;
     font-weight: bolder;
