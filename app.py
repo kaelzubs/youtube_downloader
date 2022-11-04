@@ -24,9 +24,9 @@ app = Flask(
     template_folder='templates'
 )
 
-Talisman(app)
-
 app.wsgi_app = WhiteNoise(app.wsgi_app, root='static/')
+
+Talisman(app)
 
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
