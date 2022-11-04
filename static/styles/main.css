@@ -11,15 +11,32 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 button {
     outline: none;
+
+}
+button:active {
+    border-style: outset;
 }
 
 .container {
     padding: 2rem 0rem;
-    padding: relative;
+    position: relative;
+}
+
+.col-lg-12 {
+    position: fixed;
+}
+
+.col-md-6 {
+    position: fixed;
+}
+
+.col-md-3 {
+    position: fixed;
 }
 
 .header-bg {
@@ -171,6 +188,6 @@ button {
     }
     #cookie-consent {
         position: relative;
-        top: 30px;
+        top: 100px;
     }
 }
