@@ -26,18 +26,6 @@ button:active {
     padding: 2rem 0rem;
 }
 
-.col-lg-12 {
-    position: relative;
-}
-
-.col-md-6 {
-    position: relative;
-}
-
-.col-md-3 {
-    position: relative;
-}
-
 .header-bg {
     background-color: #5bc0de;
     color: white;
