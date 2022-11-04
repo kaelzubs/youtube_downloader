@@ -171,7 +171,7 @@ button {
     .terms_css a {
         font-size: 14px;
     }
-    #cookie-consent-container {
-        height: 70%;
+    #cookie-consent {
+        margin-top: -50px;
     }
 }
