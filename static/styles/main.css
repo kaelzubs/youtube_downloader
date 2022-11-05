@@ -33,8 +33,8 @@ button {
 }
 
 .logo_css {
-    max-width: 15%;
-    max-height: 15%;
+    max-width: 13%;
+    max-height: 13%;
     margin-top: -15px;
     margin: auto;
 }
@@ -58,7 +58,7 @@ button {
     color: white;
     opacity: 1;
     z-index: 999;
-    filter: contrast(1.80);
+    filter: contrast(1);
 }
 
 .title {
@@ -85,7 +85,7 @@ button {
     color: #5bc0de;
     opacity: 1;
     z-index: 999;
-    filter: contrast(1.80);
+    filter: contrast(1);
     font-weight: bolder;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
