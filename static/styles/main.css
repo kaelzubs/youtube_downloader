@@ -17,11 +17,6 @@ body {
     outline: 3px solid transparent;
 }
 
-button {
-    outline: none;
-    border-style: none;
-}
-
 .container {
     padding: 2rem 0rem;
 }
@@ -48,6 +43,7 @@ button {
     font-weight: bold;
     opacity: 1;
     z-index: 999;
+    background-color: white;
 }
 
 .embed {
@@ -85,6 +81,7 @@ button {
     font-weight: bold;
     opacity: 1;
     z-index: 999;
+    filter: contrast(1);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -111,6 +108,10 @@ button {
     animation-delay: 40s;
     visibility: hidden;
     z-index: 100;
+}
+
+#cookie-consent {
+    color: white;
 }
 
 .cookie-title {
