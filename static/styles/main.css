@@ -11,7 +11,6 @@ body {
     height: 100%;
     position: relative;
     outline: 3px solid transparent;
-
 }
 
 button {
@@ -84,7 +83,7 @@ button {
 }
 
 #cookie-consent-container {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
     color: white;
     position: fixed;
     width: 100%;
