@@ -41,8 +41,6 @@ body {
 .dl_css {
     color: white;
     font-weight: bold;
-    opacity: 1;
-    z-index: 999;
 }
 
 .embed {
@@ -58,10 +56,7 @@ body {
 
 .fb_css a {
     color: white;
-    opacity: 1;
-    z-index: 999;
-    font-weight: bolder;
-    filter: contrast(1);
+    font-weight: bold;
 }
 
 .title {
@@ -78,20 +73,12 @@ body {
 .title_css {
     color: #5bc0de;
     font-weight: bold;
-    opacity: 1;
-    z-index: 999;
-    filter: contrast(1);
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #title_css {
     font-size: 30px;
     color: #5bc0de;
-    opacity: 1;
-    z-index: 999;
-    filter: contrast(1);
     font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #cookie-consent-container {
