@@ -14,9 +14,9 @@
         <div class="input-group">
             <input type="text" class="form-control" name="q" placeholder="Paste Youtube link here!">
             <span class="input-group-btn">
-                <span class="glyphicon glyphicon-download dl_css">
-                    <button class="btn btn-info" type="submit"> Get Download Links!</button>
-                </span>
+                <button class="btn btn-info" type="submit">
+                    <span class="glyphicon glyphicon-download dl_css"></span> Get Download Links!
+                </button>
             </span>
             <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
         </div>        
