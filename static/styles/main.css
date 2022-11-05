@@ -84,17 +84,21 @@ button {
 }
 
 #cookie-consent-container {
-    background-color: rgba(0, 0, 0);
+    background-color: black;
     color: white;
     position: fixed;
     width: 100%;
-    max-height: 350px;
+    max-height: 300px;
     padding: 30px;
     top: 100px;
     animation-duration: 50s;
     animation-delay: 40s;
     visibility: hidden;
     z-index: 100;
+}
+
+.cookie-title {
+    font-size: 18px;
 }
 
 .form-inline {
