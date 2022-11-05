@@ -58,6 +58,7 @@ button {
     color: white;
     opacity: 1;
     z-index: 999;
+    filter: contrast(1.80);
 }
 
 .title {
@@ -84,6 +85,7 @@ button {
     color: #5bc0de;
     opacity: 1;
     z-index: 999;
+    filter: contrast(1.80);
     font-weight: bolder;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
