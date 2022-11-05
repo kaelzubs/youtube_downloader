@@ -39,13 +39,10 @@ body {
 }
 
 .dl_css {
+    color: white;
     font-weight: bold;
     opacity: 1;
     z-index: 999;
-}
-
-#dl_css {
-    color: white;
 }
 
 .embed {
