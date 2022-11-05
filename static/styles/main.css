@@ -34,8 +34,8 @@ button {
 }
 
 .logo_css {
-    max-width: 10%;
-    max-height: 10%;
+    max-width: 15%;
+    max-height: 15%;
     margin-top: -15px;
     margin: auto;
 }
@@ -88,7 +88,7 @@ button {
     color: white;
     position: fixed;
     width: 100%;
-    max-height: 360px;
+    max-height: 350px;
     padding: 30px;
     top: 100px;
     animation-duration: 50s;
