@@ -34,8 +34,8 @@ CDN(app)
 
 CORS(app)
 CSRFProtect(app)
-Minify(app, html=True, js=True, cssless=True)
 Compress(app)
+Minify(app, html=True, js=True, cssless=True)
 ############################################################################################
 
 
