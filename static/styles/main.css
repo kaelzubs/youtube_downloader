@@ -171,12 +171,4 @@ button {
     .terms_css a {
         font-size: 14px;
     }
-    #cookie-consent-container {
-        position: relative;
-        height: 600px;
-    }
-    #cookie-consent {
-        position: relative;
-        top: 80px;
-    }
 }
