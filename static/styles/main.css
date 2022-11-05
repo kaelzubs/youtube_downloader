@@ -58,6 +58,7 @@ button {
     color: white;
     opacity: 1;
     z-index: 999;
+    font-weight: bolder;
     filter: contrast(1);
 }
 
@@ -74,9 +75,10 @@ button {
 
 .title_css {
     color: #5bc0de;
-    font-weight: bolder;
+    font-weight: bold;
     opacity: 1;
     z-index: 999;
+    font-weight: bolder;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -86,7 +88,7 @@ button {
     opacity: 1;
     z-index: 999;
     filter: contrast(1);
-    font-weight: bolder;
+    font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -109,6 +111,7 @@ button {
     font-size: 18px;
     color: white;
     opacity: 1;
+    font-weight: bold;
 }
 
 .form-inline {
