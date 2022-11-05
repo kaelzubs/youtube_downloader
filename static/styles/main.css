@@ -40,7 +40,7 @@ button {
 }
 
 .dl_css {
-    font-size: 1.4em;
+    line-height: 2.5rem;
 }
 
 .embed {
@@ -56,7 +56,6 @@ button {
 
 .fb_css a {
     color: white;
-    font-size: 1.4em;
 }
 
 .title {
@@ -73,12 +72,14 @@ button {
 .title_css {
     color: #5bc0de;
     font-weight: bolder;
+    opacity: 1;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #title_css {
-    font-size: 1.4em;
+    font-size: 30px;
     color: #5bc0de;
+    opacity: 1;
     font-weight: bolder;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -86,6 +87,7 @@ button {
 #cookie-consent-container {
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
+    opacity: 1;
     position: fixed;
     width: 100%;
     max-height: 320px;
@@ -99,6 +101,8 @@ button {
 
 .cookie-title {
     font-size: 18px;
+    color: white;
+    opacity: 1;
 }
 
 .form-inline {
