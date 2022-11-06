@@ -14,14 +14,14 @@
         <div class="input-group">
             <input type="text" class="form-control" name="q" placeholder="Paste Youtube link here!">
             <span class="input-group-btn">
-                <button class="btn button" type="submit">
+                <button class="btn" id="button" type="submit">
                     <span class="glyphicon glyphicon-download"></span> Get Download Links!
                 </button>
             </span>
             <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
         </div>        
     </form>
-    <p class="terms_css justify-content-center justify-content-space-between text-center">By using our service you are accepting our 
+    <p class="terms_css text-center">By using our service you are accepting our 
         <a href="{{ url_for('terms') }}" target="_blank">terms</a>
     </p>
 </div>
