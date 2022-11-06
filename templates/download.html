@@ -3,54 +3,52 @@
 
 {% block content %}
 {% for dt in data %}
-<div class="container">
-    <div class="row">
-        <h1 class="title">{{ dt.title }}</h1>
-        <!-- 16:9 aspect ratio -->
-        <div class="col-md-6 embed-responsive embed-responsive-16by9 embed">
-            <iframe class="img_frame embed-responsive-item img-responsive" width="100%" height="500px" src="{{ dt.url_emb }}" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="col-md-6 card card-price">
-            <div class="card-body">
-                <table class="table">
-                    <tr>
-                        <th>Format</th>
-                        <th>Resolution</th>
-                        <th>Duration</th>
-                        <th>File Size</th>
-                        <th>Download</th>
-                    </tr>
-                    <tr>
-                        <td class="button_fb">{{ dt.file_format }}</td>
-                        <td>{{ dt.seven }}</td>
-                        <td>{{ dt.duration }}</td>
-                        <td>{{ dt.file_size_720p }}</td>
-                        <td>
-                            <a href="{{ url_for('yt_res_720p_download') }}" id="seven" class="downloader">
-                                <button class="button_fb">Download
-                                    <span class="glyphicon glyphicon-triangle-right"></span>
-                                </button>
-                            </a>
-                            
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="button_fb">{{ dt.file_format }}</td>
-                        <td>{{ dt.three }}</td>
-                        <td>{{ dt.duration }}</td>
-                        <td>{{ dt.file_size_360p }}</td>
-                        <td>
-                            <a href="{{ url_for('yt_res_360p_download') }}" id="three" class="downloader">
-                                <button class="button_fb">Download
-                                    <span class="glyphicon glyphicon-triangle-right"></span>
-                                </button>
-                            </a>
-                            
-                        </td>
-                    </tr>
-                </table>
-                <h2 class="title">Description:</h2><p>{{ dt.description }}</p>
-            </div>
+<div class="col-lg-12">
+    <h1 class="title">{{ dt.title }}</h1>
+    <!-- 16:9 aspect ratio -->
+    <div class="col-md-6 embed-responsive embed-responsive-16by9 embed">
+        <iframe class="img_frame embed-responsive-item img-responsive" width="100%" height="500px" src="{{ dt.url_emb }}" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="col-md-6 card card-price">
+        <div class="card-body">
+            <table class="table">
+                <tr>
+                    <th>Format</th>
+                    <th>Resolution</th>
+                    <th>Duration</th>
+                    <th>File Size</th>
+                    <th>Download</th>
+                </tr>
+                <tr>
+                    <td class="button_fb">{{ dt.file_format }}</td>
+                    <td>{{ dt.seven }}</td>
+                    <td>{{ dt.duration }}</td>
+                    <td>{{ dt.file_size_720p }}</td>
+                    <td>
+                        <a href="{{ url_for('yt_res_720p_download') }}" id="seven" class="downloader">
+                            <button class="button_fb">Download
+                                <span class="glyphicon glyphicon-triangle-right"></span>
+                            </button>
+                        </a>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td class="button_fb">{{ dt.file_format }}</td>
+                    <td>{{ dt.three }}</td>
+                    <td>{{ dt.duration }}</td>
+                    <td>{{ dt.file_size_360p }}</td>
+                    <td>
+                        <a href="{{ url_for('yt_res_360p_download') }}" id="three" class="downloader">
+                            <button class="button_fb">Download
+                                <span class="glyphicon glyphicon-triangle-right"></span>
+                            </button>
+                        </a>
+                        
+                    </td>
+                </tr>
+            </table>
+            <h2 class="title">Description:</h2><p>{{ dt.description }}</p>
         </div>
     </div>
 </div>
