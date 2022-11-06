@@ -43,7 +43,7 @@ body {
     height: auto;
 }
 
-.button1 {
+.button {
     background-color: #00c3ff;
     color: white;
     border: none;
@@ -51,29 +51,21 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 13px;
-}
-
-.button2 {
-    background-color: #00c3ff;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 13px;
+    font-size: 14px;
+    border-radius: 0 3px 3px 0;
 }
 
 .button-default {
-    background-color: bisque;
-    color: rgb(23, 26, 28);
+    background-color: rgb(255, 140, 0);
+    color: white;
     border: none;
-    padding: 15px 32px;
+    padding: 10px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 13px;
+    font-size: 14px;
+    border-radius: 3px;
+    font-weight: bold;
 }
 
 .fb_css {
