@@ -9,21 +9,20 @@
                 <h1 class="title_css_">Mp4us:~ Online YouTube Video Downloader!</h1>
             </div>
         </div>
-    </div>
-</div>
-<div class="container">
-    <div class="col">
-        <form class="form-group" action="{{ url_for('download') }}" method="POST">
-            <div class="input-group">
-                <input type="text" class="form-control input" name="q" placeholder="Paste Youtube link here!">
-                <span class="input-group-btn">
-                    <button class="button" type="submit">
-                        <span class="glyphicon glyphicon-download"></span> Get download links!
-                    </button>
-                </span>
-                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-            </div>        
-        </form>
+        <div class="col-lg-12">
+            <form class="form-group" action="{{ url_for('download') }}" method="POST">
+                <div class="input-group">
+                    <input type="text" class="form-control input" name="q" placeholder="Paste Youtube link here!">
+                    <span class="input-group-btn">
+                        <button class="button" type="submit">
+                            <span class="glyphicon glyphicon-download"></span> Get download links!
+                        </button>
+                    </span>
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                </div>        
+            </form>
+        </div>
+        
         <p class="terms_css text-center">By using our service you are accepting our 
             <a href="{{ url_for('terms') }}" target="_blank">terms</a>
         </p>
