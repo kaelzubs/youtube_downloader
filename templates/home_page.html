@@ -12,19 +12,22 @@
     </div>
 </div>
 <div class="container">
-    <form action="{{ url_for('download') }}" method="POST">
-        <div class="input-group">
-            <input type="text" class="form-control input" name="q" placeholder="Paste Youtube link here!">
-            <span class="input-group-btn">
-                <button class="button" type="submit">
-                    <span class="glyphicon glyphicon-download"></span> Get download links!
-                </button>
-            </span>
-            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-        </div>        
-    </form>
-    <p class="terms_css text-center">By using our service you are accepting our 
-        <a href="{{ url_for('terms') }}" target="_blank">terms</a>
-    </p>
+    <div class="col">
+        <form action="{{ url_for('download') }}" method="POST">
+            <div class="input-group">
+                <input type="text" class="form-control input" name="q" placeholder="Paste Youtube link here!">
+                <span class="input-group-btn">
+                    <button class="button" type="submit">
+                        <span class="glyphicon glyphicon-download"></span> Get download links!
+                    </button>
+                </span>
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+            </div>        
+        </form>
+        <p class="terms_css text-center">By using our service you are accepting our 
+            <a href="{{ url_for('terms') }}" target="_blank">terms</a>
+        </p>
+    </div>
+    
 </div>
 {% endblock %}
