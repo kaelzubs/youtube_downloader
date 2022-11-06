@@ -36,5 +36,29 @@
         </div>
         {% include 'content_page.html' %}
         {% include 'footer_page.html' %}
+        <script type="text/javascript">
+            document.onreadystatechange = function() {
+                window.onload = (e) => {
+                    if (document.readyState !== "complete") {
+                        document.getElementById('#loading').hidden = false
+                    }
+                }
+            }
+        </script>
+        <script type="text/javascript">
+            var fn = function () {
+                document.cookie = "cookie_consent=true";
+                document.getElementById('cookie-consent-container').hidden = true;
+            };
+            document.getElementById('cookie-consent').onclick = fn;
+        </script>
+        <script type="text/javascript">
+            document.onreadystatechange = function() {
+                //cache your selector
+                setTimeout(function() {
+                    document.querySelector("#cookie-consent-container").hidden = false
+                }, 5000);
+            }
+        </script>
     </body>
 </html>
