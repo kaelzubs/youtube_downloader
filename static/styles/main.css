@@ -87,6 +87,11 @@ body {
     text-decoration: none;
 }
 
+.button-default:hover {
+    background-color: #00c3ff;
+    color: white;
+}
+
 .fb_css {
     padding: 20px;
     margin: 20px;
@@ -99,6 +104,11 @@ body {
     color: white;
     font-weight: bold;
     text-decoration: none;
+}
+
+.fb_css a:hover {
+    background-color: #00c3ff;
+    color: white;
 }
 
 .title {
