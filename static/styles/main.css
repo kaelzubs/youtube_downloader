@@ -17,10 +17,6 @@ body {
     outline: 3px solid transparent;
 }
 
-a {
-    text-decoration: none;
-}
-
 .container {
     padding: 2rem 0rem;
 }
@@ -88,6 +84,7 @@ a {
     font-size: 14px;
     border-radius: 3px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .fb_css {
@@ -101,6 +98,7 @@ a {
 .fb_css a {
     color: white;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .title {
