@@ -246,4 +246,7 @@ body {
     .terms_css a {
         font-size: 14px;
     }
+    #cookie-consent-container {
+        margin-bottom: 50px;
+    }
 }
