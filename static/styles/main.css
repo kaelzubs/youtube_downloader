@@ -43,7 +43,7 @@ body {
     height: auto;
 }
 
-#button1 {
+.button1 {
     background-color: #00c3ff;
     color: white;
     border: none;
@@ -54,7 +54,7 @@ body {
     font-size: 12px;
 }
 
-#button2 {
+.button2 {
     background-color: #00c3ff;
     color: white;
     border: none;
@@ -65,7 +65,7 @@ body {
     font-size: 12px;
 }
 
-#button3 {
+.button3 {
     background-color: #00c3ff;
     color: white;
     border: none;
