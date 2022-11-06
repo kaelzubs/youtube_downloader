@@ -7,3 +7,16 @@ document.onreadystatechange = function() {
         }
     }
 }
+
+
+var fn = function () {
+    document.cookie = "cookie_consent=true";
+    document.getElementById('cookie-consent-container').hidden = true;
+};
+document.getElementById('cookie-consent').onclick = fn;
+
+
+//cache your selector
+setTimeout(function() {
+    document.querySelector("#cookie-consent-container").style.visibility = 'visible'
+}, 5000);
