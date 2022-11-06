@@ -247,6 +247,6 @@ body {
         font-size: 14px;
     }
     #cookie-consent-container {
-        margin-bottom: 550px;
+        width: 550px;
     }
 }
