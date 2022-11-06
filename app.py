@@ -9,7 +9,7 @@ from flask import send_from_directory
 from flask_compress import Compress
 from flask_minify import Minify
 from flask_wtf.csrf import CSRFProtect
-from flask_cdn import CDN
+# from flask_cdn import CDN
 from flask_sslify import SSLify
 ############################################################################################
 
@@ -29,8 +29,8 @@ SSLify(app)
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
 
-app.config['CDN_DOMAIN'] = 'd12vn54927k41s.cloudfront.net'
-CDN(app)
+# app.config['CDN_DOMAIN'] = 'd12vn54927k41s.cloudfront.net'
+# CDN(app)
 
 CORS(app)
 CSRFProtect(app)
