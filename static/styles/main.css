@@ -17,6 +17,10 @@ body {
     outline: 3px solid transparent;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     padding: 2rem 0rem;
 }
@@ -40,7 +44,7 @@ body {
 
 .embed {
     max-width: 100%;
-    height: auto;
+    height: 400px;
 }
 
 .button {
