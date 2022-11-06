@@ -45,6 +45,7 @@ body {
 
 .input {
     padding: 10px 15px;
+    display: inline;
 }
 
 .button {
