@@ -44,7 +44,8 @@ body {
 }
 
 .button {
-    color: #5bc0de;
+    background-color: #5bc0de;
+    color: white;
 }
 
 .button-default {
