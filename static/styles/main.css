@@ -188,7 +188,7 @@ body {
 }
 
 #loading {
-    visibility: hidden;
+    visibility: visible;
 }
 
 #loader-2 span{
