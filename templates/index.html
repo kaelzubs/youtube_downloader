@@ -40,7 +40,7 @@
             document.onreadystatechange = function() {
                 window.onload = (e) => {
                     if (document.readyState !== "complete") {
-                        document.getElementById('#loading').hidden = false
+                        document.getElementById('#loading').style.visibility = 'visible'
                     }
                 }
             }
@@ -53,12 +53,10 @@
             document.getElementById('cookie-consent').onclick = fn;
         </script>
         <script type="text/javascript">
-            document.onreadystatechange = function() {
-                //cache your selector
-                setTimeout(function() {
-                    document.querySelector("#cookie-consent-container").hidden = false
-                }, 5000);
-            }
+            //cache your selector
+            setTimeout(function() {
+                document.getElementById("#cookie-consent-container").style.visibility = 'visible'
+            }, 5000);
         </script>
     </body>
 </html>
