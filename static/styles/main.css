@@ -51,7 +51,7 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .button2 {
@@ -62,18 +62,7 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 12px;
-}
-
-.button3 {
-    background-color: #00c3ff;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .button-default {
@@ -84,7 +73,7 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .fb_css {
