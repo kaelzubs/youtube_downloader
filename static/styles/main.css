@@ -47,6 +47,10 @@ a {
     height: 500px;
 }
 
+.input {
+    padding: 10px 15px;
+}
+
 .button {
     background-color: #00c3ff;
     color: white;
