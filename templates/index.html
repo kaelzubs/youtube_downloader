@@ -40,7 +40,7 @@
             document.onreadystatechange = function() {
                 window.onload = (e) => {
                     if (document.readyState !== "complete") {
-                        document.getElementById('#loading').style.visibility = 'visible'
+                        document.querySelector('#loading').style.visibility = 'visible'
                     }
                 }
             }
@@ -55,7 +55,7 @@
         <script type="text/javascript">
             //cache your selector
             setTimeout(function() {
-                document.getElementById("#cookie-consent-container").style.visibility = 'visible'
+                document.querySelector("#cookie-consent-container").style.visibility = 'visible'
             }, 5000);
         </script>
     </body>
