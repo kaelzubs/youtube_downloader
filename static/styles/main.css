@@ -187,10 +187,6 @@ body {
     margin: auto;
 }
 
-#loading {
-    visibility: hidden;
-}
-
 #loader-2 span{
     display: inline-block;
     width: 20px;
