@@ -32,9 +32,12 @@ app = Flask(
     template_folder='templates'
 )
 
+assets = flask_assets.Environment()
+assets.init_app(app)
+
 # tell Flask to use the above defined config
 app.config.from_mapping(config)
-cache = Cache(app)
+Cache(app)
 
 SSLify(app)
 
@@ -50,9 +53,6 @@ CORS(app)
 CSRFProtect(app)
 Compress(app)
 Minify(app, html=True, js=True, cssless=True)
-
-assets = flask_assets.Environment()
-assets.init_app(app)
 ############################################################################################
 
 
