@@ -73,6 +73,18 @@ body {
     font-weight: bold;
 }
 
+.button_fbb {
+    background-color: #00c3ff;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
 .button-default {
     background-color: rgb(255, 140, 0);
     color: white;
