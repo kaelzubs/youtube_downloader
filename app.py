@@ -12,18 +12,29 @@ from flask_wtf.csrf import CSRFProtect
 from flask_cdn import CDN
 from flask_sslify import SSLify
 import flask_assets
+from flask_caching import Cache
 ############################################################################################
 
 
 
 ############################################################################################
 # configuring flask application
+config = {
+    "DEBUG": True,          # some Flask specific configs
+    "CACHE_TYPE": "SimpleCache",  # Flask-Caching related configs
+    "CACHE_DEFAULT_TIMEOUT": 300
+}
+
 app = Flask(
     __name__,
     static_url_path='', 
     static_folder='static',
     template_folder='templates'
 )
+
+# tell Flask to use the above defined config
+app.config.from_mapping(config)
+cache = Cache(app)
 
 SSLify(app)
 
