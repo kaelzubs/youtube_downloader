@@ -35,13 +35,13 @@ CDN(app)
 
 app.config['FLASK_ASSETS_USE_CDN'] = True
 
-assets = flask_assets.Environment()
-assets.init_app(app)
-
 CORS(app)
 CSRFProtect(app)
 Compress(app)
 Minify(app, html=True, js=True, cssless=True)
+
+assets = flask_assets.Environment()
+assets.init_app(app)
 ############################################################################################
 
 
