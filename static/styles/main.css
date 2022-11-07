@@ -47,7 +47,7 @@ body {
     padding: 10px 15px;
 }
 
-.button {
+.form-inline button {
     background-color: #00c3ff;
     color: white;
     border: none;
@@ -198,6 +198,10 @@ body {
     opacity: 1;
     font-weight: bold;
 }
+
+.content_css {
+    text-align: center;
+}
   
 .signup-form {
     display: flex;
@@ -207,6 +211,10 @@ body {
 
 .emailNewsletter {
     width: 100%;
+}
+
+.home_css {
+    text-align: center;
 }
 
 .loader{
@@ -282,7 +290,7 @@ body {
         background-color: #fff;
         border: 1px solid #ddd;
     }
-    .button {
+    .form-inline button {
         background-color: #00c3ff;
         color: white;
         border: none;
