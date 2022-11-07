@@ -216,10 +216,6 @@ html, body {
     margin: auto;
 }
 
-#loading {
-    visibility: visible;
-}
-
 #loader-2 span{
     display: inline-block;
     width: 20px;
@@ -246,7 +242,12 @@ html, body {
     justify-content: center;
     align-items: center;
     display: flex;
+    visibility: visible;
 }
+
+/* #loading {
+    visibility: visible;
+} */
 
 .footer_css {
     text-align: center;
