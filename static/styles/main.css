@@ -157,7 +157,7 @@ body {
     opacity: 1;
     position: fixed;
     width: 100%;
-    max-height: 320px;
+    max-height: 400px;
     padding: 30px;
     top: 100px;
     animation-duration: 50s;
