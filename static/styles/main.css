@@ -11,11 +11,6 @@ html, body {
     overflow-x: hidden;
 }
 
-
-.container {
-    padding: 2rem 0rem;
-}
-
 .header-bg {
     background-color: #5bc0de;
     color: white;
@@ -195,6 +190,7 @@ html, body {
 .content_css {
     text-align: center;
     width: 100%;
+    word-wrap: break-word;
 }
   
 .signup-form {
@@ -279,8 +275,8 @@ html, body {
     }
     /* Style the input fields */
     .form-inline input {
-        vertical-align: middle;
-        padding: 10px 15px;
+        vertical-align: baseline;
+        padding: 10px;
         border-radius: 5px 0 0 5px;
         background-color: #fff;
         border: 1px solid #ddd;
@@ -289,7 +285,7 @@ html, body {
         background-color: #00c3ff;
         color: white;
         border: none;
-        padding: 12px 15px;
+        padding: 12px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
