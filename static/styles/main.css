@@ -138,15 +138,13 @@ body {
 
 .terms_css {
     padding-top: 5px;
-}
-
-.terms_css a {
     text-align: center;
 }
 
 .title_css {
     color: #00c3ff;
     font-weight: bold;
+    width: 100%;
 }
 
 .title_css_ {
@@ -201,6 +199,7 @@ body {
 
 .content_css {
     text-align: center;
+    width: 100%;
 }
   
 .signup-form {
@@ -215,6 +214,7 @@ body {
 
 .home_css {
     text-align: center;
+    width: 100%;
 }
 
 .loader{
