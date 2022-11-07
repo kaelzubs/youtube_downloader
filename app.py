@@ -27,6 +27,7 @@ app = Flask(
 
 assets = flask_assets.Environment()
 assets.init_app(app)
+app.config['FLASK_ASSETS_USE_CDN'] = True
 
 SSLify(app)
 
@@ -35,8 +36,6 @@ app.config['SECRET_KEY'] = SECRET_KEY
 
 app.config['CDN_DOMAIN'] = 'd12vn54927k41s.cloudfront.net'
 CDN(app)
-
-app.config['FLASK_ASSETS_USE_CDN'] = True
 
 CORS(app)
 CSRFProtect(app)
