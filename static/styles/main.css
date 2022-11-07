@@ -37,19 +37,6 @@ html, body {
     padding: 10px 15px;
 }
 
-.form-inline button {
-    background-color: #00c3ff;
-    color: white;
-    border: none;
-    padding: 12px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    border-radius: 0 5px 5px 0;
-    font-weight: bold;
-}
-
 .button_fb {
     background-color: #00c3ff;
     color: white;
@@ -152,13 +139,25 @@ html, body {
 
 /* Style the input fields */
 .form-inline input {
-    vertical-align: middle;
     padding: 10px 15px;
     margin-right: 50%;
     border-radius: 5px 0 0 5px;
     width: 100%;
     background-color: #fff;
     border: 1px solid #ddd;
+}
+
+.form-inline button {
+    background-color: #00c3ff;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 0 5px 5px 0;
+    font-weight: bold;
 }
 
 #cookie-consent-container {
