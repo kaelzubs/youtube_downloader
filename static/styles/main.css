@@ -11,16 +11,6 @@ html, body {
     overflow-x: hidden;
 }
 
-html {
-    font-family: Verdana, Arial, Tahoma, sans-serif;
-}
-
-body {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    outline: 3px solid transparent;
-}
 
 .container {
     padding: 2rem 0rem;
