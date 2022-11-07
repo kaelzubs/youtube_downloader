@@ -6,6 +6,11 @@
     bottom: 0;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 html {
     font-family: Verdana, Arial, Tahoma, sans-serif;
 }
