@@ -156,7 +156,16 @@ body {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-  }
+}
+
+/* Style the input fields */
+.form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
 
 #cookie-consent-container {
     background-color: rgba(0, 0, 0, 0.9);
