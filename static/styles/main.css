@@ -161,10 +161,11 @@ body {
 /* Style the input fields */
 .form-inline input {
     vertical-align: middle;
-    margin: 5px 10px 5px 0;
     padding: 10px 15px;
     background-color: #fff;
     border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    width: 80%;
 }
 
 #cookie-consent-container {
