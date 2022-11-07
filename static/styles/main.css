@@ -242,10 +242,18 @@ html, body {
     visibility: visible;
 }
 
+.privacy_css {
+    text-align: center;
+}
+
+.conditon_css {
+    text-align: center;
+}
+
 .footer_css {
     text-align: center;
-    width: 100%;
     padding: 15px;
+    width: 80%;
 }
 
 @keyframes bounce {
