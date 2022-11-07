@@ -140,9 +140,7 @@ html, body {
 /* Style the input fields */
 .form-inline input {
     padding: 10px 15px;
-    margin-right: 50%;
     border-radius: 5px 0 0 5px;
-    width: 100%;
     background-color: #fff;
     border: 1px solid #ddd;
 }
@@ -154,7 +152,6 @@ html, body {
     padding: 12px 15px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 14px;
     border-radius: 0 5px 5px 0;
     font-weight: bold;
@@ -275,15 +272,5 @@ html, body {
     .terms_css a {
         font-size: 14px;
         text-align: center;
-    }
-    .form-inline button {
-        background-color: #00c3ff;
-        color: white;
-        border: none;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        border-radius: 0 5px 5px 0;
-        font-weight: bold;
     }
 }
