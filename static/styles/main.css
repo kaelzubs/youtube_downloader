@@ -286,6 +286,7 @@ html, body {
     .form-inline {
         flex-direction: column;
         align-items: stretch;
+        display: inline-table;
     }
 
     .form-inline button {
