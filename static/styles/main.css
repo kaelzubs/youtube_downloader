@@ -102,7 +102,7 @@ html, body {
 }
 
 .terms_css {
-    padding-top: 5px;
+    margin-top: 5px;
     text-align: center;
 }
 
@@ -112,7 +112,7 @@ html, body {
 }
 
 .title_css_ {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #00c3ff;
     font-weight: bold;
 }
@@ -278,8 +278,7 @@ html, body {
     }
     .title_css_ {
         font-weight: bold;
-        position: relative;
-        padding-top: 15px;
+        margin-top: 35px;
     }
     .home_css {
         text-align: center;
