@@ -224,6 +224,7 @@ html, body {
 .loading_css {
     visibility: visible;
     text-align: center;
+    position: fixed;
 }
 
 .privacy_css {
@@ -276,11 +277,15 @@ html, body {
     }
     .title_css_ {
         font-weight: bold;
-        margin-top: 35px;
+        font-size: 12px;
+    }
+    .title_css {
+        font-weight: bold;
+        font-size: 12px;
     }
     .home_css {
         text-align: center;
-        padding-top: 45px;
+        margin-top: 45px;
     }
     .form-inline button {
         font-size: 10px;
