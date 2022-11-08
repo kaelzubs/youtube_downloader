@@ -48,15 +48,14 @@
         <script>
             function fn() {
                 document.cookie = "cookie_consent=true";
-                document.querySelector('#cookie-consent-container').classList.add('cookie')
-                document.querySelector('.cookie').style.visibility = 'hidden';
+                document.querySelector('#cookie-consent-container').style.visibility = 'hidden';
             };
             document.querySelector('#cookie-consent').onclick = fn();
         </script>
         <script>
             //cache your selector
             setTimeout(function() {
-                document.querySelector(".cookie").style.visibility = 'visible';
+                document.querySelector("#cookie-consent-container").style.visibility = 'visible';
             }, 5000);
         </script>
     </body>
