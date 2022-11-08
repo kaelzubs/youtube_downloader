@@ -159,7 +159,6 @@ html, body {
     top: 100px;
     animation-duration: 50s;
     animation-delay: 40s;
-    visibility: hidden;
     z-index: 100;
     word-wrap:break-word;
 }
