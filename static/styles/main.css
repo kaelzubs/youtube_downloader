@@ -129,6 +129,7 @@ html, body {
     color: #00c3ff;
     font-weight: bold;
     position: relative;
+    padding-top: 15px;
 }
 
 /* Style the form - display items horizontally */
