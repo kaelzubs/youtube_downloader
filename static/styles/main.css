@@ -149,10 +149,9 @@ html, body {
     color: white;
     opacity: 1;
     position: fixed;
+    padding: 10px;
     max-height: 380px;
     top: 150px;
-    animation-duration: 50s;
-    animation-delay: 40s;
     visibility: visible;
     z-index: 100;
 }
