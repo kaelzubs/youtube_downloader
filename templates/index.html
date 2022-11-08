@@ -40,7 +40,7 @@
             document.onreadystatechange = function() {
                 window.onload = (e) => {
                     if (document.readyState == "complete") {
-                        document.querySelector('.loading_css').style.visibility = 'hidden'
+                        document.querySelector('.loading_css').style.visibility = 'hidden';
                     }
                 }
             }
@@ -48,14 +48,14 @@
         <script>
             var fn = function () {
                 document.cookie = "cookie_consent=true";
-                document.getElementById('cookie-consent-container').hidden = true;
+                document.getElementById('cookie-consent-container').style.visibility = 'hidden';
             };
             document.getElementById('cookie-consent').onclick = fn;
         </script>
         <script>
             //cache your selector
             setTimeout(function() {
-                document.querySelector("#cookie-consent-container").style.visibility = 'visible'
+                document.querySelector("#cookie-consent-container").style.visibility = 'visible';
             }, 5000);
         </script>
     </body>
