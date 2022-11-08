@@ -48,16 +48,15 @@
         <script>
             var fn = function () {
                 document.cookie = "cookie_consent=true";
-                document.getElementById('cookie-consent-container').style.visibility = 'hidden';
+                document.getElementById('cookie-consent-container').hidden = true;
             };
             document.getElementById('cookie-consent').onclick = fn;
-            document.getElementById('cookie-consent-container').style.visibility = 'visible';
         </script>
         <script>
             //cache your selector
             setTimeout(function() {
-                document.getElementById("cookie-consent-container").style.visibility = 'visible';
-            }, 7000);
+                document.getElementById("cookie-consent-container").hidden = false;
+            }, 10000);
         </script>
     </body>
 </html>
