@@ -53,10 +53,12 @@
             document.querySelector('#cookie-consent').onclick = fn;
         </script>
         <script>
-            //cache your selector
-            setTimeout(function() {
-                document.getElementById("#cookie-consent-container").hidden = false;
-            }, 7000);
+            window.onload = function() {
+                //cache your selector
+                setTimeout(function() {
+                    document.getElementById("#cookie-consent-container").style.visibility = 'visible';
+                }, 7000);
+            }
         </script>
     </body>
 </html>
