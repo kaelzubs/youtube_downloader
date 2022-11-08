@@ -187,12 +187,12 @@ html, body {
 
 .content_css {
     text-align: center;
-    width: 100%;
     word-wrap: break-word;
 }
 
 .contact_css {
     text-align: center;
+    margin: auto;
 }
   
 .signup-form {
@@ -247,10 +247,17 @@ html, body {
 
 .privacy_css {
     text-align: center;
+    margin: auto;
 }
 
 .conditon_css {
     text-align: center;
+    margin: auto;
+}
+
+.line_hr {
+    text-align: center;
+    width: 80%;
 }
 
 .footer_css {
@@ -290,6 +297,6 @@ html, body {
     }
     .home_css {
         text-align: center;
-        margin-top: 15px;
+        margin-top: 25px;
     }
 }
