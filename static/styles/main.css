@@ -153,7 +153,7 @@ html, body {
     top: 150px;
     animation-duration: 50s;
     animation-delay: 40s;
-    visibility: hidden;
+    visibility: visible;
     z-index: 100;
 }
 
