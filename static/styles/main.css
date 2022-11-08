@@ -149,9 +149,7 @@ html, body {
     color: white;
     opacity: 1;
     position: fixed;
-    width: 100%;
     max-height: 380px;
-    padding: 30px;
     top: 150px;
     animation-duration: 50s;
     animation-delay: 40s;
