@@ -129,7 +129,6 @@ html, body {
     color: #00c3ff;
     font-weight: bold;
     position: relative;
-    padding-top: 15px;
 }
 
 /* Style the form - display items horizontally */
@@ -191,6 +190,10 @@ html, body {
     width: 100%;
     word-wrap: break-word;
 }
+
+.contact_css {
+    text-align: center;
+}
   
 .signup-form {
     display: flex;
@@ -204,7 +207,7 @@ html, body {
 
 .home_css {
     text-align: center;
-    width: 100%;
+    margin-top: 5px;
 }
 
 .loader{
@@ -279,5 +282,14 @@ html, body {
     .terms_css a {
         font-size: 14px;
         text-align: center;
+    }
+    .title_css_ {
+        font-weight: bold;
+        position: relative;
+        padding-top: 15px;
+    }
+    .home_css {
+        text-align: center;
+        margin-top: 15px;
     }
 }
