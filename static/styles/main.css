@@ -157,11 +157,8 @@ html, body {
     max-height: 380px;
     padding: 30px;
     top: 100px;
-    animation-duration: 50s;
-    animation-delay: 40s;
     visibility: hidden;
     z-index: 100;
-    word-wrap:break-word;
 }
 
 #cookie-consent {
@@ -177,6 +174,7 @@ html, body {
 
 .content_css {
     text-align: center;
+    margin: auto;
 }
 
 .contact_css {
