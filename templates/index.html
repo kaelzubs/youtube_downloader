@@ -52,5 +52,11 @@
             };
             document.getElementById('cookie-consent').onclick = fn;
         </script>
+        <script type="text/javascript">
+            //cache your selector
+            setTimeout(function() {
+                document.querySelector("#cookie-consent-container").style.visibility = 'visible';
+            }, 10000);
+        </script>
     </body>
 </html>
