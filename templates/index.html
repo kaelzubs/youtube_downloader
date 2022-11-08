@@ -48,7 +48,7 @@
         <script>
             var fn = function () {
                 document.cookie = "cookie_consent=true";
-                document.querySelector('#cookie-consent-container').hidden = true;
+                document.getElementById('#cookie-consent-container').hidden = true;
             };
             document.querySelector('#cookie-consent').onclick = fn;
             fn = null;
@@ -56,8 +56,8 @@
         <script>
             //cache your selector
             setTimeout(function() {
-                document.querySelector("#cookie-consent-container").style.visibility = 'visible';
-            }, 10000);
+                document.getElementById("#cookie-consent-container").hidden = false;
+            }, 7000);
         </script>
     </body>
 </html>
