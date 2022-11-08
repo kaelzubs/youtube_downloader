@@ -46,18 +46,18 @@
             }
         </script>
         <script>
-            var fn = null;
-            fn = function () {
+            var fn = function () {
                 document.cookie = "cookie_consent=true";
                 document.querySelector('#cookie-consent-container').hidden = true;
             };
             document.querySelector('#cookie-consent').onclick = fn;
+            fn = null;
         </script>
         <script>
             //cache your selector
             setTimeout(function() {
                 document.querySelector("#cookie-consent-container").style.visibility = 'visible';
-            }, 5000);
+            }, 10000);
         </script>
     </body>
 </html>
