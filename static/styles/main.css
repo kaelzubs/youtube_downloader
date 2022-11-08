@@ -76,8 +76,6 @@ html, body {
     padding: 20px;
     margin: 20px;
     text-align: center;
-    overflow: auto;
-    vertical-align: baseline;
 }
 
 .fb_css a {
@@ -157,7 +155,8 @@ html, body {
     max-height: 380px;
     padding: 30px;
     top: 100px;
-    visibility: hidden;
+    animation-duration: 50s;
+    animation-delay: 40s;
     z-index: 100;
 }
 
@@ -174,7 +173,6 @@ html, body {
 
 .content_css {
     text-align: center;
-    margin: auto;
 }
 
 .contact_css {
