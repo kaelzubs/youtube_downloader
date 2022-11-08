@@ -113,14 +113,12 @@ html, body {
 .title_css {
     color: #00c3ff;
     font-weight: bold;
-    width: 100%;
 }
 
 .title_css_ {
     font-size: 30px;
     color: #00c3ff;
     font-weight: bold;
-    position: relative;
 }
 
 /* Style the form - display items horizontally */
@@ -179,7 +177,6 @@ html, body {
 
 .content_css {
     text-align: center;
-    word-wrap: break-word;
 }
 
 .contact_css {
@@ -298,15 +295,6 @@ html, body {
         padding-top: 45px;
     }
     .form-inline button {
-        background-color: #00c3ff;
-        color: white;
-        border: none;
-        padding: 6px 8px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 14px;
-        word-break: keep-all;
-        border-radius: 0 5px 5px 0;
-        font-weight: bold;
+        font-size: 10px;
     }
 }
