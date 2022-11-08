@@ -236,21 +236,18 @@ html, body {
 
 .privacy_css {
     text-align: center;
-    display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 .condition_css {
     text-align: center;
-    display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 .line_hr {
     text-align: center;
-    display: block;
     margin-left: auto;
     margin-right: auto;
 }
@@ -276,7 +273,7 @@ html, body {
     }
 }
 
-@media screen and (min-width: 480px) and (min-width: 600px) and (max-width: 960px) {
+@media screen and (min-width: 480px) and (max-width: 960px) {
     body {
         max-width: 100%;
         height: 100vh;
