@@ -185,7 +185,7 @@ html, body {
 }
 
 .content_css h2 {
-    font-size: 18px;
+    font-size: 24px;
     color: #00c3ff;
     font-weight: bold;
     white-space: nowrap;
@@ -297,5 +297,11 @@ html, body {
     .home_css {
         text-align: center;
         margin-top: 45px;
+    }
+    .content_css h2 {
+        font-size: 18px;
+        color: #00c3ff;
+        font-weight: bold;
+        white-space: nowrap;
     }
 }
