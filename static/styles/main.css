@@ -298,3 +298,12 @@ html, body {
         white-space: nowrap;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .title_css_ {
+        font-size: 1vw;
+        color: #00c3ff;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+}
