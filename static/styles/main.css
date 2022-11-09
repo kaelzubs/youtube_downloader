@@ -289,6 +289,7 @@ html, body {
     body {
         max-width: 100%;
         height: 100vh;
+        padding: 5px;
     }
     .terms_css a {
         font-size: 14px;
@@ -299,13 +300,13 @@ html, body {
         margin-top: 45px;
     }
     .title_css_ {
-        font-size: 18px;
+        font-size: 2vw;
         color: #00c3ff;
         font-weight: bold;
         white-space: nowrap;
     }
     .content_css h2 {
-        font-size: 18px;
+        font-size: 2vw;
         color: #00c3ff;
         font-weight: bold;
         white-space: nowrap;
@@ -314,13 +315,13 @@ html, body {
 
 @media screen and (max-width: 600px) {
     .title_css_ {
-        font-size: 18px;
+        font-size: 2vw;
         color: #00c3ff;
         font-weight: bold;
         white-space: nowrap;
     }
     .content_css h2 {
-        font-size: 18px;
+        font-size: 2vw;
         color: #00c3ff;
         font-weight: bold;
         white-space: nowrap;
