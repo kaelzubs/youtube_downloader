@@ -185,6 +185,13 @@ html, body {
     line-height: 100%;
 }
 
+.content_css h2 {
+    font-size: 1.5vw;
+    color: #00c3ff;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
 .contact_css {
     text-align: center;
     margin: auto;
@@ -292,7 +299,13 @@ html, body {
         margin-top: 45px;
     }
     .title_css_ {
-        font-size: 14px;
+        font-size: 18px;
+        color: #00c3ff;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    .content_css h2 {
+        font-size: 18px;
         color: #00c3ff;
         font-weight: bold;
         white-space: nowrap;
@@ -301,7 +314,13 @@ html, body {
 
 @media screen and (max-width: 600px) {
     .title_css_ {
-        font-size: 14px;
+        font-size: 18px;
+        color: #00c3ff;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    .content_css h2 {
+        font-size: 18px;
         color: #00c3ff;
         font-weight: bold;
         white-space: nowrap;
