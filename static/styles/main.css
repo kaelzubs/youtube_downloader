@@ -133,12 +133,11 @@ html, body {
 }
 
 .form-inline input[type=text] {
-    width: 100%;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 5px 0 0 5px;
     border: 1px solid #ddd;
-    font-size: 16px;
+    font-size: 18px;
     background-color: white;
     padding: 10px 15px;
 }
@@ -150,7 +149,7 @@ html, body {
     padding: 12px 15px;
     text-align: center;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 18px;
     border-radius: 0 5px 5px 0;
     font-weight: bold;
     white-space: nowrap;
@@ -329,9 +328,24 @@ html, body {
     }
     .form-inline input[type=text] {
         font-size: 14px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 5px 0 0 5px;
+        border: 1px solid #ddd;
+        font-size: 16px;
+        padding: 5px 10px;
     }
     .form-inline button {
         font-size: 14px;
+        background-color: #00c3ff;
+        color: white;
+        border: none;
+        padding: 7px 10px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 0 5px 5px 0;
+        font-weight: bold;
+        white-space: nowrap;
     }
 }
 
@@ -381,9 +395,24 @@ html, body {
     }
     .form-inline input[type=text] {
         font-size: 14px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 5px 0 0 5px;
+        border: 1px solid #ddd;
+        font-size: 16px;
+        padding: 5px 10px;
     }
     .form-inline button {
         font-size: 14px;
+        background-color: #00c3ff;
+        color: white;
+        border: none;
+        padding: 7px 10px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 0 5px 5px 0;
+        font-weight: bold;
+        white-space: nowrap;
     }
 }
 
@@ -433,8 +462,23 @@ html, body {
     }
     .form-inline input[type=text] {
         font-size: 14px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 5px 0 0 5px;
+        border: 1px solid #ddd;
+        font-size: 16px;
+        padding: 5px 10px;
     }
     .form-inline button {
         font-size: 14px;
+        background-color: #00c3ff;
+        color: white;
+        border: none;
+        padding: 7px 10px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 0 5px 5px 0;
+        font-weight: bold;
+        white-space: nowrap;
     }
 }
