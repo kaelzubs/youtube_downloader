@@ -186,10 +186,14 @@ html, body {
 }
 
 .content_css h2 {
-    font-size: 24px;
+    font-size: 22px;
     color: #00c3ff;
     font-weight: bold;
     white-space: nowrap;
+}
+
+.content_css p {
+    font-size: 14px;
 }
 
 .contact_css {
