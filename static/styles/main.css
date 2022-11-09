@@ -68,17 +68,6 @@ html, body {
     color: white;
 }
 
-.fb_css {
-    text-align: center;
-    padding: 15px;
-}
-
-.fb_css a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
-
 .fb_css a:hover {
     background-color: #00c3ff;
     color: white;
@@ -109,7 +98,7 @@ html, body {
 }
 
 .title_css_ {
-    font-size: 3.5vw;
+    font-size: 3.vw;
     color: #00c3ff;
     font-weight: bold;
     white-space: nowrap;
@@ -175,6 +164,7 @@ html, body {
 .content_css {
     text-align: center;
     margin: auto;
+    line-height: 100%;
 }
 
 .contact_css {
