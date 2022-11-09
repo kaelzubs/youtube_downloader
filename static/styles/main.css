@@ -144,6 +144,7 @@ html, body {
     font-size: 14px;
     border-radius: 0 5px 5px 0;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 #cookie-consent-container {
@@ -288,8 +289,5 @@ html, body {
     .home_css {
         text-align: center;
         margin-top: 45px;
-    }
-    .form-inline button {
-        font-size: 10px;
     }
 }
