@@ -11,6 +11,7 @@ from flask_minify import Minify
 from flask_wtf.csrf import CSRFProtect
 from flask_cdn import CDN
 from flask_sslify import SSLify
+from flask_assets import Environment
 from flask_caching import Cache
 ############################################################################################
 
@@ -31,6 +32,9 @@ app = Flask(
     template_folder='templates'
 )
 
+assets = Environment()
+assets.init_app(app)
+
 # tell Flask to use the above defined config
 app.config.from_mapping(config)
 Cache(app)
@@ -42,6 +46,8 @@ app.config['SECRET_KEY'] = SECRET_KEY
 
 app.config['CDN_DOMAIN'] = 'd12vn54927k41s.cloudfront.net'
 CDN(app)
+
+app.config['FLASK_ASSETS_USE_CDN'] = True
 
 CORS(app)
 CSRFProtect(app)
