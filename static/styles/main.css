@@ -124,24 +124,18 @@ html, body {
     align-items: center;
 }
 
-/* Style the input fields */
-/* .form-inline input {
-    padding: 10px 15px;
-    border-radius: 5px 0 0 5px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-} */
-
 .form-inline input[type=text] {
     width: 100%;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 5px 0 0 5px;
+    border: 1px solid #ddd;
     font-size: 16px;
     background-color: white;
-    background-position: 10px 10px; 
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-inline button {
