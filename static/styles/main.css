@@ -300,13 +300,13 @@ html, body {
         margin-top: 45px;
     }
     .title_css_ {
-        font-size: 2vw;
+        font-size: 5vw;
         color: #00c3ff;
         font-weight: bold;
         white-space: nowrap;
     }
     .content_css h2 {
-        font-size: 2vw;
+        font-size: 5vw;
         color: #00c3ff;
         font-weight: bold;
         white-space: nowrap;
@@ -315,13 +315,13 @@ html, body {
 
 @media screen and (max-width: 600px) {
     .title_css_ {
-        font-size: 2vw;
+        font-size: 5vw;
         color: #00c3ff;
         font-weight: bold;
         white-space: nowrap;
     }
     .content_css h2 {
-        font-size: 2vw;
+        font-size: 5vw;
         color: #00c3ff;
         font-weight: bold;
         white-space: nowrap;
