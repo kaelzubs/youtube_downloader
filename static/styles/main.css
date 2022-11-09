@@ -122,6 +122,9 @@ html, body {
     color: #00c3ff;
     font-weight: bold;
     white-space: nowrap;
+    border: none;
+    position: fixed;
+    width: 100%;
 }
 
 /* Style the form - display items horizontally */
@@ -186,6 +189,8 @@ html, body {
 .content_css {
     text-align: center;
     position: relative;
+    width: 100%;
+    border: none;
 }
 
 .content_css h2 {
