@@ -295,6 +295,9 @@ html, body {
         height: 100vh;
         padding: 5px;
     }
+    .terms_css  {
+        font-size: 14px;
+    }
     .terms_css a {
         font-size: 14px;
         text-align: center;
@@ -303,7 +306,16 @@ html, body {
         text-align: center;
         margin-top: 45px;
     }
-    p {
+    .content_css h4 {
+        font-size: 14px;
+    }
+    .content_css h5 {
+        font-size: 14px;
+    }
+    .content_css p {
+        font-size: 14px;
+    }
+    .container p {
         font-size: 14px;
     }
 }
