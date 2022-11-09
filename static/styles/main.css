@@ -149,7 +149,8 @@ html, body {
     color: white;
     opacity: 1;
     position: fixed;
-    padding: 10px;
+    padding: 30px;
+    border-radius: 5px;
     max-height: 380px;
     top: 150px;
     visibility: visible;
@@ -224,7 +225,6 @@ html, body {
 .loading_css {
     visibility: visible;
     text-align: center;
-    position: fixed;
 }
 
 .privacy_css {
