@@ -186,7 +186,7 @@ html, body {
 }
 
 .content_css h2 {
-    font-size: 22px;
+    font-size: 35px;
     color: #00c3ff;
     font-weight: bold;
     white-space: nowrap;
@@ -304,10 +304,13 @@ html, body {
         margin-top: 45px;
     }
     .content_css h2 {
-        font-size: 15px;
+        font-size: 14px;
         color: #00c3ff;
         font-weight: bold;
         white-space: nowrap;
 
+    }
+    .content_css p {
+        font-size: 14px;
     }
 }
