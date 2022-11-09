@@ -106,14 +106,12 @@ html, body {
 .title_css {
     color: #00c3ff;
     font-weight: bold;
-    white-space: nowrap;
 }
 
 .title_css_ {
     font-size: 5vw;
     color: #00c3ff;
     font-weight: bold;
-    white-space: nowrap;
 }
 
 /* Style the form - display items horizontally */
