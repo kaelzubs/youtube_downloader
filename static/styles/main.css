@@ -182,12 +182,10 @@ html, body {
 
 .content_css {
     text-align: center;
-    margin: auto;
-    line-height: 100%;
 }
 
 .content_css h2 {
-    font-size: 3.9vw;
+    font-size: 18px;
     color: #00c3ff;
     font-weight: bold;
     white-space: nowrap;
