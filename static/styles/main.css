@@ -110,7 +110,7 @@ html, body {
 }
 
 .title_css_ {
-    font-size: 2.5rem;
+    font-size: 5vw;
     color: #00c3ff;
     font-weight: bold;
     white-space: nowrap;
@@ -279,14 +279,6 @@ html, body {
     .terms_css a {
         font-size: 14px;
         text-align: center;
-    }
-    .title_css_ {
-        font-weight: bold;
-        font-size: 12px;
-    }
-    .title_css {
-        font-weight: bold;
-        font-size: 12px;
     }
     .home_css {
         text-align: center;
