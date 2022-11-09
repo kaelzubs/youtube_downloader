@@ -245,6 +245,10 @@ html, body {
     margin-right: auto;
 }
 
+.form_css {
+    text-align: center;
+}
+
 .footer_css {
     text-align: center;
     padding: 15px;

@@ -5,19 +5,22 @@
     </a>
     <h1 class="title_css_">Mp4us:~ Online YouTube Video Downloader!</h1>
 </div>
-<form class="form-inline" action="{{ url_for('download') }}" method="POST">
-    <table>
-        <tr>
-            <td>
-                <input type="text" name="q" placeholder="Paste Youtube link here!">
-            </td>
-            <td>
-                <button type="submit">Get downloads</button>
-            </td>
-        </tr>
-    </table>
-    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+<div class="form_css">
+    <form class="form-inline" action="{{ url_for('download') }}" method="POST">
+        <table>
+            <tr>
+                <td>
+                    <input type="text" name="q" placeholder="Paste Youtube link here!">
+                </td>
+                <td>
+                    <button type="submit">Get downloads</button>
+                </td>
+            </tr>
+        </table>
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
 </form>
+</div>
+
 <p class="terms_css">By using our service you are accepting our 
     <a href="{{ url_for('terms') }}" target="_blank">terms</a>
 </p>
