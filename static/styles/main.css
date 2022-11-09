@@ -246,7 +246,8 @@ html, body {
 }
 
 .form_css {
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer_css {
