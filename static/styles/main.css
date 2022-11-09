@@ -300,4 +300,19 @@ html, body {
         text-align: center;
         margin-top: 45px;
     }
+    .content_css h2 {
+        font-size: 1.5rem;
+        color: #00c3ff;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content_css h2 {
+        font-size: 1.5rem;
+        color: #00c3ff;
+        font-weight: bold;
+        white-space: nowrap;
+    }
 }
