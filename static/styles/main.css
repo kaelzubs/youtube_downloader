@@ -68,6 +68,24 @@ html, body {
     color: white;
 }
 
+.fb_css {
+    padding: 15px;
+    border: none;
+}
+
+.fb_css a {
+    background-color: #00c3ff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
 .fb_css a:hover {
     background-color: #00c3ff;
     color: white;
