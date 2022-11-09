@@ -168,6 +168,8 @@ html, body {
     top: 150px;
     visibility: visible;
     z-index: 100;
+    text-align: center;
+    margin: auto;
 }
 
 #cookie-consent {
