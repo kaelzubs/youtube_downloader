@@ -1,6 +1,7 @@
 html, body {
-    max-width: 100%;
+    width: 100%;
     overflow-x: hidden;
+    height: 100vh;
 }
 
 .header-bg {
@@ -133,6 +134,7 @@ html, body {
 }
 
 .form-inline input[type=text] {
+    width: 100%;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 5px 0 0 5px;
@@ -329,6 +331,7 @@ html, body {
     .form-inline input[type=text] {
         font-size: 14px;
         padding: 5px 10px;
+        width: 100%;
     }
     .form-inline button {
         font-size: 14px;
@@ -383,6 +386,7 @@ html, body {
     .form-inline input[type=text] {
         font-size: 14px;
         padding: 5px 10px;
+        width: 100%;
     }
     .form-inline button {
         font-size: 14px;
@@ -437,6 +441,7 @@ html, body {
     .form-inline input[type=text] {
         font-size: 14px;
         padding: 5px 10px;
+        width: 100%;
     }
     .form-inline button {
         font-size: 14px;
