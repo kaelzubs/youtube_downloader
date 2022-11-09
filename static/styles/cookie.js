@@ -1,5 +1,7 @@
-var fn = function () {
+
+var fn = getElementById('cookie-consent')
+
+fn.onclick = function() {
     document.cookie = "cookie_consent=true";
-    document.getElementById('cookie-consent-container').hidden = true;
-};
-document.getElementById('cookie-consent').onclick = fn;
+    document.getElementById('cookie-consent-container').hidden = true
+}
