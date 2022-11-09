@@ -182,6 +182,7 @@ html, body {
 
 .content_css {
     text-align: center;
+    width: 100%;
 }
 
 .content_css h2 {
@@ -284,7 +285,7 @@ html, body {
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 960px) {
+@media screen and (min-width: 480px) and (min-width: 600px) and (max-width: 960px) {
     body {
         max-width: 100%;
         height: 100vh;
@@ -299,9 +300,10 @@ html, body {
         margin-top: 45px;
     }
     .content_css h2 {
-        font-size: 18px;
+        font-size: 15px;
         color: #00c3ff;
         font-weight: bold;
         white-space: nowrap;
+
     }
 }
