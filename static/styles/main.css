@@ -327,6 +327,12 @@ html, body {
     .contain ul li {
         font-size: 14px;
     }
+    .form-inline input[type=text] {
+        font-size: 14px;
+    }
+    .form-inline button {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -373,6 +379,12 @@ html, body {
     .contain ul li {
         font-size: 14px;
     }
+    .form-inline input[type=text] {
+        font-size: 14px;
+    }
+    .form-inline button {
+        font-size: 14px;
+    }
 }
 
 @media screen and (min-width: 480px) and (max-width: 960px) {
@@ -417,6 +429,12 @@ html, body {
         font-size: 14px;
     }
     .contain ul li {
+        font-size: 14px;
+    }
+    .form-inline input[type=text] {
+        font-size: 14px;
+    }
+    .form-inline button {
         font-size: 14px;
     }
 }
