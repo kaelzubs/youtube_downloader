@@ -117,7 +117,7 @@ html, body {
 }
 
 .title_css_ {
-    font-size: 4.5vw;
+    font-size: 4vw;
     color: #00c3ff;
     font-weight: bold;
     white-space: nowrap;
@@ -299,14 +299,5 @@ html, body {
     .home_css {
         text-align: center;
         margin-top: 45px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .content_css h2 {
-        font-size: 1.5rem;
-        color: #00c3ff;
-        font-weight: bold;
-        white-space: nowrap;
     }
 }
