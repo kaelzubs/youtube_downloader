@@ -10,8 +10,9 @@ from flask_compress import Compress
 from flask_minify import Minify
 from flask_wtf.csrf import CSRFProtect
 from flask_cdn import CDN
-from flask_sslify import SSLify
+# from flask_sslify import SSLify
 from flask_caching import Cache
+from flask_assets import Environment
 ############################################################################################
 
 
@@ -31,11 +32,7 @@ app = Flask(
     template_folder='templates'
 )
 
-# tell Flask to use the above defined config
-app.config.from_mapping(config)
-Cache(app)
-
-SSLify(app)
+# SSLify(app)
 
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
@@ -47,6 +44,14 @@ CORS(app)
 CSRFProtect(app)
 Compress(app)
 Minify(app, html=True, js=True, cssless=True)
+
+# tell Flask to use the above defined config
+app.config.from_mapping(config)
+Cache(app)
+
+app.config['FLASK_ASSETS_USE_CDN'] = True
+assets = Environment()
+assets.init_app(app)
 ############################################################################################
 
 

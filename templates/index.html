@@ -7,7 +7,6 @@
 
             {% block content %}
             {% endblock %}
-            
             {% if cookies_check() %}
                 {# then user has already consented so no requirement for consent banner #}
             {% else %}
@@ -23,6 +22,7 @@
                     <button id="cookie-consent" class="button_fb">I Consent</button>
                 </div>
             {% endif %}
+            
             <div class="fb_css">
                 <a  
                     rel="noopener noreferrer"
@@ -35,21 +35,5 @@
             {% include 'content_page.html' %}
             {% include 'footer_page.html' %}
         </div>
-        <script>
-            document.onreadystatechange = function() {
-                window.onload = (e) => {
-                    if (document.readyState == "complete") {
-                        document.querySelector('.loading_css').style.visibility = 'hidden';
-                    }
-                }
-            }
-        </script>
-        <script type="text/javascript">
-            var fn = function () {
-                document.cookie = "cookie_consent=true";
-                document.getElementById('cookie-consent-container').hidden = true;
-            };
-            document.getElementById('cookie-consent').onclick = fn;
-        </script>
     </body>
 </html>

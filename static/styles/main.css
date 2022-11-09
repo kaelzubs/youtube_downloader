@@ -1,7 +1,9 @@
-html, body {
+body {
     width: 100%;
     overflow-x: hidden;
     height: 100vh;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .header-bg {
@@ -122,7 +124,6 @@ html, body {
     color: #00c3ff;
     font-weight: bold;
     white-space: nowrap;
-    position: relative;
 }
 
 /* Style the form - display items horizontally */
@@ -158,19 +159,23 @@ html, body {
     white-space: nowrap;
 }
 
+.home_css {
+    text-align: center;
+    margin: auto;
+    border: none;
+    width: 100%;
+}
+
 #cookie-consent-container {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    opacity: 1;
-    position: relative;
     padding: 30px;
     border-radius: 5px;
     max-height: 380px;
-    top: 150px;
     visibility: visible;
     z-index: 100;
-    text-align: center;
-    margin: auto;
+    position: fixed;
+    top: 150px;
 }
 
 #cookie-consent {
@@ -211,13 +216,6 @@ html, body {
 
 .emailNewsletter {
     width: 100%;
-}
-
-.home_css {
-    text-align: center;
-    margin: auto;
-    width: 100%;
-    border: none;
 }
 
 .loader{
