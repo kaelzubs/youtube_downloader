@@ -9,9 +9,10 @@
 
 const fn = document.getElementById('cookie-consent');
 
-fn.click = () => {
-    document.cookie = 'cookie_consent=true'
-    if(document.cookie) {
+if (fn) {
+    fn.onclick = () => {
+        document.cookie = 'cookie_consent=true';
         document.getElementById('cookie-consent-container').hidden = true
     }
 }
+
