@@ -1,14 +1,13 @@
 {% block content %}
-<div class="row">
-    <div class="col">
-        <div class="home_css">
-            <a href="/">
-                <img class="logo_css" width="10%" height="10%" src="{{ url_for('static', filename='icon/Youtube-dl.svg') }}" alt="youtube downloader logo">
-            </a>
-            <h1 class="title_css_">Mp4us:~ Online YouTube Video Downloader!</h1>
-        </div>
+<div class="col">
+    <div class="home_css">
+        <a href="/">
+            <img class="logo_css" width="10%" height="10%" src="{{ url_for('static', filename='icon/Youtube-dl.svg') }}" alt="youtube downloader logo">
+        </a>
+        <h1 class="title_css_">Mp4us:~ Online YouTube Video Downloader!</h1>
     </div>
-    
+</div>
+<div class="col">
     <div class="form_css">
         <form class="form-inline" action="{{ url_for('download') }}" method="POST">
             <table>
@@ -24,7 +23,6 @@
             </table>
         </form>
     </div>
-    
     <p class="terms_css">By using our service you are accepting our 
         <a href="{{ url_for('terms') }}" target="_blank">terms</a>
     </p>
