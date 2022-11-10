@@ -346,6 +346,18 @@ body {
         font-size: 14px;
         padding: 7px 10px;
     }
+    .table tr th {
+        font-size: 14px;
+        flex-flow: row wrap;
+        white-space: nowrap;
+        text-align: center;
+    }
+    .table tr td {
+        font-size: 14px;
+        flex-flow: row wrap;
+        white-space: nowrap;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -401,6 +413,18 @@ body {
         font-size: 14px;
         padding: 7px 10px;
     }
+    .table tr th {
+        font-size: 14px;
+        flex-flow: row wrap;
+        white-space: nowrap;
+        text-align: center;
+    }
+    .table tr td {
+        font-size: 14px;
+        flex-flow: row wrap;
+        white-space: nowrap;
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 480px) and (max-width: 960px) {
@@ -455,5 +479,17 @@ body {
     .form-inline button {
         font-size: 14px;
         padding: 7px 10px;
+    }
+    .table tr th {
+        font-size: 14px;
+        flex-flow: row wrap;
+        white-space: nowrap;
+        text-align: center;
+    }
+    .table tr td {
+        font-size: 14px;
+        flex-flow: row wrap;
+        white-space: nowrap;
+        text-align: center;
     }
 }
