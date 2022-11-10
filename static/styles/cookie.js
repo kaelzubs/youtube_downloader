@@ -1,5 +1,5 @@
 
-var fn = getElementById('cookie-consent')
+var fn = document.getElementById('cookie-consent')
 
 fn.onclick = function() {
     document.cookie = "cookie_consent=true";
