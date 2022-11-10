@@ -175,6 +175,7 @@ body {
     z-index: 100;
     position: fixed;
     top: 150px;
+    width: 100%;
 }
 
 #cookie-consent {
