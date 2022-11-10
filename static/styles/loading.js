@@ -1,7 +1,10 @@
 document.onreadystatechange = function() {
-    window.onload = (e) => {
+    window.onload = () => {
         if (document.readyState == "complete") {
-            document.querySelector('.loading_css').style.visibility = 'hidden';
+            if (document.querySelector('.loading_css')) {
+                document.querySelector('.loading_css').style.visibility = 'hidden';
+            }
+            
         }
     }
 }
