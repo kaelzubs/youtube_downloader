@@ -169,7 +169,7 @@ body {
 #cookie-consent-container {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    padding: 50px;
+    padding: 30px;
     border-radius: 5px;
     max-height: 380px;
     visibility: visible;
@@ -177,6 +177,7 @@ body {
     position: fixed;
     top: 150px;
     width: 100%;
+    margin: auto;
 }
 
 #cookie-consent {
