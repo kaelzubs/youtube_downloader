@@ -499,6 +499,6 @@ body {
         text-align: center;
     }
     .title_css_ {
-        margin-left: 5px;
+        margin-left: -5px;
     }
 }
