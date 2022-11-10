@@ -2,10 +2,12 @@
 <html lang="en">
     {% include 'head.html' %}
     <body>
-        <div class="container">
+        <div class="container contain">
             {% include 'home_page.html' %}
 
             {% block content %}
+            {% endblock %}
+            
             {% if cookies_check() %}
                 {# then user has already consented so no requirement for consent banner #}
             {% else %}
@@ -21,7 +23,6 @@
                     <button id="cookie-consent" class="button_fb">I Consent</button>
                 </div>
             {% endif %}
-            {% endblock %}
             
             <div class="fb_css">
                 <a  
