@@ -9,8 +9,10 @@
     <title>Mp4us: Online YouTube Link Video Downloader!</title>
     <meta name="description" content="Paste copied youtube video links in our input box to Download all kinds of online youtube video in full HD quality for free on the best downloader website, mp4us.live">
     
-    <link defer rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}">
-
+    <noscript>
+        <link defer rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}">
+    </noscript>
+    
     <!-- Bootstrap CSS -->
     {{ bootstrap.load_css() }}
 
@@ -58,13 +60,10 @@
         loadCSS: load a CSS file asynchronously.
         */
         function loadCSS(href) {
-            var ss = window.document.createElement('link');
-            var ref = window.document.getElementsByTagName('head')[0];
-
-            ss.rel = 'stylesheet';
-            ss.type = 'text/css';
-            ss.href = href;
-            ss.defer
+            var ss = window.document.createElement('link'),
+                ref = window.document.getElementsByTagName('head')[0];
+                ss.rel = 'stylesheet';
+                ss.href = href;
 
             // temporarily, set media to something non-matching to ensure it'll
             // fetch without blocking render
@@ -77,6 +76,6 @@
                 ss.media = 'all';
             }, 0);
         }
-        loadCSS('{{ bootstrap.load_css() }}')
+        loadCSS('https://d12vn54927k41s.cloudfront.net/styles/main.css');
     </script>
 </head>
