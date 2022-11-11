@@ -35,7 +35,7 @@ app = Flask(
 
 bootstrap = Bootstrap5(app)
 
-# sslify = SSLify(app)
+sslify = SSLify(app)
 
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
