@@ -13,8 +13,7 @@
     <noscript><link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}"></noscript>  
 
     <!-- Bootstrap CSS -->
-    <link rel="preload" href="{{ bootstrap.load_css() }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="{{ bootstrap.load_css() }}"></noscript> 
+    {{ bootstrap.load_css() }}
 
     <link defer rel="preloader" href="{{ url_for('static', filename='fonts/glyphicons-halflings-regular.woff2') }}" as="font" type="font/woff2" crossorigin>
 
