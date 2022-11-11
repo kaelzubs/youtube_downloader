@@ -23,7 +23,8 @@
         </div>
     </div>
 </nav>
-<div class="container m-5">
+<div class="p-5"></div>
+<div class="container">
     <form method="POST" action="{{ url_for('download') }}">
         <div class="input-group mb-3">
             <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
