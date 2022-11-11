@@ -307,18 +307,6 @@ body {
     .home_css {
         text-align: center;
     }
-    .content_css h3 {
-        font-size: 14px;
-    }
-    .content_css h4 {
-        font-size: 14px;
-    }
-    .content_css h5 {
-        font-size: 14px;
-    }
-    .content_css p {
-        font-size: 14px;
-    }
     h2 {
         font-size: 14px;
     }
@@ -350,16 +338,11 @@ body {
         font-size: 14px;
         flex-flow: row wrap;
         white-space: nowrap;
-        text-align: center;
     }
     .table tr td {
         font-size: 14px;
         flex-flow: row wrap;
         white-space: nowrap;
-        text-align: center;
-    }
-    .title_css_ {
-        margin-left: 5px;
     }
 }
 
@@ -377,18 +360,6 @@ body {
     .home_css {
         text-align: center;
     }
-    .content_css h3 {
-        font-size: 14px;
-    }
-    .content_css h4 {
-        font-size: 14px;
-    }
-    .content_css h5 {
-        font-size: 14px;
-    }
-    .content_css p {
-        font-size: 14px;
-    }
     h2 {
         font-size: 14px;
     }
@@ -420,16 +391,11 @@ body {
         font-size: 14px;
         flex-flow: row wrap;
         white-space: nowrap;
-        text-align: center;
     }
     .table tr td {
         font-size: 14px;
         flex-flow: row wrap;
         white-space: nowrap;
-        text-align: center;
-    }
-    .title_css_ {
-        margin-left: 5px;
     }
 }
 
@@ -447,18 +413,6 @@ body {
     .home_css {
         text-align: center;
     }
-    .content_css h3 {
-        font-size: 14px;
-    }
-    .content_css h4 {
-        font-size: 14px;
-    }
-    .content_css h5 {
-        font-size: 14px;
-    }
-    .content_css p {
-        font-size: 14px;
-    }
     h2 {
         font-size: 14px;
     }
@@ -490,15 +444,10 @@ body {
         font-size: 14px;
         flex-flow: row wrap;
         white-space: nowrap;
-        text-align: center;
     }
     .table tr td {
         font-size: 14px;
         flex-flow: row wrap;
         white-space: nowrap;
-        text-align: center;
-    }
-    .title_css_ {
-        margin-left: -5px;
     }
 }

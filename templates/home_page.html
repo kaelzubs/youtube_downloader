@@ -3,24 +3,22 @@
     <a href="/">
         <img class="logo_css" width="10%" height="10%" src="{{ url_for('static', filename='icon/Youtube-dl.svg') }}" alt="youtube downloader logo">
     </a>
-    <h1 class="title_css_">Mp4us:~ Online YouTube Video Downloader!</h1>
-</div>
-<div class="form_css">
-    <form class="form-inline" action="{{ url_for('download') }}" method="POST">
-        <table>
-            <tr>
-                <td>
-                    <input type="text" name="q" placeholder="Paste Youtube link here!" size="100">
-                </td>
-                <td>
-                    <button type="submit">Get downloads</button>
-                </td>
-            </tr>
+    <h1 class="title_css_">Mp4us: YouTube Video Downloader!</h1>
+    <div class="form_css">
+        <form class="form-inline" action="{{ url_for('download') }}" method="POST">
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" name="q" placeholder="Paste Youtube link here!" size="100">
+                    </td>
+                    <td>
+                        <button type="submit">Get downloads</button>
+                    </td>
+                </tr>
+            </table>
             <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-        </table>
-    </form>
+        </form>
+    </div>
+    <p class="terms_css">By using our service you are accepting our<a href="{{ url_for('terms') }}" target="_blank"> terms</a></p>
 </div>
-<p class="terms_css">By using our service you are accepting our 
-    <a href="{{ url_for('terms') }}" target="_blank">terms</a>
-</p>
 {% endblock %}
