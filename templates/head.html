@@ -11,8 +11,8 @@
     
     <link defer rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}">
 
-    <!-- Bootstrap CSS -->
-    <link defer rel="stylesheet" type="text/css" href="{{ bootstrap.load_css() }}">
+    Bootstrap CSS
+    {{ bootstrap.load_css() }}
 
     <link defer rel="preloader" href="{{ url_for('static', filename='fonts/glyphicons-halflings-regular.woff2') }}" as="font" type="font/woff2" crossorigin>
 
@@ -58,10 +58,13 @@
         loadCSS: load a CSS file asynchronously.
         */
         function loadCSS(href) {
-            var ss = window.document.createElement('link'),
-                ref = window.document.getElementsByTagName('head')[0];
-                ss.rel = 'stylesheet';
-                ss.href = href;
+            var ss = window.document.createElement('link');
+            var ref = window.document.getElementsByTagName('head')[0];
+
+            ss.rel = 'stylesheet';
+            ss.type = 'text/css';
+            ss.href = href;
+            ss.defer
 
             // temporarily, set media to something non-matching to ensure it'll
             // fetch without blocking render
