@@ -9,11 +9,14 @@
     <title>Mp4us: Online YouTube Link Video Downloader!</title>
     <meta name="description" content="Paste copied youtube video links in our input box to Download all kinds of online youtube video in full HD quality for free on the best downloader website, mp4us.live">
     
-    <link rel="preload" href="{{ url_for('static', filename='styles/main.css') }}" as="style" onload="this.onload=null; this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}"></noscript>  
+    <noscript>
+        <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='styles/main.css') }}">
+    </noscript>  
 
+    <noscript>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </noscript>
     <!-- Bootstrap CSS -->
-    {{ bootstrap.load_css() }}
 
     <link defer rel="preloader" href="{{ url_for('static', filename='fonts/glyphicons-halflings-regular.woff2') }}" as="font" type="font/woff2" crossorigin>
 
@@ -54,7 +57,7 @@
           "prepTime": "PT20M"
         }
     </script>
-    <!-- <script>
+    <script>
         /*!
         loadCSS: load a CSS file asynchronously.
         */
@@ -75,6 +78,7 @@
                 ss.media = 'all';
             }, 0);
         }
+        loadCSS('https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css');
         loadCSS('https://d12vn54927k41s.cloudfront.net/styles/main.css');
-    </script> -->
+    </script>
 </head>
