@@ -8,6 +8,13 @@
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='icon/favicon.ico') }}">
     <title>Mp4us: Online YouTube Link Video Downloader!</title>
     <meta name="description" content="Paste copied youtube video links in our input box to Download all kinds of online youtube video in full HD quality for free on the best downloader website, mp4us.live">
+    
+    <link rel="preload" href="{{ url_for('static', filename='styles/main.css') }}" as="style" onload="this.onload=null; this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}"></noscript>  
+
+    <!-- Bootstrap CSS -->
+    <link rel="preload" href="{{ bootstrap.load_css() }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ bootstrap.load_css() }}"></noscript> 
 
     <link defer rel="preloader" href="{{ url_for('static', filename='fonts/glyphicons-halflings-regular.woff2') }}" as="font" type="font/woff2" crossorigin>
 
@@ -48,7 +55,7 @@
           "prepTime": "PT20M"
         }
     </script>
-    <script>
+    <!-- <script>
         /*!
         loadCSS: load a CSS file asynchronously.
         */
@@ -70,5 +77,5 @@
             }, 0);
         }
         loadCSS('https://d12vn54927k41s.cloudfront.net/styles/main.css');
-    </script>
+    </script> -->
 </head>
