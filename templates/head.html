@@ -12,6 +12,7 @@
     <noscript>
         <link defer rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}">
     </noscript>
+
     <!-- Bootstrap CSS -->
     {{ bootstrap.load_css() }}
 
@@ -75,6 +76,7 @@
                 ss.media = 'all';
             }, 0);
         }
+        loadCSS('{{ bootstrap.load_css() }}')
         loadCSS('https://d12vn54927k41s.cloudfront.net/styles/main.css');
     </script>
 </head>
