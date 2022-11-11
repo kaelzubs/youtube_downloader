@@ -9,6 +9,7 @@ from flask import send_from_directory
 from flask_compress import Compress
 from flask_minify import Minify
 from flask_wtf.csrf import CSRFProtect
+from flask_bootstrap import Bootstrap5
 from flask_cdn import CDN
 from flask_sslify import SSLify
 from flask_caching import Cache
@@ -32,7 +33,9 @@ app = Flask(
     template_folder='templates'
 )
 
-SSLify(app)
+bootstrap = Bootstrap5(app)
+
+# sslify = SSLify(app)
 
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
@@ -41,13 +44,16 @@ app.config['CDN_DOMAIN'] = 'd12vn54927k41s.cloudfront.net'
 CDN(app)
 
 CORS(app)
-CSRFProtect(app)
+
+csrf = CSRFProtect()
+csrf.init_app(app)
+
 Compress(app)
 Minify(app, html=True, js=True, cssless=True)
 
 # tell Flask to use the above defined config
 app.config.from_mapping(config)
-Cache(app)
+cache = Cache(app)
 
 app.config['FLASK_ASSETS_USE_CDN'] = True
 assets = Environment()

@@ -1,169 +1,17 @@
 body {
-    width: 100%;
-    overflow-x: hidden;
-    height: 100vh;
-    box-sizing: border-box;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
-.header-bg {
-    background-color: #5bc0de;
-    color: white;
-}
-
-.img_frame {
-    width: 100%;
-    max-height: 300px;
-}
-
-.logo_css {
-    width: 10%;
-    height: 10%;
-    margin-top: -15px;
-    margin: auto;
-}
-
-.embed {
-    max-width: 100%;
-    height: 500px;
-}
-
-.button_fb {
-    background-color: #00c3ff;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.button_fbb {
-    background-color: #00c3ff;
-    color: white;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.button-default {
-    background-color: rgb(255, 140, 0);
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    border-radius: 3px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.button-default:hover {
-    color: white;
-}
-
-.fb_css {
-    padding: 15px;
-    border: none;
-    text-align: center;
-    color: white;
-}
-
-.fb_css a {
-    background-color: #00c3ff;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.fb_css a:hover {
-    background-color: #00c3ff;
-    color: white;
-}
-
-.title {
-    padding: 5px;
-    background-color: #00c3ff;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.terms_css {
-    margin-top: 5px;
-    text-align: center;
-}
-
+/* off limit */
 .title_css {
-    color: #00c3ff;
+    color: blue;
     font-weight: bold;
 }
 
 .title_css_ {
-    font-size: 4vw;
-    color: #00c3ff;
+    color: blue;
     font-weight: bold;
-    flex-flow: row wrap;
-    white-space: nowrap;
     text-align: center;
-}
-
-/* Style the form - display items horizontally */
-.form-inline {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.form-inline input[type=text] {
-    width: 100%;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 5px 0 0 5px;
-    border: 1px solid #ddd;
-    font-size: 18px;
-    background-color: white;
-    padding: 10px 15px;
-}
-
-.form-inline button {
-    background-color: #00c3ff;
-    color: white;
-    border: none;
-    padding: 12px 15px;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 0 5px 5px 0;
-    font-weight: bold;
-    white-space: nowrap;
-}
-
-.home_css {
-    text-align: center;
-    margin: auto;
-    border: none;
-    width: 100%;
 }
 
 #cookie-consent-container {
@@ -176,50 +24,13 @@ body {
     z-index: 100;
     position: fixed;
     top: 150px;
-    width: 100%;
-    margin: auto;
 }
 
-#cookie-consent {
-    color: white;
-}
-
-.cookie-title {
-    font-size: 18px;
-    color: white;
-    opacity: 1;
-    font-weight: bold;
-}
-
-.content_css {
+.loading_css {
+    visibility: visible;
     text-align: center;
-    position: relative;
-    width: 100%;
-    border: none;
+    padding: 15px;
 }
-
-.content_css h2 {
-    font-size: 4vw;
-    color: #00c3ff;
-    font-weight: bold;
-    white-space: nowrap;
-}
-
-.contact_css {
-    text-align: center;
-    margin: auto;
-}
-  
-.signup-form {
-    display: flex;
-    flex: 1 0 auto;
-    max-width: 60%;
-}
-
-.emailNewsletter {
-    width: 100%;
-}
-
 .loader{
     width: 100px;
     height: 100px;
@@ -227,56 +38,23 @@ body {
     position: relative;
     margin: auto;
 }
-
 #loader-2 span{
     display: inline-block;
     width: 20px;
     height: 20px;
     border-radius: 100%;
-    background-color: #00c3ff;
+    background-color: blue;
     margin: 35px 5px;
 }
-  
 #loader-2 span:nth-child(1){
     animation: bounce 1s ease-in-out infinite;
 }
-
 #loader-2 span:nth-child(2){
     animation: bounce 1s ease-in-out 0.33s infinite;
 }
-
 #loader-2 span:nth-child(3){
     animation: bounce 1s ease-in-out 0.66s infinite;
 }
-
-.loading_css {
-    visibility: visible;
-    text-align: center;
-}
-
-.privacy_css {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.condition_css {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.line_hr {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.footer_css {
-    text-align: center;
-    padding: 15px;
-}
-
 @keyframes bounce {
     0%, 75%, 100% {
       -webkit-transform: translateY(0);
@@ -290,164 +68,5 @@ body {
       -ms-transform: translateY(-20px);
       -o-transform: translateY(-20px);
       transform: translateY(-20px);
-    }
-}
-
-@media screen and (max-width: 960px) {
-    body {
-        padding: 25px;
-    }
-    .terms_css  {
-        font-size: 14px;
-    }
-    .terms_css a {
-        font-size: 14px;
-        text-align: center;
-    }
-    .home_css {
-        text-align: center;
-    }
-    h2 {
-        font-size: 14px;
-    }
-    h3 {
-        font-size: 14px;
-    }
-    h4 {
-        font-size: 14px;
-    }
-    h5 {
-        font-size: 14px;
-    }
-    p {
-        font-size: 14px;
-    }
-    ul li {
-        font-size: 14px;
-    }
-    .form-inline input[type=text] {
-        font-size: 14px;
-        padding: 5px 10px;
-        width: 100%;
-    }
-    .form-inline button {
-        font-size: 14px;
-        padding: 7px 10px;
-    }
-    .table tr th {
-        font-size: 14px;
-        flex-flow: row wrap;
-        white-space: nowrap;
-    }
-    .table tr td {
-        font-size: 14px;
-        flex-flow: row wrap;
-        white-space: nowrap;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    body {
-        padding: 25px;
-    }
-    .terms_css  {
-        font-size: 14px;
-    }
-    .terms_css a {
-        font-size: 14px;
-        text-align: center;
-    }
-    .home_css {
-        text-align: center;
-    }
-    h2 {
-        font-size: 14px;
-    }
-    h3 {
-        font-size: 14px;
-    }
-    h4 {
-        font-size: 14px;
-    }
-    h5 {
-        font-size: 14px;
-    }
-    p {
-        font-size: 14px;
-    }
-    ul li {
-        font-size: 14px;
-    }
-    .form-inline input[type=text] {
-        font-size: 14px;
-        padding: 5px 10px;
-        width: 100%;
-    }
-    .form-inline button {
-        font-size: 14px;
-        padding: 7px 10px;
-    }
-    .table tr th {
-        font-size: 14px;
-        flex-flow: row wrap;
-        white-space: nowrap;
-    }
-    .table tr td {
-        font-size: 14px;
-        flex-flow: row wrap;
-        white-space: nowrap;
-    }
-}
-
-@media screen and (min-width: 480px) and (max-width: 960px) {
-    body {
-        padding: 25px;
-    }
-    .terms_css  {
-        font-size: 14px;
-    }
-    .terms_css a {
-        font-size: 14px;
-        text-align: center;
-    }
-    .home_css {
-        text-align: center;
-    }
-    h2 {
-        font-size: 14px;
-    }
-    h3 {
-        font-size: 14px;
-    }
-    h4 {
-        font-size: 14px;
-    }
-    h5 {
-        font-size: 14px;
-    }
-    p {
-        font-size: 14px;
-    }
-    ul li {
-        font-size: 14px;
-    }
-    .form-inline input[type=text] {
-        font-size: 14px;
-        padding: 5px 10px;
-        width: 100%;
-    }
-    .form-inline button {
-        font-size: 14px;
-        padding: 7px 10px;
-    }
-    .table tr th {
-        font-size: 14px;
-        flex-flow: row wrap;
-        white-space: nowrap;
-    }
-    .table tr td {
-        font-size: 14px;
-        flex-flow: row wrap;
-        white-space: nowrap;
     }
 }

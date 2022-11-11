@@ -1,14 +1,12 @@
 {% block body_content %}
-<div class="footer_css">
+<div class="container text-center mb-5">
     <p>Copyright© 2022 mp4us.live. All rights reserved.</p>
-    <div>
-        <a  
-            class="button-default"
-            href="{{ url_for('contact') }}"
-            target="_blank"
-        >
-            Contact us
-        </a>
-    </div>
+    <a  
+        class="btn btn-warning"
+        href="{{ url_for('contact') }}"
+        target="_blank"
+    >
+        Contact us
+    </a>
 </div>
 {% endblock %}
