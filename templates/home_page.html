@@ -29,7 +29,7 @@
         <div class="input-group mb-3">
             <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
             <input type="text" class="form-control" name="q" placeholder="Paste Youtube link here!" aria-label="Text input" aria-describedby="basic-addon2" required>
-            <button class="btn btn-primary" type="submit" data-bs-toggle="dropdown" id="basic-addon2">Get downloads</button>
+            <button class="btn btn-primary" type="submit" id="basic-addon2">Get downloads</button>
         </div>
     </form>
     <p class="text-center">By using our service you are accepting our<a href="{{ url_for('terms') }}" target="_blank"> terms</a></p> 
