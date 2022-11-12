@@ -9,9 +9,7 @@
     <title>Mp4us: Online YouTube Link Video Downloader!</title>
     <meta name="description" content="Paste copied youtube video links in our input box to Download all kinds of online youtube video in full HD quality for free on the best downloader website, mp4us.live">
     
-    <noscript>
-        <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='styles/main.css') }}">
-    </noscript>
+    <link async rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='styles/main.css') }}">
 
     <!-- Bootstrap CSS -->
     {{ bootstrap.load_css() }}
@@ -58,7 +56,7 @@
           "prepTime": "PT20M"
         }
     </script>
-    <script>
+    <!-- <script>
         /*!
         loadCSS: load a CSS file asynchronously.
         */
@@ -80,5 +78,5 @@
             }, 0);
         }
         loadCSS('https://d12vn54927k41s.cloudfront.net/styles/main.css');
-    </script>
+    </script> -->
 </head>
