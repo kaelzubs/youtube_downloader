@@ -133,5 +133,8 @@
             <hr>
         </div>
         {% include 'footer_page.html' %}
+        <script defer type="text/javascript" src="{{ url_for('static', filename='styles/loading.js') }}"></script>
+        <script defer type="text/javascript" src="{{ url_for('static', filename='styles/cookie.js') }}"></script>
+        {{ bootstrap.load_js() }}
     </body>
 </html>
