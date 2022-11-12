@@ -59,6 +59,8 @@ app.config['FLASK_ASSETS_USE_CDN'] = True
 assets = Environment()
 assets.init_app(app)
 
+BOOTSTRAP_SERVE_LOCAL = True
+
 Minify(app, html=True, js=True, cssless=True)
 ############################################################################################
 
