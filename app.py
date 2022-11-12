@@ -56,8 +56,8 @@ cache = Cache(app)
 
 app.config['FLASK_ASSETS_USE_CDN'] = True
 
-css = Bundle('main.css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css', output='gen/main.css', filters='cssmin')
-js = Bundle('cookie.js', 'loading.js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', output='gen/main.js', filters='jsmin')
+css = Bundle('main.css', output='gen/main.css', filters='cssmin')
+js = Bundle('cookie.js', 'loading.js', output='gen/main.js', filters='jsmin')
 assets = Environment(app)
 assets.register('main_css', css)
 assets.register('main_js', js)
