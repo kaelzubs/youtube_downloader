@@ -13,7 +13,7 @@ from flask_bootstrap import Bootstrap5
 from flask_cdn import CDN
 from flask_sslify import SSLify
 from flask_caching import Cache
-from flask_assets import Environment
+from flask_assets import Environment, Bundle
 ############################################################################################
 
 
@@ -55,8 +55,12 @@ app.config.from_mapping(config)
 cache = Cache(app)
 
 app.config['FLASK_ASSETS_USE_CDN'] = True
-assets = Environment()
-assets.init_app(app)
+
+css = Bundle('main.css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css', output='gen/main.css', filters='cssmin')
+js = Bundle('cookie.js', 'loading.js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', output='gen/main.js', filters='jsmin')
+assets = Environment(app)
+assets.register('main_css', css)
+assets.register('main_js', js)
 
 BOOTSTRAP_SERVE_LOCAL = True
 
