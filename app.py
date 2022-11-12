@@ -49,7 +49,6 @@ csrf = CSRFProtect()
 csrf.init_app(app)
 
 Compress(app)
-Minify(app, html=True, js=True, cssless=True)
 
 # tell Flask to use the above defined config
 app.config.from_mapping(config)
@@ -60,6 +59,8 @@ assets = Environment()
 assets.init_app(app)
 
 BOOTSTRAP_SERVE_LOCAL = True
+
+Minify(app, html=True, js=True, cssless=True)
 ############################################################################################
 
 
