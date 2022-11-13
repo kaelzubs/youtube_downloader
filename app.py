@@ -10,8 +10,8 @@ from flask_compress import Compress
 from flask_minify import Minify
 from flask_wtf.csrf import CSRFProtect
 from flask_bootstrap import Bootstrap5
-from flask_cdn import CDN
-from flask_sslify import SSLify
+# from flask_cdn import CDN
+# from flask_sslify import SSLify
 from flask_caching import Cache
 from flask_assets import Environment
 ############################################################################################
@@ -35,13 +35,13 @@ app = Flask(
 
 bootstrap = Bootstrap5(app)
 
-sslify = SSLify(app)
+# sslify = SSLify(app)
 
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
 
-app.config['CDN_DOMAIN'] = 'd12vn54927k41s.cloudfront.net'
-CDN(app)
+# app.config['CDN_DOMAIN'] = 'd12vn54927k41s.cloudfront.net'
+# CDN(app)
 
 CORS(app)
 
