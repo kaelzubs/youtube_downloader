@@ -15,9 +15,10 @@ body {
 }
 
 .img {
-    max-width: 100%;
+    max-width: 500px;
     height: 500px;
     background-size: contain;
+    border-radius: 3px;
 }
 
 #cookie-consent-container {
