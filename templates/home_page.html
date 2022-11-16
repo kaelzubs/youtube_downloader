@@ -47,7 +47,7 @@
     <form method="POST" action="{{ url_for('download') }}">
         <div class="input-group mb-3">
             <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-            <input id="clipboard-paste" type="text" class="form-control" name="q" placeholder="Paste Youtube link here!" aria-label="Text input" aria-describedby="basic-addon2" required>
+            <input type="text" class="form-control" name="q" placeholder="Paste Youtube link here!" aria-label="Text input" aria-describedby="basic-addon2" required>
             <button class="btn btn-primary" type="submit" id="basic-addon2">Get downloads</button>
         </div>
     </form>
