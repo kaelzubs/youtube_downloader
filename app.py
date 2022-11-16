@@ -33,35 +33,30 @@ app = Flask(
     template_folder='templates'
 )
 
-bootstrap = Bootstrap5(app)
-
-sslify = SSLify(app)
-
+BOOTSTRAP_SERVE_LOCAL = True
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
-
+app.config['FLASK_ASSETS_USE_CDN'] = True
 app.config['CDN_DOMAIN'] = 'd12vn54927k41s.cloudfront.net'
-CDN(app)
+app.config.from_mapping(config)
+
+SSLify(app)
 
 CORS(app)
 
 csrf = CSRFProtect()
 csrf.init_app(app)
 
-Compress(app)
-
-# tell Flask to use the above defined config
-app.config.from_mapping(config)
-cache = Cache(app)
-
-app.config['FLASK_ASSETS_USE_CDN'] = True
-
 assets = Environment()
 assets.init_app(app)
 
-BOOTSTRAP_SERVE_LOCAL = True
+Bootstrap5(app)
+CDN(app)
 
 Minify(app, html=True, js=True, cssless=True)
+Compress(app)
+
+Cache(app)
 ############################################################################################
 
 
