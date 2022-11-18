@@ -4,6 +4,6 @@
         if (delay_func) {
             delay_func.hidden = false;
         }
-    }, 7);
+    }, 7000);
 });
 
