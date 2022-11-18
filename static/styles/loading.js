@@ -3,7 +3,6 @@ document.onreadystatechange = function() {
         if (document.readyState == "complete") {
             if (document.querySelector('.loading_css')) {
                 document.querySelector('.loading_css').style.visibility = 'hidden';
-                document.querySelector('.loading_css').style.display = 'none';
             }
             
         }
