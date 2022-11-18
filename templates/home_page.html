@@ -25,25 +25,23 @@
             </ul>
         </div>
     </div>
+    <div class="p-5"></div>
+    <div class="p-2"></div>
 </nav>
-<div class="p-5"></div>
-<div class="p-2"></div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6411693288489882" crossorigin="anonymous"></script>
+<!-- Mp4us -->
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-6411693288489882"
+    data-ad-slot="7706995475"
+    data-ad-format="auto"
+    data-full-width-responsive="true">
+</ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <div class="container">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6411693288489882" crossorigin="anonymous"></script>
-    <!-- Mp4us -->
-    <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-6411693288489882"
-        data-ad-slot="7706995475"
-        data-ad-format="auto"
-        data-full-width-responsive="true">
-    </ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<div class="p-2"></div>
-<div class="container">
+    <div class="p-2"></div>
     <form method="POST" action="{{ url_for('download') }}">
         <div class="input-group mb-3">
             <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
@@ -51,8 +49,6 @@
             <button class="btn btn-primary" type="submit" id="basic-addon2">Get downloads</button>
         </div>
     </form>
-</div>
-<div class="container">
     <p class="text-center">By using our service you are accepting our<a href="{{ url_for('terms') }}" target="_blank"> terms</a></p> 
     <div class="text-center">
         <a 
@@ -64,6 +60,5 @@
             Share on Facebook
         </a>
     </div>
-</div>
 </div>
 {% endblock %}
