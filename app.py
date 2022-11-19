@@ -11,7 +11,7 @@ from flask_minify import Minify
 from flask_wtf.csrf import CSRFProtect
 from flask_bootstrap import Bootstrap5
 from flask_cdn import CDN
-# from flask_sslify import SSLify
+from flask_sslify import SSLify
 from flask_caching import Cache
 from flask_assets import Environment
 ############################################################################################
@@ -33,7 +33,7 @@ app = Flask(
     template_folder='templates'
 )
 
-# SSLify(app)
+SSLify(app)
 
 Compress(app)
 
