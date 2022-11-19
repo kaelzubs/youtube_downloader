@@ -1,9 +1,7 @@
-(function(){
-    setTimeout(() => {
-        var delay_func = document.getElementById('cookie-consent-container')
-        if (delay_func) {
-            delay_func.style.visibility = 'visible';
-        }
-    }, 7000);
-});
+setTimeout(() => {
+    var delay_func = document.getElementById('cookie-consent-container')
+    if (delay_func) {
+        delay_func.hidden = false;
+    }
+}, 7000);
 
