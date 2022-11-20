@@ -35,7 +35,6 @@ body {
 .loading_css {
     visibility: visible;
     text-align: center;
-    padding: 15px;
 }
 .loader{
     width: 100px;

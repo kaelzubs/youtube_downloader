@@ -2,4 +2,4 @@ User-agent: *
 Disallow:
 
 Host: mp4us.live
-Sitemap: https://mp4us.live/sitemap.xml/
+Sitemap: https://mp4us.live/sitemap.xml
