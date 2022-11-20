@@ -17,6 +17,8 @@ body {
 .gtag-g {
     display: none;
     visibility: hidden;
+    width: 0;
+    height: 0;
 }
 
 #cookie-consent-container {
@@ -33,9 +35,9 @@ body {
 }
 
 .loading_css {
-    visibility: hidden;
+    visibility: visible;
     text-align: center;
-    display: none;
+    padding: 15px;
 }
 .loader{
     width: 100px;

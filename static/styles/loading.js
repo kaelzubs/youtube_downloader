@@ -1,8 +1,9 @@
 document.onreadystatechange = function() {
     window.onload = () => {
-        if (document.readyState !== "complete") {
+        if (document.readyState == "complete") {
             if (document.querySelector('.loading_css')) {
-                document.querySelector('.loading_css').style.visibility = 'visible';
+                document.querySelector('.loading_css').style.visibility = 'hidden';
+                document.querySelector('.loading_css').style.display = 'none';
             }
             
         }
