@@ -5,43 +5,79 @@
         <p>MP4US is an easy to use online youtube link video downloader service. When you want to download youtube videos from the Internet, the first thing that comes to mind is to search for a solution online. Try MP4US (mp4us.live) - the online youtube link video downloader that can download videos from the most popular social networks and video hosting. Downloading is absolutely free and the number of downloads is not limited. Using the MP4US online yotube link video downloader is safe as we ask for no personal data and provide file downloads straight from the video hosting. We don't keep the files you download and don't modify them.</p>
         <h2>How to download online youtube videos?</h2>
         <p><b>Click on the image to preview and Click on the back button to exit.</b></p>
-        <div class="row">
-            <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
-                <a href="{{ url_for('static', filename='screenshots/Screenshot1.svg') }}">
-                    <img width="100%" height="100%" loading="lazy" src="{{ url_for('static', filename='screenshots/Screenshot1.svg') }}" alt="Screenshot1">
-                </a>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
             </div>
-            <div class="mb-4"></div>
-            <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
-                <a href="{{ url_for('static', filename='screenshots/Screenshot2.svg') }}">
-                    <img width="100%" height="100%" loading="lazy" src="{{ url_for('static', filename='screenshots/Screenshot2.svg') }}" alt="Screenshot2">
-                </a>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="{{ url_for('static', filename='screenshots/Screenshot1.jpg') }}">
+                        <img class="d-block w-100" width="100%" height="100%" src="{{ url_for('static', filename='screenshots/Screenshot1.jpg') }}" alt="Screenshot1">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Visit the Official youtube website</h5>
+                        <p>Go to https://www.youtube.com</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="{{ url_for('static', filename='screenshots/Screenshot2.jpg') }}">
+                        <img class="d-block w-100" width="100%" height="100%" src="{{ url_for('static', filename='screenshots/Screenshot2.jpg') }}" alt="Screenshot2">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Search and Explore the youtube official website</h5>
+                        <p>Search for any video of choice that you would love to have in your galary including movies/music.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="{{ url_for('static', filename='screenshots/Screenshot3.jpg') }}">
+                        <img class="d-block w-100" width="100%" height="100%" src="{{ url_for('static', filename='screenshots/Screenshot3.jpg') }}" alt="Screenshot3">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Copy the link of any youtube video list</h5>
+                        <p>Copy the link of the youtube video you have selected.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="{{ url_for('static', filename='screenshots/Screenshot4.jpg') }}">
+                        <img class="d-block w-100" width="100%" height="100%" src="{{ url_for('static', filename='screenshots/Screenshot4.jpg') }}" alt="Screenshot4">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Visit https://mp4us.live, paste link you copied and click on the Get Download button</h5>
+                        <p>Visit the best youtube downloader official website (https://mp4us.live), paste link in the input box and click on the Get Download button.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="{{ url_for('static', filename='screenshots/Screenshot5.jpg') }}">
+                        <img class="d-block w-100" width="100%" height="100%" src="{{ url_for('static', filename='screenshots/Screenshot5.jpg') }}" alt="Screenshot5">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Download Video</h5>
+                        <p>Once the page is done loading like the one you are seeing, click the Download button.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="{{ url_for('static', filename='screenshots/Screenshot6.jpg') }}">
+                        <img class="d-block w-100" width="100%" height="100%" src="{{ url_for('static', filename='screenshots/Screenshot6.jpg') }}" alt="Screenshot6">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Downloading...</h5>
+                        <p>Your download will begin within a split seconds. Thank you for using our services, please don't forget to click share button.</p>
+                    </div>
+                </div>
             </div>
-            <div class="mb-4"></div>
-            <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
-                <a href="{{ url_for('static', filename='screenshots/Screenshot3.svg') }}">
-                    <img width="100%" height="100%" loading="lazy" src="{{ url_for('static', filename='screenshots/Screenshot3.svg') }}" alt="Screenshot3">
-                </a>
-            </div>
-            <div class="mb-4"></div>
-            <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
-                <a href="{{ url_for('static', filename='screenshots/Screenshot4.svg') }}">
-                    <img width="100%" height="100%" loading="lazy" src="{{ url_for('static', filename='screenshots/Screenshot4.svg') }}" alt="Screenshot4">
-                </a>
-            </div>
-            <div class="mb-4"></div>
-            <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
-                <a href="{{ url_for('static', filename='screenshots/Screenshot5.svg') }}">
-                    <img width="100%" height="100%" loading="lazy" src="{{ url_for('static', filename='screenshots/Screenshot5.svg') }}" alt="Screenshot5">
-                </a>
-            </div>
-            <div class="mb-4"></div>
-            <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
-                <a href="{{ url_for('static', filename='screenshots/Screenshot6.svg') }}">
-                    <img width="100%" height="100%" loading="lazy" src="{{ url_for('static', filename='screenshots/Screenshot6.svg') }}" alt="Screenshot6">
-                </a>
-            </div>
-            <div class="mb-4"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
         <p><b>Note:</b> To download a YouTube video you are watching now in MP4 format, just copy the link and paste in our website's input box to download. Link should have <b><i><mark>WATCH</mark></i></b>within texts. eg: (<b><i>"https://www.youtube.com/<mark>watch</mark>?v=HL1UzIK-flA"</i></b>) and paste in the input box to download.</p>
         <p>This video downloader also will save your videos without using any other third party software. You just need to find and enter into the box the link of the video you want to download, and to start the downloading process. As it was said: 500 freeware, safe and fast!</p>
