@@ -28,37 +28,35 @@
 </nav>
 <div class="p-4"></div>
 <div class="p-2"></div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6411693288489882" crossorigin="anonymous"></script>
+<!-- Mp4us -->
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-6411693288489882"
+    data-ad-slot="7706995475"
+    data-ad-format="auto"
+    data-full-width-responsive="true">
+</ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<div class="p-2"></div>
 <div class="container">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6411693288489882" crossorigin="anonymous"></script>
-    <!-- Mp4us -->
-    <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-6411693288489882"
-        data-ad-slot="7706995475"
-        data-ad-format="auto"
-        data-full-width-responsive="true">
-    </ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    <div class="p-2"></div>
-    <div class="text-center">
-        <form method="POST" action="{{ url_for('download') }}">
-            <div class="input-group mb-3">
-                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-                <input type="text" class="form-control" name="q" placeholder="Paste Youtube link here!" aria-label="Text input" aria-describedby="basic-addon2" required>
-                <button class="btn btn-primary" type="submit" id="basic-addon2">Get downloads</button>
-            </div>
-        </form>
-        <p class="text-center">By using our service you are accepting our<a href="{{ url_for('terms') }}" target="_blank"> terms</a></p> 
-        <a 
-            class="btn btn-primary" 
-            rel="noopener noreferrer"
-            href="https://www.facebook.com/sharer/sharer.php?u=https://mp4us.live"
-            target="_blank"
-        >
-            Share on Facebook
-        </a>
-    </div>
+    <form method="POST" action="{{ url_for('download') }}">
+        <div class="input-group mb-3">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+            <input type="text" class="form-control" name="q" placeholder="Paste Youtube link here!" aria-label="Text input" aria-describedby="basic-addon2" required>
+            <button class="btn btn-primary" type="submit" id="basic-addon2">Get downloads</button>
+        </div>
+    </form>
+    <p class="text-center">By using our service you are accepting our<a href="{{ url_for('terms') }}" target="_blank"> terms</a></p> 
+    <a 
+        class="btn btn-primary" 
+        rel="noopener noreferrer"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://mp4us.live"
+        target="_blank"
+    >
+        Share on Facebook
+    </a>
 </div>
 {% endblock %}
