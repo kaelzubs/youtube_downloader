@@ -41,7 +41,7 @@
     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <div class="p-2"></div>
-<div class="container">
+<div class="container text-cente">
     <form method="POST" action="{{ url_for('download') }}">
         <div class="input-group mb-3">
             <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
@@ -49,9 +49,9 @@
             <button class="btn btn-primary" type="submit" id="basic-addon2">Get downloads</button>
         </div>
     </form>
-    <p class="text-center">By using our service you are accepting our<a href="{{ url_for('terms') }}" target="_blank"> terms</a></p> 
+    <p>By using our service you are accepting our<a href="{{ url_for('terms') }}" target="_blank"> terms</a></p> 
     <a 
-        class="btn btn-primary text-center" 
+        class="btn btn-primaryr" 
         rel="noopener noreferrer"
         href="https://www.facebook.com/sharer/sharer.php?u=https://mp4us.live"
         target="_blank"
