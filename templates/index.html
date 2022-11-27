@@ -17,17 +17,15 @@
             {# then user has already consented so no requirement for consent banner #}
         {% else %}
             {# show a cookie consent banner #}
-            <div class="container-fluid">
-                 <div id="cookie-consent-container">
-                    <h1 class="cookie-title">Cookies disclaimer</h1>
-                    <p>
-                        Our site saves small pieces of text information (cookies) on
-                        your device in order to deliver better content and for statistical purposes.
-                        You can disable the usage of cookies by changing the settings of your browser.
-                        By browsing our website without changing the browser settings you grant us permission to store that information on your device. 
-                    </p>
-                    <button id="cookie-consent" class="btn btn-primary">I Consent</button>
-                </div>
+            <div id="cookie-consent-container">
+                <h1 class="cookie-title">Cookies disclaimer</h1>
+                <p>
+                    Our site saves small pieces of text information (cookies) on
+                    your device in order to deliver better content and for statistical purposes.
+                    You can disable the usage of cookies by changing the settings of your browser.
+                    By browsing our website without changing the browser settings you grant us permission to store that information on your device. 
+                </p>
+                <button id="cookie-consent" class="btn btn-primary">I Consent</button>
             </div>
         {% endif %}
         <script defer async src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
