@@ -22,7 +22,7 @@ body {
 }
 
 .carousel-item {
-    object-fit: cover;
+    object-fit: contain;
 }
 
 #cookie-consent-container {
