@@ -21,6 +21,12 @@ body {
     height: 0;
 }
 
+.img {
+    max-width: 100%;
+    max-height: auto;
+    background-size: 100% 100%;
+}
+
 #cookie-consent-container {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
