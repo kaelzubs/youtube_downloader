@@ -21,13 +21,6 @@ body {
     height: 0;
 }
 
-.img {
-    max-width: 100vw;
-    max-height: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 #cookie-consent-container {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
