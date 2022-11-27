@@ -13,6 +13,7 @@ from flask_cdn import CDN
 from flask_sslify import SSLify
 from flask_caching import Cache
 from flask_assets import Environment
+from flask_cors import CORS
 ############################################################################################
 
 
@@ -31,6 +32,8 @@ app = Flask(
     static_folder='static',
     template_folder='templates'
 )
+
+CORS(app)
 
 SSLify(app)
 
