@@ -23,7 +23,8 @@ body {
 
 .carousel-item {
     max-width: 500px;
-    max-height: 350px;
+    max-height: 450px;
+    object-fit: cover;
     display: block;
 }
 
