@@ -32,6 +32,9 @@ body {
     z-index: 100;
     position: fixed;
     top: 150px;
+    display: block;
+    justify-content: center;
+    align-items: center;
 }
 
 .loading_css {
