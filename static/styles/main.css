@@ -22,8 +22,9 @@ body {
 }
 
 .carousel-item {
+    max-width: 1366px;
     max-height: 450px;
-    object-fit: scale-down;
+    object-fit: contain;
 }
 
 #cookie-consent-container {
