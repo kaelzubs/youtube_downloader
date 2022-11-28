@@ -80,14 +80,12 @@ body {
 }
 
 .img {
-    max-width: 100%;
-    /* width: auto\9; */
+    width: auto\9;
     height: auto;
 }
 
 @media only screen and (max-width: 600px)  {
     .img {
-        max-width: 100%;
         width: auto\9;
         height: auto;
     }
