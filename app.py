@@ -32,8 +32,6 @@ app = Flask(
     template_folder='templates'
 )
 
-Minify(app=app, html=True, js=True, cssless=True)
-
 CORS(app)
 
 Compress(app)
@@ -54,6 +52,8 @@ csrf.init_app(app)
 
 assets = Environment()
 assets.init_app(app)
+
+Minify(app=app, html=True, js=True, cssless=True)
 
 app.config.from_mapping(config)
 Cache(app)
