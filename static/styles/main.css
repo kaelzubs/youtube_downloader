@@ -34,6 +34,10 @@ body {
     display: block;
 }
 
+.cookie-title {
+    font-size: 24px;
+}
+
 .loading_css {
     visibility: visible;
     text-align: center;
@@ -89,5 +93,8 @@ body {
         max-width: 100%;
         width: auto\9;
         height: auto;
+    }
+    .cookie-title {
+        font-size: 18px;
     }
 }
