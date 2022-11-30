@@ -13,7 +13,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url_for('index') }}">
                     <img width="40%" height="40%" src="{{ url_for('static', filename='icon/Youtube-dl.svg') }}" alt="youtube downloader logo">
-                    <b>MP4US</b>
+                    <p class="title">MP4US</p>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -39,7 +39,7 @@
         <div class="p-5"></div>
         <div class="p-2"></div>
         <div class="container">
-            <h1 class="title_css_">Online Youtube Link Video Downloader!</h1>
+            <h1 class="title_css_">Mp4us: Online Youtube Link Video Downloader!</h1>
             <h4>ATTENTION: <b>THIS IS A LEGALLY-BINDING CONTRACT.</b> PLEASE READ THESE TERMS OF SERVICE CAREFULLY BEFORE USING SERVICES PROVIDED BY MP4US INC. (mp4us.live) THROUGH THIS WEBSITE. THIS AGREEMENT GOVERNS YOUR RELATIONSHIP WITH MP4US AND USE OF THE SERVICES PROVIDED THROUGH THE WEBSITE. MP4US HERERBY REQUESTS THAT YOU ACCEPT THESE TERMS OF SERVICE. YOU MAY USE THE SERVICES PROVIDED THROUGH THE WEBSITE ONLY ON THE CONDITION THAT YOU ACCEPT ALL OF THE TERMS AND CONDITIONS CONTAINED HEREIN. USING THE SERVICES PROVIDED THROUGH THE WEBSITE INDICATES THAT YOU ACCEPT THESE TERMS OF SERVICE. IF YOU DO NOT ACCEPT THESE TERMS OF SERVICE, DO NOT USE THE WEBSITE OR SERVICES.</h4>
             <hr>
             <h4>THESE TERMS OF SERVICE INCLUDES MP4US'S PRIVACY POLICY LOCATED AT <a href="{{ url_for('privacy') }}" target="_blank">https://mp4us.live/privacy-policy</a> WHICH IS INCORPORATED AND MADE A PART OF THESE TERMS OF SERVICE.</h4>
@@ -186,9 +186,9 @@
             <hr>
         </div>
         {% include 'footer_page.html' %}
-        <script defer async src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <script defer async type="text/javascript" src="{{ url_for('static', filename='styles/loading.js') }}"></script>
-        <script defer async type="text/javascript" src="{{ url_for('static', filename='styles/delay.js') }}"></script>
-        <script defer async type="text/javascript" src="{{ url_for('static', filename='styles/cookie.js') }}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='styles/loading.js') }}" defer></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='styles/delay.js') }}" defer></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='styles/cookie.js') }}" defer></script>
     </body>
 </html>
