@@ -36,6 +36,7 @@ body {
 
 .cookie-title {
     font-size: 24px;
+    font-weight: bold;
 }
 
 .loading_css {
@@ -96,5 +97,6 @@ body {
     }
     .cookie-title {
         font-size: 18px;
+        font-weight: bold;
     }
 }
