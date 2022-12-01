@@ -13,7 +13,7 @@ from flask_cdn import CDN
 from flask_caching import Cache
 from flask_assets import Environment
 from flask_cors import CORS
-from flask_talisman import Talisman
+from flask_sslify import SSLify
 ############################################################################################
 
 
@@ -32,6 +32,8 @@ app = Flask(
     static_folder='static',
     template_folder='templates'
 )
+
+SSLify(app)
 
 CORS(app)
 
@@ -58,15 +60,6 @@ Minify(app=app, html=True, js=True, cssless=True)
 
 app.config.from_mapping(config)
 Cache(app)
-
-csp = {
-    'default-src': [
-        '\'self\'',
-        '*.mp4us.live'
-    ]
-}
-
-Talisman(app, content_security_policy=csp)
 ############################################################################################
 
 
