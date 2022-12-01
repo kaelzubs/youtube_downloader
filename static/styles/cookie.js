@@ -1,9 +1,11 @@
 const fn = document.getElementById('cookie-consent');
 
-if (fn) {
-    fn.onclick = () => {
-        document.cookie = 'cookie_consent=true';
-        document.getElementById('cookie-consent-container').hidden = true
-    }
-}
 
+window.addEventListener('DOMContentLoaded', (event) => {
+    if (fn) {
+        fn.onclick = () => {
+            document.cookie = 'cookie_consent=true';
+            document.getElementById('cookie-consent-container').hidden = true
+        }
+    }
+});
