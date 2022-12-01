@@ -33,8 +33,6 @@ app = Flask(
     template_folder='templates'
 )
 
-Talisman(app)
-
 CORS(app)
 
 Compress(app)
@@ -60,6 +58,8 @@ Minify(app=app, html=True, js=True, cssless=True)
 
 app.config.from_mapping(config)
 Cache(app)
+
+Talisman(app)
 ############################################################################################
 
 
