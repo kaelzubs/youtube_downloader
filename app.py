@@ -59,7 +59,14 @@ Minify(app=app, html=True, js=True, cssless=True)
 app.config.from_mapping(config)
 Cache(app)
 
-Talisman(app)
+csp = {
+    'default-src': [
+        '\'self\'',
+        '*.mp4us.live'
+    ]
+}
+
+Talisman(app, content_security_policy=csp)
 ############################################################################################
 
 
