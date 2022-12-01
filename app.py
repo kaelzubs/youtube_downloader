@@ -13,6 +13,7 @@ from flask_cdn import CDN
 from flask_caching import Cache
 from flask_assets import Environment
 from flask_cors import CORS
+from flask_talisman import Talisman
 ############################################################################################
 
 
@@ -31,6 +32,8 @@ app = Flask(
     static_folder='static',
     template_folder='templates'
 )
+
+Talisman(app)
 
 CORS(app)
 
