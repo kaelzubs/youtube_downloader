@@ -3,11 +3,6 @@ body {
 }
 
 /* off limit */
-.title_css {
-    color: blue;
-    font-weight: bold;
-}
-
 .gtag {
     display: none;
     visibility: hidden;
