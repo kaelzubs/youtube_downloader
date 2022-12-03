@@ -18,7 +18,12 @@ body {
     text-align: center;
 }
 
-.gtag-g {
+.title_css_main {
+    color: blue;
+    font-weight: bold;
+}
+
+.gtag {
     display: none;
     visibility: hidden;
     width: 0;
