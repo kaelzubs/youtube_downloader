@@ -2,8 +2,8 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{ url_for('index') }}">
-            <img width="40%" height="40%" loading="eager" src="{{ url_for('static', filename='icon/Youtube-dl.svg') }}" alt="youtube downloader logo">
-            <span class="title">MP4US</span>
+            <img width="40%" height="40%" src="{{ url_for('static', filename='icon/Youtube-dl.svg') }}" alt="youtube downloader logo">
+            <span class="fw-bold">MP4US</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -40,7 +40,7 @@
     </script>
     <div class="p-2"></div> -->
     <div class="text-center">
-        <h1 class="title_css_main">Mp4us: Online YouTube Link Video Downloader</h1>
+        <h1 class="text-primary fw-bold">Mp4us: Online YouTube Link Video Downloader</h1>
         <p>MP4US is an easy to use Online YouTube Link Video Downloader Service. Download any YouTube videos including Latest Music vidoes, Movies, Series, etc...
         <form method="POST" action="{{ url_for('download') }}">
             <div class="input-group mb-3">
