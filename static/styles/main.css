@@ -95,14 +95,13 @@ body {
 }
 
 .img {
-    max-width: 100vw;
+    max-width: 100%;
     height: auto;
 }
 
 @media only screen and (max-width: 600px)  {
     .img {
-        max-width: 100vw;
-        width: auto\9;
+        width: 100vw;
         height: auto;
     }
     .cookie-title {
