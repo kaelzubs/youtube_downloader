@@ -48,8 +48,8 @@ CDN(app)
 
 Bootstrap5(app)
 
-csrf = CSRFProtect()
-csrf.init_app(app)
+csrf = CSRFProtect(app)
+# csrf.init_app(app)
 
 assets = Environment()
 assets.init_app(app)
@@ -98,7 +98,7 @@ def pretty_size(bytes, units=UNITS_MAPPING):
 ############################################################################################
 @app.after_request
 def add_security_headers(resp):
-    resp.headers['Content-Security-Policy']='default-src \'self\''
+    resp.headers['Content-Security-Policy']='default-src \'none\''
     return resp
 ############################################################################################
 

@@ -43,7 +43,6 @@
         <h1 class="text-primary fw-bold">Mp4us: Online YouTube Link Video Downloader</h1>
         <p>MP4US is an easy to use Online YouTube Link Video Downloader Service. Download any YouTube videos including Latest Music vidoes, Movies, Series, etc...
         <form method="POST" action="{{ url_for('download') }}">
-            {{ csrf_token }}
             <div class="input-group mb-3">
                 <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
                 <input type="text" class="form-control" name="q" placeholder="Paste Youtube link here!" aria-label="Text input" aria-describedby="basic-addon2" required>
