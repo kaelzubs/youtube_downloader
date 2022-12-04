@@ -98,7 +98,7 @@ def pretty_size(bytes, units=UNITS_MAPPING):
 ############################################################################################
 @app.after_request
 def add_security_headers(resp):
-    resp.headers['Content-Security-Policy']="default-src 'none', script-src 'https://mp4us.live'"
+    resp.headers['Content-Security-Policy']="default-src 'none'; script-src 'https://mp4us.live';"
     return resp
 ############################################################################################
 
