@@ -3,13 +3,6 @@ body {
 }
 
 /* off limit */
-.gtag {
-    display: none;
-    visibility: hidden;
-    width: 0;
-    height: 0;
-}
-
 #cookie-consent-container {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
