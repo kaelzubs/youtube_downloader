@@ -98,7 +98,7 @@ def pretty_size(bytes, units=UNITS_MAPPING):
 ############################################################################################
 @app.after_request
 def add_security_headers(resp):
-    resp.headers['Content-Security-Policy']='default-src \'self\''
+    resp.headers["Content-Security-Policy"]="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *;**script-src 'self' http://onlineerp.solution.quebec 'unsafe-inline' 'unsafe-eval';** "
     return resp
 ############################################################################################
 
