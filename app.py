@@ -96,6 +96,15 @@ def pretty_size(bytes, units=UNITS_MAPPING):
 
 
 ############################################################################################
+@app.after_request
+def add_security_headers(resp):
+    resp.headers['Content-Security-Policy']='default-src \'self\''
+    return resp
+############################################################################################
+
+
+
+############################################################################################
 # Loading page
 @app.route('/')
 def loading():
