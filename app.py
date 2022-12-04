@@ -99,7 +99,7 @@ def pretty_size(bytes, units=UNITS_MAPPING):
 @app.after_request
 def add_security_headers(resp):
     resp.headers['Content-Security-Policy']="default-src 'self' http://mp4us.live; connect-src 'none';"
-    resp.headers['Content-Security-Policy']="connect-src http://mp4us.live; script-src 'nonce-[uuid.uuid4().hex]' 'strict-dynamic'; object-src https://mp4us.live"
+    resp.headers['Content-Security-Policy']="connect-src http://mp4us.live; script-src 'nonce-[ManOfTheYear]' 'strict-dynamic'; object-src https://mp4us.live"
     return resp
 ############################################################################################
 
