@@ -98,7 +98,7 @@ def pretty_size(bytes, units=UNITS_MAPPING):
 ############################################################################################
 @app.after_request
 def add_security_headers(resp):
-    resp.headers['Content-Security-Policy']="default-src 'self' d12vn54927k41s.cloudfront.net https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js;"
+    resp.headers['Content-Security-Policy']="default-src 'self' d12vn54927k41s.cloudfront.net;"
     return resp
 ############################################################################################
 
