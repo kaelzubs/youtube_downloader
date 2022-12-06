@@ -13,7 +13,7 @@ from flask_cdn import CDN
 from flask_caching import Cache
 from flask_assets import Environment
 from flask_cors import CORS
-# from flask_sslify import SSLify
+from flask_sslify import SSLify
 ############################################################################################
 
 
@@ -48,8 +48,8 @@ CDN(app)
 
 Bootstrap5(app)
 
-csrf = CSRFProtect(app)
-# csrf.init_app(app)
+csrf = CSRFProtect()
+csrf.init_app(app)
 
 assets = Environment()
 assets.init_app(app)
@@ -59,7 +59,7 @@ Minify(app=app, html=True, js=True, cssless=True)
 app.config.from_mapping(config)
 Cache(app)
 
-# SSLify(app, subdomains=True, permanent=True)
+SSLify(app, subdomains=True, permanent=True)
 ############################################################################################
 
 
@@ -98,7 +98,7 @@ def pretty_size(bytes, units=UNITS_MAPPING):
 ############################################################################################
 @app.after_request
 def add_security_headers(resp):
-    resp.headers['Content-Security-Policy']="default-src 'self' 'https://mp4us.live'"
+    resp.headers['Content-Security-Policy']="default-src 'self'"
     return resp
 ############################################################################################
 
