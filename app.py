@@ -98,7 +98,7 @@ def pretty_size(bytes, units=UNITS_MAPPING):
 ############################################################################################
 @app.after_request
 def add_security_headers(resp):
-    resp.headers['Content-Security-Policy']="default-src 'self' d12vn54927k41s.cloudfront.net; img-src * data:; script-src-elem * data: 'unsafe-inline'; style-src-elem * data:;"
+    resp.headers['Content-Security-Policy']="default-src mp4us.live *.mp4us.live; img-src * data:; script-src-elem * data: 'unsafe-inline'; style-src-elem * data:; object-src 'none' require-trusted-types-for 'script'"
     return resp
 ############################################################################################
 
