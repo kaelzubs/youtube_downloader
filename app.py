@@ -98,7 +98,7 @@ def pretty_size(bytes, units=UNITS_MAPPING):
 ############################################################################################
 @app.after_request
 def add_security_headers(resp):
-    resp.headers['Content-Security-Policy']="default-src mp4us.live 'unsafe-inline' https:; img-src 'self' *.google.com *.doubleclick.net *.googleadservices.net; script-src apis.google.com * data:; style-src-elem * data:; object-src 'none'; media-src * data:; font-src * data:; frame-src * data:; connect-src 'self' data:;"
+    resp.headers['Content-Security-Policy']="default-src mp4us.live 'unsafe-inline' https:; img-src *.google.com *.doubleclick.net *.googleadservices.net; script-src apis.google.com 'unsafe-inline' * data:; style-src-elem * data:; object-src 'none'; media-src * data:; font-src * data:; frame-src * data:; connect-src * data:;"
     return resp
 ############################################################################################
 
