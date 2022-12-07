@@ -6,4 +6,3 @@ if (fn) {
         document.getElementById('cookie-consent-container').hidden = true
     }
 }
-
