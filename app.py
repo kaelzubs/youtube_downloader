@@ -98,7 +98,7 @@ def pretty_size(bytes, units=UNITS_MAPPING):
 ############################################################################################
 @app.after_request
 def add_security_headers(resp):
-    resp.headers['Content-Security-Policy']="default-src 'self' 'sha256-udQJaD2iLjLPwDBs5CIgWma5W3O8BHOI9Sy+17DR6tk=' 'unsafe-hash'; img-src * data:; script-src-elem 'self' *.google.com *.doubleclick.net *.googleadservices.net *.googlesyndication.com *.googletagmanager.com cdn.jsdelivr.net d12vn54927k41s.cloudfront.net 'unsafe-inline'; style-src-elem * data:; object-src 'none'; media-src * data:; font-src * data:; frame-src * data:; connect-src * data:;"
+    resp.headers['Content-Security-Policy']="default-src 'self' 'sha256-udQJaD2iLjLPwDBs5CIgWma5W3O8BHOI9Sy+17DR6tk=' 'unsafe-hashes'; img-src * data:; script-src *.google.com *.doubleclick.net *.googleadservices.net *.googlesyndication.com *.googletagmanager.com cdn.jsdelivr.net d12vn54927k41s.cloudfront.net 'unsafe-inline'; style-src-elem * data:; object-src 'none'; media-src * data:; font-src * data:; frame-src * data:; connect-src * data:;"
     return resp
 ############################################################################################
 
