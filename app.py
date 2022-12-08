@@ -98,7 +98,7 @@ def pretty_size(bytes, units=UNITS_MAPPING):
 ############################################################################################
 @app.after_request
 def add_security_headers(resp):
-    resp.headers['Content-Security-Policy']="default-src * 'unsafe-inline'; img-src * data:; script-src * data: 'unsafe-inline'; style-src-elem * data:; object-src 'none'; media-src * data:; font-src * data:; frame-src * data:; connect-src * data:;"
+    resp.headers['Content-Security-Policy']="default-src * 'unsafe-inline'; img-src * data:; script-src * 'strict-dynamic'; style-src-elem * data:; object-src 'none'; media-src * data:; font-src * data:; frame-src * data:; connect-src * data:;"
     return resp
 ############################################################################################
 
