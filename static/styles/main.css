@@ -68,8 +68,8 @@ body {
 
 @media only screen and (max-width: 600px)  {
     .img {
-        max-width: auto\9;
-        height: auto;
+        width: auto\9;
+        max-height: auto;
     }
     .cookie-title {
         font-size: 18px;
