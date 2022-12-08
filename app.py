@@ -98,7 +98,7 @@ def pretty_size(bytes, units=UNITS_MAPPING):
 ############################################################################################
 @app.after_request
 def add_security_headers(resp):
-    resp.headers['Content-Security-Policy']="img-src * data:; script-src 'self' *.google.com *.doubleclick.net *.googleadservices.net *.googlesyndication.com *.googletagmanager.com cdn.jsdelivr.net d12vn54927k41s.cloudfront.net 'unsafe-inline'; style-src-elem * data:; object-src 'none'; media-src * data:; font-src * data:; frame-src * data:; connect-src * data:; require-trusted-types-for 'script';"
+    resp.headers['Content-Security-Policy']="default-src 'self'; img-src * data:; script-src 'self' *.google.com *.doubleclick.net *.googleadservices.net *.googlesyndication.com *.googletagmanager.com cdn.jsdelivr.net d12vn54927k41s.cloudfront.net 'unsafe-inline'; style-src-elem * data:; object-src 'none'; media-src * data:; font-src * data:; frame-src * data:; connect-src * data:; require-trusted-types-for 'script';"
     return resp
 ############################################################################################
 
