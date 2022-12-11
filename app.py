@@ -13,7 +13,7 @@ from flask_cdn import CDN
 from flask_caching import Cache
 from flask_assets import Environment
 from flask_cors import CORS
-from flask_sslify import SSLify
+# from flask_sslify import SSLify
 ############################################################################################
 
 
@@ -59,7 +59,7 @@ Minify(app=app, html=True, js=True, cssless=True)
 app.config.from_mapping(config)
 Cache(app)
 
-SSLify(app, subdomains=True, permanent=True)
+# SSLify(app, subdomains=True, permanent=True)
 ############################################################################################
 
 
