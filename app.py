@@ -71,7 +71,7 @@ class WwwRedirectMiddleware:
 
     def __call__(self, request):
         host = request.get_host().partition(":")[0]
-        if host == "www.epredictz.com":
+        if host == "https://www.epredictz.com":
             return redirect("https://epredictz.com" + request.path, code=302)
         else:
             return self.get_response(request)
