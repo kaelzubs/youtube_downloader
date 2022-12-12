@@ -42,7 +42,7 @@ SECRET_KEY = os.urandom(32)
 
 app.config['SECRET_KEY'] = SECRET_KEY
 app.config['FLASK_ASSETS_USE_CDN'] = True
-app.config['CDN_DOMAIN'] = 'd2icji5ao6doo0.cloudfront.net'
+app.config['CDN_DOMAIN'] = 'd12vn54927k41s.cloudfront.net'
 
 CDN(app)
 
