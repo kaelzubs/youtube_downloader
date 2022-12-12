@@ -54,20 +54,7 @@ Minify(app=app, html=True, js=True, cssless=True)
 app.config.from_mapping(config)
 Cache(app)
 
-# SSLify(app)
-############################################################################################
-
-
-
-############################################################################################
-# @app.before_request
-# def redirect_nonwww():
-#     """Redirect www requests to non-www."""
-#     urlparts = urlparse(request.url)
-#     if urlparts.netloc == 'https://www.mp4us.live':
-#         urlparts_list = list(urlparts)
-#         urlparts_list[1] = 'https://mp4us.live'
-#         return redirect(urlunparse(urlparts_list), code=301)
+SSLify(app)
 ############################################################################################
 
 
