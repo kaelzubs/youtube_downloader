@@ -11,10 +11,8 @@ from flask_wtf.csrf import CSRFProtect
 from flask_bootstrap import Bootstrap5
 from flask_cdn import CDN
 from flask_caching import Cache
-from flask_assets import Environment
 from flask_cors import CORS
-# from flask_sslify import SSLify
-from urllib.parse import urlparse, urlunparse
+from flask_sslify import SSLify
 ############################################################################################
 
 
@@ -42,7 +40,6 @@ BOOTSTRAP_SERVE_LOCAL = True
 SECRET_KEY = os.urandom(32)
 
 app.config['SECRET_KEY'] = SECRET_KEY
-app.config['FLASK_ASSETS_USE_CDN'] = True
 app.config['CDN_DOMAIN'] = 'd12vn54927k41s.cloudfront.net'
 
 CDN(app)
@@ -51,9 +48,6 @@ Bootstrap5(app)
 
 csrf = CSRFProtect()
 csrf.init_app(app)
-
-assets = Environment()
-assets.init_app(app)
 
 Minify(app=app, html=True, js=True, cssless=True)
 
