@@ -101,7 +101,7 @@ class WwwRedirectMiddleware:
     def __call__(self, request):
         host = request.get_host().partition(":")[0]
         if host == "www.mp4us.live":
-            return redirect("https://mp4us.live" + request.path, code=301)
+            return redirect("mp4us.live" + request.path, code=301)
         else:
             return self.get_response(request)
 
