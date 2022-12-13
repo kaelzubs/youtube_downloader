@@ -59,7 +59,7 @@ Minify(app=app, html=True, js=True, cssless=True)
 app.config.from_mapping(config)
 Cache(app)
 
-SSLify(app)
+SSLify(app, permanent=True)
 ############################################################################################
 
 
