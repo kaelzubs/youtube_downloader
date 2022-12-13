@@ -98,9 +98,9 @@ def pretty_size(bytes, units=UNITS_MAPPING):
 def redirect_nonwww():
     """Redirect www requests to non-www."""
     urlparts = urlparse(request.url)
-    if urlparts.netloc == 'www.example.com':
+    if urlparts.netloc == 'www.mp4us.live':
         urlparts_list = list(urlparts)
-        urlparts_list[1] = 'example.com'
+        urlparts_list[1] = 'mp4us.live'
         redirect(urlunparse(urlparts_list), code=301)
 
 
