@@ -14,7 +14,6 @@ from flask_caching import Cache
 from flask_assets import Environment
 from flask_cors import CORS
 from flask_sslify import SSLify
-from urlparse import urlparse, urlunparse
 ############################################################################################
 
 
@@ -93,15 +92,6 @@ def pretty_size(bytes, units=UNITS_MAPPING):
             suffix = multiple
     return str(amount) + suffix
 ############################################################################################
-
-@app.before_request
-def redirect_nonwww():
-    """Redirect www requests to non-www."""
-    urlparts = urlparse(request.url)
-    if urlparts.netloc == 'www.mp4us.live':
-        urlparts_list = list(urlparts)
-        urlparts_list[1] = 'mp4us.live'
-        redirect(urlunparse(urlparts_list), code=301)
 
 
 
