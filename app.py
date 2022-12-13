@@ -93,6 +93,18 @@ def pretty_size(bytes, units=UNITS_MAPPING):
     return str(amount) + suffix
 ############################################################################################
 
+@app.before_request
+class WwwRedirectMiddleware:
+    def __init__(self, get_response):
+        self.get_response = get_response
+
+    def __call__(self, request):
+        host = request.get_host().partition(":")[0]
+        if host == "www.mp4us.live":
+            return redirect("https://mp4us.live" + request.path, code=301)
+        else:
+            return self.get_response(request)
+
 
 
 ############################################################################################
