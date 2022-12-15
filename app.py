@@ -14,6 +14,7 @@ from flask_caching import Cache
 from flask_assets import Environment
 from flask_cors import CORS
 from flask_sslify import SSLify
+from urllib.parse import urlparse, urlunparse
 ############################################################################################
 
 
@@ -59,8 +60,18 @@ Minify(app=app, html=True, js=True, cssless=True)
 app.config.from_mapping(config)
 Cache(app)
 
-SSLify(app, permanent=False)
+SSLify(app)
 ############################################################################################
+
+
+@app.before_request
+def redirect_nonwww():
+    """Redirect non-www requests to www."""
+    urlparts = urlparse(request.url)
+    if urlparts.netloc == 'www.mp4us.live':
+        urlparts_list = list(urlparts)
+        urlparts_list[1] = 'mp4us.live'
+        return redirect(urlunparse(urlparts_list), code=301)
 
 
 
