@@ -43,7 +43,7 @@ SECRET_KEY = os.urandom(32)
 
 app.config['SECRET_KEY'] = SECRET_KEY
 app.config['FLASK_ASSETS_USE_CDN'] = True
-app.config['CDN_DOMAIN'] = 'd12vn54927k41s.cloudfront.net'
+app.config['CDN_DOMAIN'] = 'd2icji5ao6doo0.cloudfront.net'
 
 CDN(app)
 
@@ -79,14 +79,14 @@ def redirect_nonwww():
 
 
 ############################################################################################
-@app.endpoint('static')
-def static(filename):
+@app.template_global()
+def static_url(filename):
     static_url = app.config.get('STATIC_URL')
 
     if static_url:
-        return redirect(urljoin(static_url, filename))
+        return urljoin(static_url, filename)
 
-    return app.send_static_file(filename)
+    return url_for('static', filename=filename)
 ############################################################################################
 
 
