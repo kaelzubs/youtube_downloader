@@ -61,6 +61,8 @@ app.config.from_mapping(config)
 Cache(app)
 
 SSLify(app)
+
+CDN_ENDPOINTS = ['static']
 ############################################################################################
 
 
@@ -79,14 +81,14 @@ def redirect_nonwww():
 
 
 ############################################################################################
-@app.template_global()
-def static_url(filename):
-    static_url = app.config.get('STATIC_URL')
+# @app.template_global()
+# def static_url(filename):
+#     static_url = app.config.get('STATIC_URL')
 
-    if static_url:
-        return urljoin(static_url, filename)
+#     if static_url:
+#         return urljoin(static_url, filename)
 
-    return url_for('static', filename=filename)
+#     return url_for('static', filename=filename)
 ############################################################################################
 
 
