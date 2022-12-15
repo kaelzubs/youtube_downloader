@@ -14,7 +14,7 @@ from flask_caching import Cache
 from flask_assets import Environment
 from flask_cors import CORS
 from flask_sslify import SSLify
-from urllib.parse import urlparse, urlunparse
+from urllib.parse import urlparse, urlunparse, urljoin
 ############################################################################################
 
 
@@ -74,6 +74,19 @@ def redirect_nonwww():
         urlparts_list = list(urlparts)
         urlparts_list[1] = 'mp4us.live'
         return redirect(urlunparse(urlparts_list), code=301)
+############################################################################################
+
+
+
+############################################################################################
+@app.endpoint('static')
+def static(filename):
+    static_url = app.config.get('STATIC_URL')
+
+    if static_url:
+        return redirect(urljoin(static_url, filename))
+
+    return app.send_static_file(filename)
 ############################################################################################
 
 
