@@ -43,7 +43,7 @@ SECRET_KEY = os.urandom(32)
 
 app.config['SECRET_KEY'] = SECRET_KEY
 app.config['FLASK_ASSETS_USE_CDN'] = True
-app.config['CDN_DOMAIN'] = 'd2icji5ao6doo0.cloudfront.net'
+app.config['CDN_DOMAIN'] = 'd12vn54927k41s.cloudfront.net'
 
 CDN(app)
 
@@ -64,6 +64,8 @@ SSLify(app)
 ############################################################################################
 
 
+
+############################################################################################
 @app.before_request
 def redirect_nonwww():
     """Redirect non-www requests to www."""
@@ -72,6 +74,7 @@ def redirect_nonwww():
         urlparts_list = list(urlparts)
         urlparts_list[1] = 'mp4us.live'
         return redirect(urlunparse(urlparts_list), code=301)
+############################################################################################
 
 
 
