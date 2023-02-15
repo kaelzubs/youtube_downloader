@@ -68,14 +68,14 @@ CDN_ENDPOINTS = ['static']
 
 
 ############################################################################################
-#@app.before_request
-#def redirect_nonwww():
-#    """Redirect non-www requests to www."""
-#    urlparts = urlparse(request.url)
-#    if urlparts.netloc == 'www.mp4us.live':
-#        urlparts_list = list(urlparts)
-#        urlparts_list[1] = 'mp4us.live'
-#        return redirect(urlunparse(urlparts_list), code=301)
+@app.before_request
+def redirect_nonwww():
+    """Redirect non-www requests to www."""
+    urlparts = urlparse(request.url)
+    if urlparts.netloc == 'www.mp4us.live':
+        urlparts_list = list(urlparts)
+        urlparts_list[1] = 'mp4us.live'
+        return redirect(urlunparse(urlparts_list), code=301)
 ############################################################################################
 
 
