@@ -74,7 +74,7 @@ def redirect_nonwww():
     urlparts = urlparse(request.url)
     if urlparts.netloc == 'www.mp4us.live':
         urlparts_list = list(urlparts)
-        urlparts_list[1] = 'http://mp4us.live'
+        urlparts_list[1] = 'mp4us.live'
         return redirect(urlunparse(urlparts_list), code=301)
 ############################################################################################
 
