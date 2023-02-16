@@ -34,6 +34,8 @@ app = Flask(
     template_folder='templates'
 )
 
+SSLify(app)
+
 CORS(app)
 
 Compress(app)
@@ -59,8 +61,6 @@ Minify(app=app, html=True, js=True, cssless=True)
 
 app.config.from_mapping(config)
 Cache(app)
-
-SSLify(app)
 
 CDN_ENDPOINTS = ['static']
 ############################################################################################
