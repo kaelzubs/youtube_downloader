@@ -13,7 +13,7 @@ from flask_cdn import CDN
 from flask_caching import Cache
 from flask_assets import Environment
 from flask_cors import CORS
-from flask_sslify import SSLify
+# from flask_sslify import SSLify
 from urllib.parse import urlparse, urlunparse, urljoin
 ############################################################################################
 
@@ -34,7 +34,7 @@ app = Flask(
     template_folder='templates'
 )
 
-SSLify(app)
+# SSLify(app)
 
 CORS(app)
 
@@ -70,11 +70,11 @@ CDN_ENDPOINTS = ['static']
 ############################################################################################
 @app.before_request
 def redirect_nonwww():
-    """Redirect non-www requests to www."""
+    """Redirect www requests to non-www."""
     urlparts = urlparse(request.url)
     if urlparts.netloc == 'www.mp4us.live':
         urlparts_list = list(urlparts)
-        urlparts_list[1] = 'mp4us.live'
+        urlparts_list[1] = 'https://mp4us.live'
         return redirect(urlunparse(urlparts_list), code=301)
 ############################################################################################
 
