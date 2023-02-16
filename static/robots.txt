@@ -1,5 +1,5 @@
 User-agent: *
-Disallow:
+Disallow: /admin
 
 Host: mp4us.live
 Sitemap: https://mp4us.live/sitemap.xml
