@@ -69,6 +69,14 @@ CDN_ENDPOINTS = ['static']
 
 ############################################################################################
 @app.before_request
+def before_request():
+    if not request.is_secure:
+        url = request.url.replace('http://', 'https://', 1)
+        code = 301
+        return redirect(url, code=code)
+
+
+@app.before_request
 def redirect_nonwww():
     """Redirect www requests to non-www."""
     urlparts = urlparse(request.url)
